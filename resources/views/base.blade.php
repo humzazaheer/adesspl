@@ -15,8 +15,6 @@
 </head>
 <body>
 
-{{--body is here--}}
-
     @yield('content')
 
         {{--javascript files--}}
