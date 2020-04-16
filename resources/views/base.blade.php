@@ -14,7 +14,7 @@
     <link href="{{asset('css/lightslider.min.css')}}" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+    <p>Hello Humza</p>
     @yield('content')
 
         {{--javascript files--}}
