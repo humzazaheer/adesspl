@@ -15,6 +15,7 @@
 </head>
 <body>
     <p>Hello Humza</p>
+    <p>Hey Fake</p>
     @yield('content')
 
         {{--javascript files--}}
