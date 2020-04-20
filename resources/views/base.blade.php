@@ -15,9 +15,10 @@
 </head>
 <body>
 
-<p>test</p>
 
+    @yield('header')
     @yield('content')
+    @yield('footer')
 
         {{--javascript files--}}
         <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
