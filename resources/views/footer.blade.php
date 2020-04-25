@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 @extends('base')
-
 
 @section('footer')
 
-
-
-@endsection
-=======
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
 
@@ -91,4 +85,3 @@
 
 </footer>
 <!-- Footer -->
->>>>>>> 1bc3ad7e1d950153c0870858617ee1585535b19b
