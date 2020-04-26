@@ -4,7 +4,7 @@
 
     <section class="banner contact-banner">
 
-        <div class="mask rgba-red-light">
+        <div class="mask rgba-stylish-strong">
             <h2>Contact Us</h2>
         </div>
     </section>
@@ -145,5 +145,8 @@
         <!-- Form with header -->
 
     </section>
-    <iframe  width="100%" height="300" frameborder="0" class="map shadow mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7787349353034!2d74.32010231481888!3d31.53023655381027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919049a66feaf99%3A0x9816f44b8f4fadb6!2sAl-Din+Engineering+Solutions+and+Services+(Pvt.)+Ltd.!5e0!3m2!1sen!2s!4v1471667656830"  allowfullscreen=""></iframe>
+    <section class="mt-5">
+        <h2 class="my-5 text-center font-weight-bold">Our Location</h2>
+        <iframe  width="100%" height="300" frameborder="0" class="map shadow mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7787349353034!2d74.32010231481888!3d31.53023655381027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919049a66feaf99%3A0x9816f44b8f4fadb6!2sAl-Din+Engineering+Solutions+and+Services+(Pvt.)+Ltd.!5e0!3m2!1sen!2s!4v1471667656830"  allowfullscreen=""></iframe>
+    </section>
 </div>
