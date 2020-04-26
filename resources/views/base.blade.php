@@ -13,15 +13,7 @@
     <link href="{{asset('fonts/font-awesome/css/all.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/lightslider.min.css')}}" rel="stylesheet" type="text/css">
 
-<style media="screen">
-  .navbar.scrolling-navbar.top-nav-collapse{
-    padding: 25px 25px !important;
-  }
 
-  .navbar.scrolling-navbar{
-    padding: 50px 50px !important;
-  }
-</style>
 
 </head>
 
