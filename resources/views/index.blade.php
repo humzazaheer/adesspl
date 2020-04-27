@@ -86,7 +86,7 @@
         <div class="container ">
             <h1 class="text-center font-weight-bold">Why ADESSPL?</h1>
 
-            <div class="row dark-grey-text my-5">
+            <div class="row  why-aldin-row">
 
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
@@ -95,7 +95,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">An Unusual Exciting Company </h6>
-                            <p class="text-muted">Where people are empopwered to do business with an enterpreneure
+                            <p class="">Where people are empopwered to do business with an enterpreneure
                                 flair.</p>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Organizational Culture</h6>
-                            <p class="text-muted">A values driven organizational culture encouraging innovation.</p>
+                            <p class="">A values driven organizational culture encouraging innovation.</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Offer One Window Solution</h6>
-                            <p class="text-muted">To it's customers in several engineering disciplines &
+                            <p class="">To it's customers in several engineering disciplines &
                                 technologies.</p>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Excellent Knowledge Of It's Management</h6>
-                            <p class="text-muted">Excellent knowledge of it's management team to develop & implement
+                            <p class="">Excellent knowledge of it's management team to develop & implement
                                 projects.</p>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Strong Network for Sourcing </h6>
-                            <p class="text-muted">Strong Network for sourcing of materials & equipment internationally &
+                            <p class="">Strong Network for sourcing of materials & equipment internationally &
                                 in Pakistan.</p>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Ability To Assimilate</h6>
-                            <p class="text-muted">Ability to assimilate new technologies and work in diversified
+                            <p class="">Ability to assimilate new technologies and work in diversified
                                 multicultural environment.</p>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Experties In Both Fields</h6>
-                            <p class="text-muted">Experties in both green field and brown field project execution.</p>
+                            <p class="">Experties in both green field and brown field project execution.</p>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Uniqueness</h6>
-                            <p class="text-muted">ADESSPL provides unique project management solutions & is capable to
+                            <p class="">ADESSPL provides unique project management solutions & is capable to
                                 integrate all phases of project execution.</p>
                         </div>
                     </div>
@@ -195,7 +195,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Focus On Human Life</h6>
-                            <p class="text-muted">Offers uncompromised focus on human life & sustainable development
+                            <p class="">Offers uncompromised focus on human life & sustainable development
                                 through time tested state of art integrated QHSE System.</p>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Coaching & Nurturing Human Development</h6>
-                            <p class="text-muted">Coaching & nurturing human development both from the technical &
+                            <p class="">Coaching & nurturing human development both from the technical &
                                 general management perspectives on defined career paths.</p>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Processes Different Indigenous Developed Areas</h6>
-                            <p class="text-muted">Project management, engineering, manufacturing and construction
+                            <p class="">Project management, engineering, manufacturing and construction
                                 capabilities which offer best value for money-based upon in-house multi-disciplinary
                                 engineering design resourse. </p>
                         </div>
@@ -234,9 +234,9 @@
 
 
     {{--  Core Values  --}}
-    <section class="pt-4 core-values">
+    <section class=" core-values">
         <div class="container">
-            <h1 class="text-center font-weight-bold my-5">Core Values</h1>
+            <h1 class="text-center font-weight-bold">Core Values</h1>
 
             <div class="row my-5">
                 <div class="col-lg-8 mx-auto">
@@ -244,49 +244,49 @@
                     <ol class="timeline">
                         <li class="timeline-element">
 
-                            <h5 class="font-weight-bold dark-grey-text mb-3">
+                            <h5 class="font-weight-bold  mb-3">
                                 <span class="text-danger mr-4"><i class="fad fa-users fa-2x"></i></span>
                                 Team Work
                             </h5>
-                            <p class="text-muted">We are an employee-owned company that encourages differing ideas &
+                            <p class="">We are an employee-owned company that encourages differing ideas &
                                 fosters partnerships through communication, mutual respect, cooperation & trust.</p>
                         </li>
 
                         <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">
+                            <h5 class="font-weight-bold  mb-3">
                                 Quality
                                 <span class="text-warning ml-4"><i class="fad fa-award fa-2x"></i></span>
 
                             </h5>
-                            <p class="text-muted">We are passionate about excellence and doing our work right the first
+                            <p class="">We are passionate about excellence and doing our work right the first
                                 time. Our reputation depends on our delievered value in the eyes of every customer and
                                 community.</p>
                         </li>
 
                         <li class="timeline-element">
 
-                            <h5 class="font-weight-bold dark-grey-text mb-3">
+                            <h5 class="font-weight-bold  mb-3">
                                 <span class="text-danger mr-4"><i class="fad fa-people-carry fa-2x"></i></span>
                                 Challenge
                             </h5>
-                            <p class="text-muted">We constantly challenge ourselves to come up with solutions that make us unique & leade us to innovation.</p>
+                            <p class="">We constantly challenge ourselves to come up with solutions that make us unique & leade us to innovation.</p>
                         </li>
 
                         <li class="timeline-element">
-                            <h5 class="font-weight-bold dark-grey-text mb-3">
+                            <h5 class="font-weight-bold  mb-3">
                                 No Politics
                                 <span class="text-warning ml-4"><i class="fad fa-landmark fa-2x"></i></span>
 
                             </h5>
-                            <p class="text-muted">As a team we struggle for results & collective success. Internal politics is not bearable.</p>
+                            <p class="">As a team we struggle for results & collective success. Internal politics is not bearable.</p>
                         </li>
                         <li class="timeline-element">
 
-                            <h5 class="font-weight-bold dark-grey-text mb-3">
+                            <h5 class="font-weight-bold  mb-3">
                                 <span class="text-danger     mr-4"><i class="fad fa-balance-scale fa-2x"></i></span>
                                 Ethics
                             </h5>
-                            <p class="text-muted">We are uncompromising in our integrity, honesty & fairness.</p>
+                            <p class="">We are uncompromising in our integrity, honesty & fairness.</p>
                         </li>
 
                     </ol>

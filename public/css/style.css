@@ -150,3 +150,12 @@
 .navbar.scrolling-navbar.top-nav-collapse {
     padding: 15px 0px !important;
 }
+section{
+    padding: 70px 0px;
+}
+.why-aldin-row{
+    margin-top: 50px;
+}
+.core-values{
+    background-color: #f2f2f2;
+}
