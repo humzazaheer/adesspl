@@ -4,7 +4,7 @@
 
     <section class="banner contact-banner">
 
-        <div class="mask rgba-stylish-strong">
+        <div class="mask rgba-black-strong">
             <h2>Contact Us</h2>
         </div>
     </section>
