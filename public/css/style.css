@@ -47,25 +47,6 @@
     }
 }
 
-.contact-banner {
-    background-image: url("../images/contact-min.jpg");
-}
-
-.banner {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.banner h2 {
-    padding: 17% 0 5%;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-}
-
-.map {
-    border-radius: .25rem;
-}
 
 .timeline {
     position: relative;
@@ -158,4 +139,13 @@ section{
 }
 .core-values{
     background-color: #f2f2f2;
+}
+
+
+.contact-banner {
+    background-image: url("../images/contact-min.jpg");
+}
+
+.map {
+    border-radius: .25rem;
 }

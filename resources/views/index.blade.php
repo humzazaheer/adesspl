@@ -296,5 +296,31 @@
 
         </div>
     </section>
-    {{-- Core Values --}}
+    {{--End Core Values --}}
+
+
+{{--    clients--}}
+    <section id="clients" class="container">
+        <h1 class="text-center font-weight-bold">Our Clients</h1>
+        <ul id="clientSlider" class="my-5">
+            <li>
+                <h3>First Slide</h3>
+                <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+            </li>
+            <li>
+                <h3>Second Slide</h3>
+                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+            </li>
+            <li>
+                <h3>Second Slide</h3>
+                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+            </li>
+            <li>
+                <h3>Second Slide</h3>
+                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+            </li>
+            ...
+        </ul>
+    </section>
+{{--    end clients--}}
 @endsection
