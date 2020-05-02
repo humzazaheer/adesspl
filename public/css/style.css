@@ -1,53 +1,3 @@
-@media (max-width: 767.98px) {
-    .timeline::before {
-        left: 8px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .timeline-element {
-        width: 100%;
-        text-align: left;
-        padding-left: 2.5rem;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .timeline-element::before {
-        top: 1.25rem;
-        left: 1px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .timeline-element:nth-child(even) {
-        margin-left: 0rem;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .timeline-element {
-        width: 100%;
-        text-align: left;
-        padding-left: 2.5rem;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .timeline-element:nth-child(even)::before {
-        left: 1px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .timeline-element::before {
-        top: 1.25rem;
-    }
-}
-
-
 .timeline {
     position: relative;
     list-style: none;
@@ -99,6 +49,55 @@
     text-align: left;
 }
 
+@media (max-width: 767.98px) {
+    .timeline::before {
+        left: 8px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .timeline-element {
+        width: 100%;
+        text-align: left;
+        padding-left: 2.5rem;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .timeline-element::before {
+        top: 1.25rem;
+        left: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .timeline-element:nth-child(even) {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .timeline-element {
+        width: 100%;
+        text-align: left;
+        padding-left: 2.5rem;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .timeline-element:nth-child(even)::before {
+        left: 1px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .timeline-element::before {
+        top: 1.25rem;
+    }
+}
+
 @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
         background: #1C2331 !important;
@@ -131,22 +130,73 @@
 .navbar.scrolling-navbar.top-nav-collapse {
     padding: 15px 0px !important;
 }
-section{
+
+section {
     padding: 70px 0px;
 }
-.why-aldin-row{
+
+.why-aldin-row {
     margin-top: 50px;
 }
-.core-values{
-    background-color: #f2f2f2;
-}
+.why-aldin{
+    font-weight: lighter;
 
+}
+.core-values {
+    background-color: #f4f7fa;
+}
 
 .contact-banner {
     background-image: url("../images/map.png");
+}
+.solution-service-banner {
+    background-image: url("../images/solutionservice-banner.jpg");
 }
 
 .map {
     border-radius: .25rem;
 }
-gehetec
+
+.timeline::before {
+    background-color: #b7d9fb;
+}
+
+.timeline-element::before {
+    border: 2px solid #b7d9fb;
+}
+.banner-icon{
+    border: 2px solid #ffbb33;
+    padding: 8px 16px;
+}
+/*.banner-icon::before {*/
+/*    content: "";*/
+/*    height: 1px;*/
+/*    width: 36px;*/
+/*    background-color: #fff;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: -42px;*/
+/*}*/
+
+/*.banner::after {*/
+/*    content: "";*/
+/*    height: 1px;*/
+/*    width: 36px;*/
+/*    background-color: #fff;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: -42px;*/
+/*}*/
+
+.banner-icon{
+    font-size: 40px;
+}
+.nav-item{
+    margin-left: 15px;
+}
+.our-clients img{
+    height: 50px;
+
+}

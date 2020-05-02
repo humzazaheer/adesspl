@@ -91,7 +91,7 @@
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
                         <div class="mr-4">
-                            <span class="text-black-50"><i class="fad fa-child fa-2x"></i></span>
+                            <span class="text-dark"><i class="fad fa-child fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">An Unusual Exciting Company </h6>
@@ -103,8 +103,8 @@
 
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
-                        <div class="mr-4">
-                            <span class="text-warning"><i class="fad fa-users fa-2x"></i></span>
+                        <div class="mr-3">
+                            <span class="text-warning"><i class="fas fa-users fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Organizational Culture</h6>
@@ -129,8 +129,8 @@
 
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
-                        <div class="mr-4">
-                            <span class="text-black-50"><i class="fad fa-tasks-alt fa-2x"></i></span>
+                        <div class="mr-3">
+                            <span class="text-dark"><i class="fad fa-tasks-alt fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Excellent Knowledge Of It's Management</h6>
@@ -155,8 +155,8 @@
 
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
-                        <div class="mr-4">
-                            <span class="text-danger"><i class="fad fa-hand-receiving fa-2x"></i></span>
+                        <div class="mr-3">
+                            <span class="text-danger"><i class="fas fa-hand-receiving fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Ability To Assimilate</h6>
@@ -167,8 +167,8 @@
                 </div>
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
-                        <div class="mr-4">
-                            <span class="text-black-50"><i class="fad fa-star-half fa-2x"></i></span>
+                        <div class="mr-3">
+                            <span class="text-dark"><i class="fad fa-star-half fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Experties In Both Fields</h6>
@@ -179,7 +179,7 @@
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
                         <div class="mr-4">
-                            <span class="text-warning"><i class="fad fa-gem fa-2x"></i></span>
+                            <span class="text-warning"><i class="fas fa-gem fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Uniqueness</h6>
@@ -191,7 +191,7 @@
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
                         <div class="mr-4">
-                            <span class="text-danger"><i class="fad fa-heartbeat fa-2x"></i></span>
+                            <span class="text-danger"><i class="fas fa-heartbeat fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Focus On Human Life</h6>
@@ -203,7 +203,7 @@
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
                         <div class="mr-4">
-                            <span class="text-black-50"><i class="fad fa-hiking fa-2x"></i></span>
+                            <span class="text-dark"><i class="fad fa-hiking fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Coaching & Nurturing Human Development</h6>
@@ -215,7 +215,7 @@
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
                         <div class="mr-4">
-                            <span class="text-warning"><i class="fad fa-braille fa-2x"></i></span>
+                            <span class="text-warning"><i class="fas fa-braille fa-2x"></i></span>
                         </div>
                         <div class="media-body">
                             <h6 class="font-weight-bold">Processes Different Indigenous Developed Areas</h6>
@@ -300,26 +300,22 @@
 
 
 {{--    clients--}}
-    <section id="clients" class="container">
+    <section id="clients" class="container our-clients">
         <h1 class="text-center font-weight-bold">Our Clients</h1>
-        <ul id="clientSlider" class="my-5">
+        <ul id="lightSlider" class="my-5">
             <li>
-                <h3>First Slide</h3>
-                <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
             </li>
             <li>
-                <h3>Second Slide</h3>
-                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+
             </li>
             <li>
-                <h3>Second Slide</h3>
-                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
             </li>
             <li>
-                <h3>Second Slide</h3>
-                <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
             </li>
-            ...
         </ul>
     </section>
 {{--    end clients--}}

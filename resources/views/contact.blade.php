@@ -5,7 +5,12 @@
     <section class="banner contact-banner">
 
         <div class="mask rgba-black-strong">
-            <h2>Contact Us</h2>
+
+            <h2>
+                <span class="banner-icon"><i class="fad fa-tools  text-warning" ></i></span>
+                <br><br>
+                Contact Us
+            </h2>
         </div>
     </section>
 

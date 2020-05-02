@@ -3,9 +3,50 @@
     background-size: cover;
     padding: 0;
 }
+
 .banner h2 {
     padding: 17% 0 5%;
     text-align: center;
     font-weight: bold;
     color: #fff;
 }
+
+@font-face {
+    font-family: 'baloo-tamma';
+    src: url("../fonts/Baloo_Tamma_2/BalooTamma2-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'viga';
+    src: url("../fonts/Viga/Viga-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url("../fonts/ubuntu-font-family/Ubuntu-L.ttf");
+}
+
+@font-face {
+    font-family: 'segoe';
+    src: url("../fonts/Segoe/segoeui.ttf");
+}
+
+@font-face {
+    font-family: 'segoe-semi-bold';
+    src: url("../fonts/Segoe/seguisb.ttf");
+}
+
+body {
+    font-family: segoe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: segoe-semi-bold;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+
+

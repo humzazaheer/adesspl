@@ -15,8 +15,20 @@ class PageController extends Controller
     {
         return view('about', []);
     }
+
     public function contact()
     {
-        return view('contact',[]);
+        return view('contact', []);
     }
+
+    public function solutionservice()
+    {
+        return view('solutionservice', []);
+    }
+    public function workshop()
+    {
+        return view('workshop', []);
+    }
+
+
 }

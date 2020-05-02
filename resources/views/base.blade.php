@@ -32,23 +32,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                   <a class="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                   <a class="nav-link waves-effect waves-light" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="#">Features</a>
+                    <a class="nav-link waves-effect waves-light" href="/solutionservice">Solution & Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="#">Pricing</a>
+                    <a class="nav-link waves-effect waves-light" href="/workshop">Workshop</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-                        <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-                        <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#">Gallery</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#">QHSE Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="/contact">Contact</a>
+                </li>
+
             </ul>
 
         </div>
@@ -60,10 +65,10 @@
 @yield('content')
 
     <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4 mt-5">
+    <footer class="page-footer font-small pt-4 mt-5 ">
 
       <!-- Footer Links -->
-      <div class="container-fluid text-center text-md-left">
+      <div class="container-fluid text-center text-md-left ">
 
         <!-- Grid row -->
         <div class="row">
@@ -155,3 +160,41 @@
         <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
         </body>
 </html>
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+        var autoplaySlider = $('#lightSlider').lightSlider({
+            auto:true,
+            loop:true,
+            item:4,
+            thumbMargin: 3,
+            onBeforeSlide: function (el) {
+                $('#current').text(el.getCurrentSlideCount());
+            },
+
+            responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                    }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                    }
+                }
+            ]
+        });
+        $('#total').text(autoplaySlider.getTotalSlideCount());
+    });
+
+
+</script>
