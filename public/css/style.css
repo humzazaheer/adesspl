@@ -112,8 +112,12 @@
     background-color: rgba(0, 0, 0, .3)
 }
 
-.page-footer, .top-nav-collapse {
-    background-color: #1C2331
+.top-nav-collapse {
+    background-color: #fff
+}
+
+.page-footer{
+    background-color: #333;
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,6 +133,9 @@
 
 .navbar.scrolling-navbar.top-nav-collapse {
     padding: 15px 0px !important;
+}
+.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link{
+    color: black;
 }
 
 section {
@@ -152,6 +159,9 @@ section {
 .solution-service-banner {
     background-image: url("../images/solutionservice-banner.jpg");
 }
+.about-banner {
+        background-image: url("https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg");
+}
 
 .map {
     border-radius: .25rem;
@@ -168,27 +178,6 @@ section {
     border: 2px solid #ffbb33;
     padding: 8px 16px;
 }
-/*.banner-icon::before {*/
-/*    content: "";*/
-/*    height: 1px;*/
-/*    width: 36px;*/
-/*    background-color: #fff;*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: -42px;*/
-/*}*/
-
-/*.banner::after {*/
-/*    content: "";*/
-/*    height: 1px;*/
-/*    width: 36px;*/
-/*    background-color: #fff;*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: -42px;*/
-/*}*/
 
 .banner-icon{
     font-size: 40px;

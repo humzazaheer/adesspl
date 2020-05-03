@@ -26,7 +26,7 @@
     	<div class="container">
 
 
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand text-danger font-weight-bold" href="/">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,7 +48,7 @@
                     <a class="nav-link waves-effect waves-light" href="#">QHSE Policy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="#">About</a>
+                    <a class="nav-link waves-effect waves-light" href="/about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light" href="/contact">Contact</a>
