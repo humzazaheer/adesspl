@@ -25,7 +25,9 @@
     <div class="container">
 
 
-        <a class="navbar-brand text-danger font-weight-bold" href="/">Navbar</a>
+        <a class="navbar-brand font-weight-bold" href="/">
+            <img src="{{asset('images/logo.png')}}" alt="ADESSPL" class="img-fluid"><br><span class="navbar-brand-text">ADESSPL</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -166,52 +168,3 @@
 </body>
 </html>
 
-
-<script type="text/javascript">
-
-
-    $(document).ready(function () {
-        var autoplaySlider = $('#nat-clients,#internat-clients').lightSlider({
-            auto:true,
-            loop:true,
-            item:4,
-            margin:3,
-            pauseOnHover: true,
-            responsive : [
-                {
-                    breakpoint:800,
-                    settings: {
-                        item:3,
-                        slideMove:1,
-                        slideMargin:6,
-                    }
-                },
-                {
-                    breakpoint:480,
-                    settings: {
-                        item:2,
-                        slideMove:1
-                    }
-                }
-            ]
-        });
-
-
-
-    $(function () {
-
-        var $btn = $('#btnTop');
-        var $home = $('#top');
-        var startpoint = $home.scrollTop() + $home.height()/2;
-
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() > startpoint) {
-                $btn.fadeIn();
-            } else {
-                $btn.fadeOut();
-            }
-        });
-    });
-    });
-
-</script>

@@ -125,18 +125,46 @@
         background-color: #1C2331
     }
 }
+.navbar-brand-text {
+    text-align: center;
+    display: table;
+    margin: auto;
+    font-family: segoe-semi-bold;
+    line-height: 1.5rem;
 
+}
+.navbar.scrolling-navbar .navbar-brand .navbar-brand-text {
+    font-size: 0.78rem;
+    /*transform: scale(1);*/
+}
+.navbar.scrolling-navbar.top-nav-collapse .navbar-brand .navbar-brand-text {
+    color: #000;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    /*transform: scale(0.9);*/
 
+}
+.navbar.scrolling-navbar .navbar-brand img {
+    max-width: 4rem;
+    /*transform: scale(1);*/
+    transition: all ease 0.4s;
+}
+.navbar.scrolling-navbar.top-nav-collapse .navbar-brand img {
+    max-width: 3.5rem;
+    /*transform: scale(0.8);*/
+    transition: all ease 0.4s;
+}
 .navbar.scrolling-navbar {
-    padding: 30px 0px !important;
+    padding: 5px 0px !important;
 }
 
 .navbar.scrolling-navbar.top-nav-collapse {
-    padding: 15px 0px !important;
+    padding: 5px 0px !important;
 }
 
 .navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link {
     color: black;
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 852px) {
@@ -204,3 +232,19 @@ section {
 .our-clients img {
     height: 50px;
 }
+
+.statements .card-icon i.fa-bullseye-arrow {
+
+    background-color: transparent;
+    background: radial-gradient(circle at 33% 100%, #F77B7B 4%, #FBB615BA 30%, #F45E5E 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.statements .card-icon i.fa-eye {
+
+    background-color: transparent;
+    background: radial-gradient(circle at 33% 100%, #FFCF146E 4%, #DF3939B5 30%, #F2AB21 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

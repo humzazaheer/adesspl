@@ -43,9 +43,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: segoe-semi-bold;
 }
-
-.nav-link {
-    font-weight: bold;
+textarea {
+    resize: none;
 }
 section {
     padding: 70px 0px;
@@ -53,4 +52,10 @@ section {
 .banner-icon{
     border: 2px solid #ffbb33;
     padding: 8px 16px;
+}
+.ad-orangeGradient {
+    background: linear-gradient(125deg, #F46262, #F2AB21);
+}
+.ad-redBtn {
+    background: #f46361;
 }

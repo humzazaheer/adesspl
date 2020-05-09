@@ -34,11 +34,11 @@
 
 
                 <!-- Card -->
-                <div class="card mb-6">
+                <div class="card mb-6 mx-2">
 
                     <!-- Card image -->
-                    <div class="card-icon my-5 text-center text-danger">
-                        <i class="fad fa-bullseye-arrow fa-5x"></i>
+                    <div class="card-icon mt-5 mb-4 text-center text-danger">
+                        <i class="fa fa-bullseye-arrow fa-5x"></i>
                     </div>
 
                     <!-- Card content -->
@@ -55,11 +55,11 @@
                 <!-- Card -->
 
                 <!-- Card -->
-                <div class="card mb-6">
+                <div class="card mb-6 mx-2">
 
                     <!-- Card image -->
-                    <div class="card-icon my-5 text-center text-warning">
-                        <i class="fad fa-eye fa-5x"></i>
+                    <div class="card-icon mt-5 mb-4 text-center text-warning">
+                        <i class="fa fa-eye fa-5x"></i>
                     </div>
 
                     <!-- Card content -->
@@ -68,7 +68,7 @@
                         <!-- Title -->
                         <h3 class="card-title text-center">Vision Statement</h3>
                         <!-- Text -->
-                        <p class="card-text">To become the preferred leading Contractor and Supplier to Petrochemical, Oil & Gas, fertilizer, Power Generation Cem ent and Industrial Projects in Asia. Customers and partners will see us as integral to their success. We will anticipate their needs and deliver on every commitment we make. People will be proud to work at ADESSPL. We will create opportunities to achieve the extraordinary, and we will reward
+                        <p class="card-text">To become the preferred leading Contractor and Supplier to Petrochemical, Oil & Gas, fertilizer, Power Generation Cement and Industrial Projects in Asia. Customers and partners will see us as integral to their success. We will anticipate their needs and deliver on every commitment we make. People will be proud to work at ADESSPL. We will create opportunities to achieve the extraordinary, and we will reward
                             success.</p>
 
                     </div>
