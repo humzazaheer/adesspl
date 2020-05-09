@@ -29,6 +29,10 @@ class PageController extends Controller
     {
         return view('workshop', []);
     }
+    public function gallery()
+    {
+        return view('gallery', []);
+    }
 
 
 }

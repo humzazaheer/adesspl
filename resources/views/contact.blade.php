@@ -7,7 +7,7 @@
         <div class="mask rgba-black-strong">
 
             <h2>
-                <span class="banner-icon"><i class="fad fa-tools  text-warning" ></i></span>
+                <span class="banner-icon"><i class="fad fa-cogs  text-warning" ></i></span>
                 <br><br>
                 Contact Us
             </h2>

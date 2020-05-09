@@ -50,5 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
     padding: 70px 0px;
 }
-
-
+.banner-icon{
+    border: 2px solid #ffbb33;
+    padding: 8px 16px;
+}

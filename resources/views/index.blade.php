@@ -234,7 +234,7 @@
 
 
     {{--  Core Values  --}}
-    <section class=" core-values">
+    <section class=" core-values section-highlight">
         <div class="container">
             <h1 class="text-center font-weight-bold">Core Values</h1>
 
@@ -300,23 +300,50 @@
 
 
 {{--    clients--}}
-    <section id="clients" class="container our-clients">
-        <h1 class="text-center font-weight-bold">Our Clients</h1>
-        <ul id="lightSlider" class="my-5">
-            <li>
-                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-            </li>
-            <li>
-                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+    <section id="clients" class="our-clients container-fluid">
 
-            </li>
-            <li>
-                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-            </li>
-            <li>
-                <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-            </li>
-        </ul>
+        <h1 class="text-center font-weight-bold">Our Clients</h1>
+
+        <div class="container my-5">
+
+                <h3 class="text-center font-weight-bold my-4">National</h3>
+
+                <ul id="nat-clients" class="">
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+                    </li>
+                </ul>
+
+
+                <h3 class="text-center font-weight-bold my-4">International</h3>
+
+                <ul id="internat-clients" class="my-5">
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
+                    </li>
+                </ul>
+            </div>
+
     </section>
 {{--    end clients--}}
 @endsection

@@ -116,7 +116,7 @@
     background-color: #fff
 }
 
-.page-footer{
+.page-footer {
     background-color: #333;
 }
 
@@ -134,9 +134,18 @@
 .navbar.scrolling-navbar.top-nav-collapse {
     padding: 15px 0px !important;
 }
-.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link{
+
+.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link {
     color: black;
 }
+
+@media screen and (max-width: 852px) {
+    .navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link {
+        color: #fff !important;
+
+    }
+}
+
 
 section {
     padding: 70px 0px;
@@ -145,23 +154,31 @@ section {
 .why-aldin-row {
     margin-top: 50px;
 }
-.why-aldin{
+
+.why-aldin {
     font-weight: lighter;
 
 }
-.core-values {
+
+.section-highlight {
     background-color: #f4f7fa;
 }
 
 .contact-banner {
     background-image: url("../images/map.png");
 }
+
 .solution-service-banner {
     background-image: url("../images/solutionservice-banner.jpg");
 }
+
 .about-banner {
-        background-image: url("https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg");
+    background-image: url("");
 }
+.gallery-banner {
+    background-image: url("");
+}
+
 
 .map {
     border-radius: .25rem;
@@ -174,18 +191,16 @@ section {
 .timeline-element::before {
     border: 2px solid #b7d9fb;
 }
-.banner-icon{
-    border: 2px solid #ffbb33;
-    padding: 8px 16px;
-}
 
-.banner-icon{
+
+.banner-icon {
     font-size: 40px;
 }
-.nav-item{
+
+.nav-item {
     margin-left: 15px;
 }
-.our-clients img{
-    height: 50px;
 
+.our-clients img {
+    height: 50px;
 }
