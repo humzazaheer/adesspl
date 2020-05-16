@@ -7,8 +7,8 @@
         <div class="mask rgba-black-strong">
 
             <h2>
-                <span class="banner-icon"><i class="fad fa-cogs  text-warning" ></i></span>
-                <br><br>
+                <span class="banner-icon"><img src="{{asset('images/engineer-80px.png')}}" alt=""></span>
+                <br>
                 About Us
             </h2>
         </div>

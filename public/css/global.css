@@ -49,9 +49,8 @@ textarea {
 section {
     padding: 70px 0px;
 }
-.banner-icon{
-    border: 2px solid #ffbb33;
-    padding: 8px 16px;
+.banner-icon img{
+    margin-bottom: .5em;
 }
 .ad-orangeGradient {
     background: linear-gradient(125deg, #F46262, #F2AB21);
