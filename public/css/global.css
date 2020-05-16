@@ -11,31 +11,6 @@
     color: #fff;
 }
 
-@font-face {
-    font-family: 'baloo-tamma';
-    src: url("../fonts/Baloo_Tamma_2/BalooTamma2-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'viga';
-    src: url("../fonts/Viga/Viga-Regular.ttf");
-}
-
-@font-face {
-    font-family: 'ubuntu';
-    src: url("../fonts/ubuntu-font-family/Ubuntu-L.ttf");
-}
-
-@font-face {
-    font-family: 'segoe';
-    src: url("../fonts/Segoe/segoeui.ttf");
-}
-
-@font-face {
-    font-family: 'segoe-semi-bold';
-    src: url("../fonts/Segoe/seguisb.ttf");
-}
-
 body {
     font-family: segoe;
 }
@@ -43,8 +18,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: segoe-semi-bold;
 }
+p {
+    color: #4d4b4b;
+}
+button {
+    border: none;
+}
 textarea {
     resize: none;
+}
+abbr[title] {
+    text-decoration: none;
 }
 section {
     padding: 70px 0px;
@@ -57,4 +41,7 @@ section {
 }
 .ad-redBtn {
     background: #f46361;
+}
+.ad-black {
+    color: #4d4b4b;
 }

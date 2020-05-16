@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'segoe';
+    src: url("../fonts/Segoe/segoeui.ttf");
+}
+
+@font-face {
+    font-family: 'segoe-semi-bold';
+    src: url("../fonts/Segoe/seguisb.ttf");
+}

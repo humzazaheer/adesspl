@@ -22,5 +22,6 @@ Route::get('/contact', 'PageController@contact');
 Route::get('/solutionservice', 'PageController@solutionservice');
 Route::get('/workshop', 'PageController@workshop');
 Route::get('/gallery', 'PageController@gallery');
+Route::get('/experience', 'PageController@experience');
 
 

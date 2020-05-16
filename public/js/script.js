@@ -34,21 +34,19 @@ $(document).ready(function () {
     });
     $('#total').text(autoplaySlider.getTotalSlideCount());
 
-});
+    $('#btnTop').click(function () {
 
-// scrollTop
-
-$(function () {
-
-    var $btn = $('#btnTop');
-    var $home = $('#top');
-    var startpoint = $home.scrollTop() + $home.height() / 2;
-
-    $(window).on('scroll', function () {
-        if ($(window).scrollTop() > startpoint) {
-            $btn.fadeIn();
-        } else {
-            $btn.fadeOut();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $('#top').height()+200) {
+            $('#btnTop').fadeIn();
+        }
+        else {
+            $('#btnTop').fadeOut();
         }
     });
+
 });

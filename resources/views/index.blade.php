@@ -84,7 +84,7 @@
     {{--  Why Aldin?  --}}
     <section class="why-aldin">
         <div class="container ">
-            <h1 class="text-center font-weight-bold">Why ADESSPL?</h1>
+            <h1 class="text-center ad-black">Why ADESSPL?</h1>
 
             <div class="row  why-aldin-row">
 
@@ -236,7 +236,7 @@
     {{--  Core Values  --}}
     <section class=" core-values section-highlight">
         <div class="container">
-            <h1 class="text-center font-weight-bold">Core Values</h1>
+            <h1 class="text-center ad-black">Core Values</h1>
 
             <div class="row my-5">
                 <div class="col-lg-8 mx-auto">
@@ -269,8 +269,7 @@
                                 <span class="text-danger mr-4"><i class="fad fa-people-carry fa-2x"></i></span>
                                 Challenge
                             </h5>
-                            <p class="">We constantly challenge ourselves to come up with solutions that make us unique
-                                & leade us to innovation.</p>
+                            <p class="">We constantly challenge ourselves to come up with solutions that make us unique & leade us to innovation.</p>
                         </li>
 
                         <li class="timeline-element">
@@ -279,8 +278,7 @@
                                 <span class="text-warning ml-4"><i class="fad fa-landmark fa-2x"></i></span>
 
                             </h5>
-                            <p class="">As a team we struggle for results & collective success. Internal politics is not
-                                bearable.</p>
+                            <p class="">As a team we struggle for results & collective success. Internal politics is not bearable.</p>
                         </li>
                         <li class="timeline-element">
 
@@ -301,17 +299,14 @@
     {{--End Core Values --}}
 
 
-
-
-{{--        clients--}}
+{{--    clients--}}
     <section id="clients" class="our-clients container-fluid">
 
+        <h1 class="text-center ad-black">Our Clients</h1>
 
-            <h1 class="text-center font-weight-bold">Our Clients</h1>
+        <div class="container my-5">
 
-            <div class="container my-5">
-
-{{--                <h3 class="text-center font-weight-bold my-4">National</h3>--}}
+                <h3 class="text-center font-weight-bold my-4">National</h3>
 
                 <ul id="nat-clients" class="">
                     <li>
@@ -349,7 +344,6 @@
 {{--                </ul>--}}
             </div>
 
-
     </section>
-{{--        end clients--}}
+{{--    end clients--}}
 @endsection

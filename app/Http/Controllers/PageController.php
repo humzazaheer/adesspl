@@ -25,13 +25,20 @@ class PageController extends Controller
     {
         return view('solutionservice', []);
     }
+
     public function workshop()
     {
         return view('workshop', []);
     }
+
     public function gallery()
     {
         return view('gallery', []);
+    }
+
+    public function experience()
+    {
+        return view('experience', []);
     }
 
 

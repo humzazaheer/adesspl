@@ -122,8 +122,36 @@
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #1C2331
+        background-color: #1C2331;
+
     }
+}
+.navbar.scrolling-navbar .dropdown-menu {
+    background-color: rgba(0, 0, 0, .3);
+    margin-top: 2.06rem;
+}
+.navbar.scrolling-navbar .dropdown-item {
+    color: #fff !important;
+}
+.navbar.scrolling-navbar.top-nav-collapse .dropdown-item {
+    color: #4d4b4b !important;
+}
+.navbar.scrolling-navbar.top-nav-collapse .dropdown-menu {
+    background-color: rgba(255,255,255);
+    margin-top: 1.6rem;
+}
+.navbar.scrolling-navbar.top-nav-collapse .dropdown-item:hover {
+    color: #fff !important;
+}
+.navbar.scrolling-navbar .dropdown-menu {
+    border: 0;
+    border-radius: 0;
+}
+.navbar .dropdown-item:hover {
+    background: linear-gradient(125deg, #F46262, #F2AB21);
+    background-color: transparent !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
 .navbar-brand-text {
     text-align: center;
@@ -182,7 +210,9 @@ section {
 .why-aldin-row {
     margin-top: 50px;
 }
-
+.why-aldin-row h6 {
+    color: #4d4b4b;
+}
 .why-aldin {
     font-weight: lighter;
 
@@ -206,7 +236,9 @@ section {
 .gallery-banner {
     background-image: url("");
 }
-
+.core-values h5 {
+    color: #4d4b4b;
+}
 
 .map {
     border-radius: .25rem;
@@ -245,3 +277,34 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
+/*experience*/
+
+.work-experience .company-logo {
+    max-width: 3rem;
+}
+
+/*footer*/
+
+.footer-logo img {
+    max-width: 3.5rem;
+}
+.footer-logo-text {
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.footer-logo-text span {
+    font-size: 1.14rem;
+}
+
+@media screen and (max-width: 480px){
+    .footer-logo img {
+        max-width: 3rem;
+    }
+     .footer-logo-text {
+         line-height: 1.2rem;
+         font-size: 1.2rem;
+     }
+    .footer-logo-text span {
+        font-size: 0.786rem;
+    }
+}

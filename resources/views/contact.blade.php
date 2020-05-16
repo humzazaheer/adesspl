@@ -16,7 +16,7 @@
 
 <div class="container">
     <section class="contact-section mt-5">
-
+<h1 class="text-center mb-5 ad-black">Get In Touch</h1>
         <!-- Form with header -->
         <div class="card">
 
@@ -29,7 +29,7 @@
                     <div class="card-body form">
 
                         <!-- Header -->
-                        <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write to us:</h3>
+                        <h3 class="mt-4 ad-black"><i class="fas fa-envelope pr-2"></i>Write to us:</h3>
 
                         <!-- Grid row -->
                         <div class="row">
@@ -88,7 +88,7 @@
                                     <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
                                     <label for="form-contact-message">Your message</label>
                                     <a class="btn-floating btn-lg ad-redBtn">
-                                        <i class="far fa-paper-plane"></i>
+                                        <i class="fad fa-paper-plane"></i>
                                     </a>
                                 </div>
                             </div>
@@ -151,7 +151,7 @@
 
     </section>
     <section class="mapSection">
-        <h2 class="mb-5 text-center font-weight-bold">Our Location</h2>
+        <h1 class="mb-5 text-center ad-black">Our Location</h1>
         <iframe  width="100%" height="350" frameborder="0" class="map shadow mb-5 rounded z-depth-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7787349353034!2d74.32010231481888!3d31.53023655381027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919049a66feaf99%3A0x9816f44b8f4fadb6!2sAl-Din+Engineering+Solutions+and+Services+(Pvt.)+Ltd.!5e0!3m2!1sen!2s!4v1471667656830"  allowfullscreen=""></iframe>
     </section>
 </div>
