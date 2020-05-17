@@ -25,6 +25,7 @@ Route::get('/gallery', 'PageController@gallery');
 Route::get('/experience', 'PageController@experience');
 Route::get('/admin', 'AdminPageController@dashboard');
 Route::get('/admin/clients', 'AdminPageController@clients')->name('clients');
-Route::post('/admin/clients', 'ClientController@store');
+Route::get('/admin/clients', 'ClientController@index')->name('clientData');
+Route::post('/admin/clients', 'ClientController@store')->name('clientStore');
 
 

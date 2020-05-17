@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+
+
     $('.mdb-select').materialSelect();
 
     // admin navbar

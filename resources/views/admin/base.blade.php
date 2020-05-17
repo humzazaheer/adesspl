@@ -62,9 +62,11 @@
     <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/fontawesome.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/datatables.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/mdb-datatables.js')}}"></script>
 </body>
 
 </html>
