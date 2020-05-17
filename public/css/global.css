@@ -40,8 +40,8 @@ section {
     background: linear-gradient(125deg, #F46262, #F2AB21);
 }
 .ad-redBtn {
-    background: #f46361;
+    background: #f46361 !important;
 }
 .ad-black {
-    color: #4d4b4b;
+    color: #4d4b4b !important;
 }
