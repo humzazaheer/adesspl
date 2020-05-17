@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/css/mdb.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/fonts/font-awesome/css/all.css')}}">
+    <link href="{{asset('css/font.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{asset('/css/datatables.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/css/animate.css')}}">
 </head>
@@ -24,9 +25,9 @@
                 <li class="nav-item waves-effect">
                     <a class="nav-link ad-black" href="{{url('/admin')}}"><i class="fad fa-tachometer mr-2"></i> Dashboard</a>
                 </li>
-                <li class="nav-item waves-effect"><a class="nav-link ad-black" href="{{url('/admin/clients')}}"><i class="fad fa-users mr-2"></i> Clients</a></li>
-                <li class="nav-item waves-effect"><a class="nav-link ad-black" href="{{url('/admin/gallery')}}"><i class="fad fa-images mr-2"></i> Gallery</a></li>
-                <li class="nav-item waves-effect"><a class="nav-link ad-black" href="{{url('/admin/work_experience')}}"><i class="fad fa-tasks mr-2"></i> Work Experience</a></li>
+                <li class="nav-item waves-effect {{Request::path()==='/admin/clients'?'active':''}}"><a class="nav-link ad-black" href="{{url('/admin/clients')}}"><i class="fad fa-users mr-2"></i> Clients</a></li>
+                <li class="nav-item waves-effect {{Request::path()==='/admin/gallery'?'active':''}}"><a class="nav-link ad-black" href="{{url('/admin/gallery')}}"><i class="fad fa-images mr-2"></i> Gallery</a></li>
+                <li class="nav-item waves-effect {{Request::path()==='/admin/work_experience'?'active':''}}"><a class="nav-link ad-black" href="{{url('/admin/work_experience')}}"><i class="fad fa-tasks mr-2"></i> Work Experience</a></li>
             </ul>
 
         </div>

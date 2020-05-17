@@ -1,8 +1,9 @@
-// function changeText() {
-//     filename = document.getElementById('fileInput').value.replace("C:\\fakepath\\", "");
-//     document.getElementById('file-name').value = filename;
-// }
+
 $(document).ready(function() {
+
+    $('.mdb-select').materialSelect();
+
+    // admin navbar
 
     $('aside').hide();
     $('.body-overlay').hide();
@@ -17,6 +18,9 @@ $(document).ready(function() {
         $('.body-overlay').fadeOut(500);
     });
 
+    // end admin navbar
+
+    // lightslider
 
     var autoplaySlider = $('#lightSlider,#nat-clients,#internat-clients').lightSlider({
         auto: true,
@@ -47,6 +51,10 @@ $(document).ready(function() {
     });
     $('#total').text(autoplaySlider.getTotalSlideCount());
 
+    // end lightslider
+
+    //scrolltop
+
     $('#btnTop').click(function() {
 
         $('html,body').animate({
@@ -60,5 +68,7 @@ $(document).ready(function() {
             $('#btnTop').fadeOut();
         }
     });
+
+    // end scrolltop
 
 });

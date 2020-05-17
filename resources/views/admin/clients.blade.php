@@ -3,7 +3,7 @@
 @section('title','Brands')
 
 @section('content')
-
+{{$hello??''}}
 <h1 class="h1-responsive text-center my-5">Your Clients</h1>
 <div class="text-right mb-5">
     <button class="btn btn-primary" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
@@ -52,16 +52,16 @@
 <div class="modal fade" id="clientModalAddForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header text-center">
+            <div class="modal-header text-center ad-orangeGradient text-white">
                 <h4 class="modal-title w-100">Add New Brand</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div id="message" class="m-4 list-unstyled">
 
             </div>
-            <form id="clientForm" style="color: #757575;" method="post" enctype="multipart/form-data">
+            <form id="client_form" style="color: #757575;" method="post" action="{{route('clients')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="modal-body mx-3">
 
@@ -69,31 +69,25 @@
                         <input type="text" id="client_name" name="client_name" class="form-control validate">
                         <label data-error="wrong" data-success="right">Client name</label>
                     </div>
+                    <select class="mdb-select md-form" id="locale" name="locale">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="National">National</option>
+                        <option value="International">International</option>
+                    </select>
                     <div class="md-form file-field">
-                        <a class="btn-floating peach-gradient mt-0 float-left">
-                            <i class="fas fa-paperclip" aria-hidden="true"></i>
-                            <input type="file">
-                        </a>
+                        <div class="btn ad-orangeGradient btn-sm float-left text-white">
+                            <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose files</span>
+                            <input type="file" name="client_logo" id="client_logo">
+                        </div>
                         <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="Upload your file">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
                         </div>
                     </div>
-
-
-{{--                    <div class="md-form mb-4">--}}
-{{--                        <div class="file-field">--}}
-{{--                            <input class="file-name input-group form-control mb-2 " type="text" id="file-name" placeholder="Choose brand image" readonly="true">--}}
-{{--                            <div class="btn btn-primary btn-sm file-input ml-0">--}}
-{{--                                <span>Choose file</span>--}}
-{{--                                <input type="file" id="fileInput" name="brand_img" onchange="changeText();" class="validate">--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
 
                 </div>
 
                 <div class="modal-footer d-flex justify-content-center">
-                    <input class="btn btn-primary btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" id="addBrand" value="Save" />
+                    <input class="btn ad-orangeGradient text-white btn-block my-4 waves-effect z-depth-0" type="submit" id="add_client" name="add_client" value="Save" />
                 </div>
             </form>
         </div>

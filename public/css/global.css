@@ -11,15 +11,16 @@
     color: #fff;
 }
 
-body {
-    font-family: segoe;
+body,p,button,textarea,input,a,.btn {
+    font-family: segoe !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: segoe-semi-bold;
+    font-family: segoe-semi-bold !important;
 }
 p {
     color: #4d4b4b;
+
 }
 button {
     border: none;
