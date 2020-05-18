@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class ClientController extends Controller
 {
@@ -18,7 +19,6 @@ class ClientController extends Controller
     }
 
 
-
     /**
      * Store a newly created resource in storage.
      *
@@ -31,12 +31,12 @@ class ClientController extends Controller
         $client->locale = $request->get('locale');
         $logo = $request->file('client_logo');
         $client->client_active_status = 1;
-        $file_name = $request->client_name.'.'.$logo->getClientOriginalExtension();
-        $logo->move(public_path('/uploads'),$file_name);
+        $file_name = $request->client_name . '.' . $logo->getClientOriginalExtension();
+        $logo->move(public_path('/uploads'), $file_name);
         $client->client_logo = $file_name;
         $client->save();
+        return redirect('/admin/clients');
 
-        return view('/admin/clients', ['hello' => 'success']);
     }
 
 
@@ -46,9 +46,10 @@ class ClientController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Client $client)
     {
-        //
+
+        return view('admin.edit_client', compact('client'));
     }
 
     /**
@@ -69,8 +70,13 @@ class ClientController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Client $client, Request $request)
     {
-        //
+        $client->client_id = $request->get('client_id');
+        $data = array('client_active_status' => '0');
+        $client->update($data);
+        return redirect('/admin/clients');
+
+
     }
 }

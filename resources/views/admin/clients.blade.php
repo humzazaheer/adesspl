@@ -1,10 +1,10 @@
 @extends('/admin/base')
 
-@section('title','Brands')
+@section('title','Clients')
 
 @section('content')
 
-
+{{$message??''}}
     <h1 class="h1-responsive text-center my-5">Your Clients</h1>
     <div class="text-right mb-5">
         <button class="btn btn-primary" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
@@ -27,20 +27,22 @@
         <!--End Table head-->
         <!--Table body-->
         <tbody>
-        @foreach($clientData as $data)
-            <tr>
-                <td>{{$data->client_id}}</td>
-                <td>{{$data->client_name}}</td>
-                <td><img src="{{asset('/uploads')}}/{{$data->client_logo}}" alt="{{$data->client_logo}}"></td>
-                <td>{{$data->locale}}</td>
-                <td>{{$data->created_at}}</td>
-                <td>{{$data->updated_at}}</td>
-                <td><i class="fa fa-edit"></i></td>
-                <td><i class="fa fa-trash"></i></td>
+        @if($clientData)
+            @foreach($clientData as $data)
+                <tr>
+                    <td>{{$data->id}}</td>
+                    <td>{{$data->client_name}}</td>
+                    <td><img src="{{asset('/uploads')}}/{{$data->client_logo}}" alt="{{$data->client_logo}}"></td>
+                    <td>{{$data->locale}}</td>
+                    <td>{{$data->created_at}}</td>
+                    <td>{{$data->updated_at}}</td>
+                    <td><a  href="/admin/edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
+                    <td><form method="post" action="{{route('clientDelete')}}"> @csrf <button type="submit" name="delete_client" value="{{$data->id}}"><i class="fa fa-trash"></i></button></form></td>
 
-            </tr>
+                </tr>
 
-        @endforeach
+            @endforeach
+        @endif
         </tbody>
 
         <!--End Table body-->
@@ -76,17 +78,18 @@
                 <div id="message" class="m-4 list-unstyled">
 
                 </div>
-                <form id="client_form" style="color: #757575;" method="post" action="/admin/clients"
+                <form id="client_form" style="color: #757575;" method="post" action="/admin/clients/store"
                       enctype="multipart/form-data">
-                    {{ csrf_field() }}
+                    @csrf
                     <div class="modal-body mx-3">
 
                         <div class="md-form">
                             <input type="text" id="client_name" name="client_name" class="form-control validate">
                             <label data-error="wrong" data-success="right">Client name</label>
                         </div>
+
                         <select class="mdb-select md-form" id="locale" name="locale">
-                            <option value="" disabled selected>Choose your option</option>
+                            <option value="{{$client->locale}}" disabled selected>Choose your option</option>
                             <option value="National">National</option>
                             <option value="International">International</option>
                         </select>

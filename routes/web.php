@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
+//page controller
 Route::get('/', 'PageController@index');
 Route::get('/about', 'PageController@about');
 Route::get('/contact', 'PageController@contact');
@@ -23,9 +23,17 @@ Route::get('/solutionservice', 'PageController@solutionservice');
 Route::get('/workshop', 'PageController@workshop');
 Route::get('/gallery', 'PageController@gallery');
 Route::get('/experience', 'PageController@experience');
+
+//admin controller
+
 Route::get('/admin', 'AdminPageController@dashboard');
-Route::get('/admin/clients', 'AdminPageController@clients')->name('clients');
+Route::get('/admin/clients', 'AdminPageController@clients')->name('admin.clients');
+
+//client controller
+
 Route::get('/admin/clients', 'ClientController@index')->name('clientData');
-Route::post('/admin/clients', 'ClientController@store')->name('clientStore');
+Route::post('/admin/clients/store', 'ClientController@store')->name('clientStore');
+Route::post('/admin/clients', 'ClientController@destroy')->name('clientDelete');
+Route::get('/admin/edit_client/{client}', 'ClientController@edit')->name('clientEdit');
 
 
