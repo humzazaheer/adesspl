@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <h4 class="text-center">Edit Client</h4>
+  ara  <h4 class="text-center">Edit Client</h4>
     <form id="edit_client_form" style="color: #757575;" method="post" action="/admin/clients"
           enctype="multipart/form-data">
         @csrf

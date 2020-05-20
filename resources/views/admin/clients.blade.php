@@ -89,7 +89,7 @@
                         </div>
 
                         <select class="mdb-select md-form" id="locale" name="locale">
-                            <option value="{{$client->locale}}" disabled selected>Choose your option</option>
+                            <option value="" disabled selected>Choose your option</option>
                             <option value="National">National</option>
                             <option value="International">International</option>
                         </select>
