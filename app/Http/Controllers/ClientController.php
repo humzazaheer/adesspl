@@ -11,11 +11,12 @@ class ClientController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Client $client
      * @return \Illuminate\Http\Response
      */
     public function index(Client $client)
     {
-        return view('/admin/clients', ['clientData' => $client->all()]);
+        return view('/admin/clients', ['client' => $client->all()]);
     }
 
 
@@ -61,7 +62,7 @@ class ClientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
     }
 
     /**

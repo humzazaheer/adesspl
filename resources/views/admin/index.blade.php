@@ -1,6 +1,8 @@
 @extends('/admin/base')
+@section('content')
+@endsection
 
 @section('content')
-    {{$clientData}}
+
 
 @endsection

@@ -24,6 +24,17 @@ $(document).ready(function() {
 
     // lightslider
 
+    // $("#clientSlider").lightSlider({
+    //     loop: true,
+    // });
+
+
+    // MDB Lightbox Inintialize
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    // End MDB Lightbox Inintialize
+
+
+
     var autoplaySlider = $('#lightSlider,#nat-clients,#internat-clients').lightSlider({
         auto: true,
         loop: true,
