@@ -1,10 +1,10 @@
 @extends('/admin/base')
 
-@section('title','Clients')
+@section('title','Brands')
 
 @section('content')
 
-{{$message??''}}
+
     <h1 class="h1-responsive text-center my-5">Your Clients</h1>
     <div class="text-right mb-5">
         <button class="btn btn-primary" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
@@ -27,8 +27,8 @@
         <!--End Table head-->
         <!--Table body-->
         <tbody>
-        @if($clientData)
-            @foreach($clientData as $data)
+        @if($client)
+            @foreach($client as $data)
                 <tr>
                     <td>{{$data->id}}</td>
                     <td>{{$data->client_name}}</td>
@@ -36,7 +36,7 @@
                     <td>{{$data->locale}}</td>
                     <td>{{$data->created_at}}</td>
                     <td>{{$data->updated_at}}</td>
-                    <td><a  href="/admin/edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
+                    <td><a  href="admin.edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
                     <td><form method="post" action="{{route('clientDelete')}}"> @csrf <button type="submit" name="delete_client" value="{{$data->id}}"><i class="fa fa-trash"></i></button></form></td>
 
                 </tr>

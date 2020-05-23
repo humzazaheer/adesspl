@@ -42,9 +42,18 @@
                     <a class="nav-link waves-effect waves-light dropdown-toggle" href="{{url('solutionservice')}}" id="navbarDropdownMenuLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">Solution & Services</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Turnkey EPC Project & Solutions</a>
+                        <a class="dropdown-item" href="#">Fabrication & Plant Eraction</a>
+                        <a class="dropdown-item" href="#">Installation & Commissioning of Plant Machinery</a>
+                        <a class="dropdown-item" href="#">O&M Services</a>
+                        <a class="dropdown-item" href="#">Manufacturing of Machine Element</a>
+                        <a class="dropdown-item" href="#">Overhauling of Diesel Engine & Parts</a>
+                        <a class="dropdown-item" href="#">Design Engineering</a>
+                        <a class="dropdown-item" href="#">Project Management Consultancy</a>
+                        <a class="dropdown-item" href="#">Plant Maintenance & Turnaround</a>
+                        <a class="dropdown-item" href="#">Infrastructure & MEP</a>
+                        <a class="dropdown-item" href="#">Manpower Supply</a>
+                        <a class="dropdown-item" href="#">Equipment on Rent</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -173,6 +182,8 @@
 <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/lightslider.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
+
+
 </body>
 </html>
 

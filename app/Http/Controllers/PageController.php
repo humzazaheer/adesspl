@@ -23,7 +23,7 @@ class PageController extends Controller
 
     public function solutionservice()
     {
-        return view('solutionservice', []);
+        return view('solution_service', []);
     }
 
     public function workshop()
@@ -39,6 +39,10 @@ class PageController extends Controller
     public function experience()
     {
         return view('experience', []);
+    }
+    public function project_gallery()
+    {
+        return view('project_gallery', []);
     }
 
 
