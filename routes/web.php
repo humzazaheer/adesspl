@@ -28,6 +28,8 @@ Route::get('/experience', 'PageController@experience');
 
 Route::get('/admin', 'AdminPageController@dashboard');
 Route::get('/admin/clients', 'AdminPageController@clients')->name('admin.clients');
+Route::get('/admin/work_experience', 'AdminPageController@experience')->name('admin.experience');
+Route::get('/admin/gallery', 'AdminPageController@gallery')->name('admin.gallery');
 
 //client controller
 

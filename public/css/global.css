@@ -39,10 +39,15 @@ section {
 }
 .ad-orangeGradient {
     background: linear-gradient(125deg, #F46262, #F2AB21);
+    color: #fff !important;
 }
 .ad-redBtn {
     background: #f46361 !important;
 }
 .ad-black {
     color: #4d4b4b !important;
+}
+#toast-container {
+    position: unset !important;
+    z-index: 100 !important;
 }

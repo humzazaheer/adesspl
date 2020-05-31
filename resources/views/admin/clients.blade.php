@@ -4,12 +4,16 @@
 
 @section('content')
 
-@if($msg = Session::get('success'))
-    {{$msg}}
-    @endif
+
     <h1 class="h1-responsive text-center my-5">Your Clients</h1>
-    <div class="text-right mb-5">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
+    <div class="row my-5">
+        @if($msg = Session::get('success'))
+            <div id="toast-container"><div class="md-toast md-toast-success"><div class="md-toast-message">{{$msg}}</div></div></div>
+        @endif
+
+        <div class="ml-auto">
+            <button class="btn ad-orangeGradient" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
+        </div>
     </div>
     <!--Table-->
     <table id="dtMaterialDesignExample" class="ad-datatable table table-responsive-md" width="100%">
@@ -30,16 +34,28 @@
         <!--Table body-->
         <tbody>
         @if($clientData)
+            @php
+                $sr = 0;
+            @endphp
+
             @foreach($clientData as $data)
+                @php
+                    $sr++;
+                @endphp
                 <tr>
-                    <td>{{$data->id}}</td>
+                    <td>{{$sr}}</td>
                     <td>{{$data->client_name}}</td>
                     <td><img src="{{asset('/uploads')}}/{{$data->client_logo}}" alt="{{$data->client_logo}}"></td>
                     <td>{{$data->locale}}</td>
                     <td>{{$data->created_at}}</td>
                     <td>{{$data->updated_at}}</td>
-                    <td><a  href="/admin/edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
-                    <td><form method="post" action="/admin/clients/{{$data->id}}"> @csrf @method('put') <button type="submit" name="delete_client" value="{{$data->id}}"><i class="fa fa-trash"></i></button></form></td>
+                    <td><a href="/admin/edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
+                    <td>
+                        <form method="post" action="/admin/clients/{{$data->id}}"> @csrf @method('put')
+                            <button type="submit" name="delete_client" value="{{$data->id}}"><i class="fa fa-trash"></i>
+                            </button>
+                        </form>
+                    </td>
 
                 </tr>
 
@@ -72,7 +88,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center ad-orangeGradient text-white">
-                    <h4 class="modal-title w-100">Add New Brand</h4>
+                    <h4 class="modal-title w-100">Add New Client</h4>
                     <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -97,11 +113,11 @@
                         </select>
                         <div class="md-form file-field">
                             <div class="btn ad-orangeGradient btn-sm float-left text-white">
-                                <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose files</span>
+                                <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
                                 <input type="file" name="client_logo" id="client_logo">
                             </div>
                             <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                <input class="file-path validate" type="text" placeholder="Upload client's logo">
                             </div>
                         </div>
 

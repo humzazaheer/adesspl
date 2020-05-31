@@ -37,7 +37,7 @@ class ClientController extends Controller
         $logo->move(public_path('/uploads'), $file_name);
         $client->client_logo = $file_name;
         $client->save();
-        return Redirect::route('clientData.admin')->with('success', 'succesfull');
+        return Redirect::route('clientData.admin')->with('success', 'Client added successfully.');
 
     }
 
@@ -76,7 +76,7 @@ class ClientController extends Controller
             $client->client_logo = $file_name;
         }
         $client->save();
-        return Redirect::route('clientData.admin')->with('success', 'successfull');
+        return Redirect::route('clientData.admin')->with('success', 'Client updated successfully.');
     }
 
     /**
@@ -90,7 +90,7 @@ class ClientController extends Controller
         $client->client_active_status = 0;
 //        $data = array('client_active_status' => '0');
         $client->save();
-        return Redirect::route('clientData.admin')->with('success', 'successfull');
+        return Redirect::route('clientData.admin')->with('success', 'Client deleted successfully.');
 
 
     }
