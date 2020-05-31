@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 
 class ClientController extends Controller
@@ -15,7 +16,8 @@ class ClientController extends Controller
      */
     public function index(Client $client)
     {
-        return view('/admin/clients', ['clientData' => $client->all()]);
+        $clients = DB::table('clients')->where('client_active_status','1')->get();
+        return view('/admin/clients', ['clientData' => $clients]);
     }
 
 
@@ -31,11 +33,11 @@ class ClientController extends Controller
         $client->locale = $request->get('locale');
         $logo = $request->file('client_logo');
         $client->client_active_status = 1;
-        $file_name = $request->client_name . '.' . $logo->getClientOriginalExtension();
+        $file_name = $request->client_name . '_' . date('d_m_y_H_s_i') . '.' . $logo->getClientOriginalExtension();
         $logo->move(public_path('/uploads'), $file_name);
         $client->client_logo = $file_name;
         $client->save();
-        return redirect('/admin/clients');
+        return Redirect::route('clientData.admin')->with('success', 'succesfull');
 
     }
 
@@ -59,9 +61,22 @@ class ClientController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Client $client)
     {
-        //
+        $client->client_name = $request->get('client_name');
+        $client->locale = $request->get('locale');
+        $client_current_logo = $request->get('client_current_logo');
+        $logo = $request->file('client_logo');
+        if ($logo) {
+            if (file_exists('/uploads/' . $client_current_logo)) {
+                unlink('/uploads/' . $client_current_logo);
+            }
+            $file_name = $request->client_name . '_' . date('d_m_y_H_s_i') . '.' . $logo->getClientOriginalExtension();
+            $logo->move(public_path('/uploads'), $file_name);
+            $client->client_logo = $file_name;
+        }
+        $client->save();
+        return Redirect::route('clientData.admin')->with('success', 'successfull');
     }
 
     /**
@@ -72,10 +87,10 @@ class ClientController extends Controller
      */
     public function destroy(Client $client, Request $request)
     {
-        $client->client_id = $request->get('client_id');
-        $data = array('client_active_status' => '0');
-        $client->update($data);
-        return redirect('/admin/clients');
+        $client->client_active_status = 0;
+//        $data = array('client_active_status' => '0');
+        $client->save();
+        return Redirect::route('clientData.admin')->with('success', 'successfull');
 
 
     }

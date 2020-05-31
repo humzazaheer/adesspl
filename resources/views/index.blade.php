@@ -306,22 +306,12 @@
 
         <div class="container my-5">
 
-                <h3 class="text-center font-weight-bold my-4">National</h3>
-
-                <ul id="nat-clients" class="">
-                    <li>
-                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-                    </li>
-                    <li>
-                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-
-                    </li>
-                    <li>
-                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-                    </li>
-                    <li>
-                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">
-                    </li>
+                <ul id="client_slider" class="">
+                    @foreach($clientLogos as $client_logo)
+                        <li>
+                            <img src="{{asset('/uploads')}}/{{$client_logo->client_logo}}" alt="{{$client_logo->client_logo}}" class="w-50 img-fluid">
+                        </li>
+                        @endforeach
                 </ul>
 
 

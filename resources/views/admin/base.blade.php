@@ -55,7 +55,7 @@
     </div>
 
 
-    <div class="body-overlay position-absolute"></div>
+    <div class="body-overlay position-fixed"></div>
 
     <!--        javascript      -->
 

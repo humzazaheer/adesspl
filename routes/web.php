@@ -31,9 +31,10 @@ Route::get('/admin/clients', 'AdminPageController@clients')->name('admin.clients
 
 //client controller
 
-Route::get('/admin/clients', 'ClientController@index')->name('clientData');
+Route::get('/admin/clients', 'ClientController@index')->name('clientData.admin');
 Route::post('/admin/clients/store', 'ClientController@store')->name('clientStore');
-Route::post('/admin/clients', 'ClientController@destroy')->name('clientDelete');
 Route::get('/admin/edit_client/{client}', 'ClientController@edit')->name('clientEdit');
+Route::put('/admin/edit_client/{client}', 'ClientController@update')->name('clientUpdate');
+Route::put('/admin/clients/{client}', 'ClientController@destroy')->name('clientDelete');
 
 

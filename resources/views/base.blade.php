@@ -75,8 +75,8 @@
 <!-- header -->
 
 @yield('content')
-<div id="btnTop" class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;display: none;">
-    <button class="btn-floating btn-large ad-redBtn">
+<div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
+    <button id="btnTop" class="btn-floating btn-large ad-redBtn">
         <i class="fa fa-arrow-up"></i>
     </button>
 </div>

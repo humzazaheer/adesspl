@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
     public function index()
     {
-        return view('index', []);
+        $client_logos = DB::table('clients')->select('client_logo')->where('client_active_status','1')->get();
+        return view('index', ['clientLogos' => $client_logos]);
     }
 
     public function about()

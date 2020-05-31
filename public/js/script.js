@@ -24,11 +24,10 @@ $(document).ready(function() {
 
     // lightslider
 
-    var autoplaySlider = $('#lightSlider,#nat-clients,#internat-clients').lightSlider({
+    var autoplaySlider = $('#client_slider').lightSlider({
         auto: true,
         loop: true,
         item: 4,
-        thumbMargin: 3,
         pauseOnHover: true,
         onBeforeSlide: function(el) {
             $('#current').text(el.getCurrentSlideCount());
