@@ -39,4 +39,11 @@ Route::get('/admin/edit_client/{client}', 'ClientController@edit')->name('client
 Route::put('/admin/edit_client/{client}', 'ClientController@update')->name('clientUpdate');
 Route::put('/admin/clients/{client}', 'ClientController@destroy')->name('clientDelete');
 
+//experience controller
+
+Route::get('/admin/experience', 'ExperienceController@index')->name('expData.admin');
+Route::post('/admin/experience/store', 'ExperienceController@store')->name('expStore');
+Route::get('/admin/edit_experience/{exp}', 'ExperienceController@edit')->name('expEdit');
+Route::put('/admin/edit_experience/{exp}', 'ExperienceController@update')->name('expUpdate');
+Route::put('/admin/experience/{exp}', 'ExperienceController@destroy')->name('expDelete');
 

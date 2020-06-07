@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <h4 class="text-center">Edit Client</h4>
+    <h1 class="text-center my-5">Edit Client</h1>
     <form id="edit_client_form" style="color: #757575;" method="post" action="/admin/edit_client/{{$client->id}}"
           enctype="multipart/form-data">
         @csrf
@@ -45,6 +45,7 @@
         <div class="d-flex justify-content-center">
             <input class="btn ad-orangeGradient text-white btn-block my-4 waves-effect z-depth-0"
                    type="submit" id="update_client" name="update_client" value="Save"/>
+            <input type="button" class="btn ad-orangeGradient waves-effect z-depth-0 btn-black my-4" onclick="history.back();" value="Back">
         </div>
     </form>
 @endsection

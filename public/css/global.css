@@ -51,3 +51,6 @@ section {
     position: unset !important;
     z-index: 100 !important;
 }
+#toast-container>div {
+    width: 100% !important;
+}

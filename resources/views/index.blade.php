@@ -269,7 +269,8 @@
                                 <span class="text-danger mr-4"><i class="fad fa-people-carry fa-2x"></i></span>
                                 Challenge
                             </h5>
-                            <p class="">We constantly challenge ourselves to come up with solutions that make us unique & leade us to innovation.</p>
+                            <p class="">We constantly challenge ourselves to come up with solutions that make us unique
+                                & leade us to innovation.</p>
                         </li>
 
                         <li class="timeline-element">
@@ -278,7 +279,8 @@
                                 <span class="text-warning ml-4"><i class="fad fa-landmark fa-2x"></i></span>
 
                             </h5>
-                            <p class="">As a team we struggle for results & collective success. Internal politics is not bearable.</p>
+                            <p class="">As a team we struggle for results & collective success. Internal politics is not
+                                bearable.</p>
                         </li>
                         <li class="timeline-element">
 
@@ -299,41 +301,26 @@
     {{--End Core Values --}}
 
 
-{{--    clients--}}
+    {{--    clients--}}
     <section id="clients" class="our-clients container-fluid">
 
         <h1 class="text-center ad-black">Our Clients</h1>
 
         <div class="container my-5">
 
-                <ul id="client_slider" class="">
+            <ul id="client_slider" class="client_slider">
+                @if($clientLogos)
                     @foreach($clientLogos as $client_logo)
                         <li>
-                            <img src="{{asset('/uploads')}}/{{$client_logo->client_logo}}" alt="{{$client_logo->client_logo}}" class="w-50 img-fluid">
+                            <img src="{{asset('/uploads')}}/{{$client_logo->client_logo}}"
+                                 alt="{{$client_logo->client_logo}}" class="w-50 img-fluid">
                         </li>
-                        @endforeach
-                </ul>
+                    @endforeach
+                @endif
+            </ul>
 
-
-{{--                <h3 class="text-center font-weight-bold my-4">International</h3>--}}
-
-{{--                <ul id="internat-clients" class="my-5">--}}
-{{--                    <li>--}}
-{{--                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">--}}
-
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <img src="{{ asset('images/dummy-logo.png') }}" class="img-fluid px-4" alt="">--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-            </div>
+        </div>
 
     </section>
-{{--    end clients--}}
+    {{--    end clients--}}
 @endsection
