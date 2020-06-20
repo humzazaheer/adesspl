@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 
@@ -34,7 +33,7 @@ $(document).ready(function() {
     // End MDB Lightbox Inintialize
 
 
-
+    // lightslider
     var autoplaySlider = $('#lightSlider,#nat-clients,#internat-clients').lightSlider({
         auto: true,
         loop: true,

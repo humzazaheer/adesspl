@@ -36,7 +36,7 @@
                     <td>{{$data->locale}}</td>
                     <td>{{$data->created_at}}</td>
                     <td>{{$data->updated_at}}</td>
-                    <td><a  href="admin.edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
+                    <td><a  href="/admin/edit_client/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
                     <td><form method="post" action="{{route('clientDelete')}}"> @csrf <button type="submit" name="delete_client" value="{{$data->id}}"><i class="fa fa-trash"></i></button></form></td>
 
                 </tr>

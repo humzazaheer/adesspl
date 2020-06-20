@@ -38,22 +38,124 @@
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light" href="{{url('/')}}">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link waves-effect waves-light dropdown-toggle" href="{{url('solutionservice')}}" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">Solution & Services</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Turnkey EPC Project & Solutions</a>
-                        <a class="dropdown-item" href="#">Fabrication & Plant Eraction</a>
-                        <a class="dropdown-item" href="#">Installation & Commissioning of Plant Machinery</a>
-                        <a class="dropdown-item" href="#">O&M Services</a>
-                        <a class="dropdown-item" href="#">Manufacturing of Machine Element</a>
-                        <a class="dropdown-item" href="#">Overhauling of Diesel Engine & Parts</a>
-                        <a class="dropdown-item" href="#">Design Engineering</a>
-                        <a class="dropdown-item" href="#">Project Management Consultancy</a>
-                        <a class="dropdown-item" href="#">Plant Maintenance & Turnaround</a>
-                        <a class="dropdown-item" href="#">Infrastructure & MEP</a>
-                        <a class="dropdown-item" href="#">Manpower Supply</a>
-                        <a class="dropdown-item" href="#">Equipment on Rent</a>
+{{--                <li class="nav-item dropdown">--}}
+{{--                    <a class="nav-link waves-effect waves-light dropdown-toggle" href="{{url('solutionservice')}}" id="navbarDropdownMenuLink" data-toggle="dropdown"--}}
+{{--                       aria-haspopup="true" aria-expanded="false">Solution & Services</a>--}}
+{{--                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">--}}
+{{--                        <a class="dropdown-item" href="#">Turnkey EPC Project & Solutions</a>--}}
+{{--                        <a class="dropdown-item" href="#">Fabrication & Plant Eraction</a>--}}
+{{--                        <a class="dropdown-item" href="#">Installation & Commissioning of Plant Machinery</a>--}}
+{{--                        <a class="dropdown-item" href="#">O&M Services</a>--}}
+{{--                        <a class="dropdown-item" href="#">Manufacturing of Machine Element</a>--}}
+{{--                        <a class="dropdown-item" href="#">Overhauling of Diesel Engine & Parts</a>--}}
+{{--                        <a class="dropdown-item" href="#">Design Engineering</a>--}}
+{{--                        <a class="dropdown-item" href="#">Project Management Consultancy</a>--}}
+{{--                        <a class="dropdown-item" href="#">Plant Maintenance & Turnaround</a>--}}
+{{--                        <a class="dropdown-item" href="#">Infrastructure & MEP</a>--}}
+{{--                        <a class="dropdown-item" href="#">Manpower Supply</a>--}}
+{{--                        <a class="dropdown-item" href="#">Equipment on Rent</a>--}}
+{{--                    </div>--}}
+{{--                </li>--}}
+                <li class="nav-item dropdown mega-dropdown">
+                    <a class="nav-link dropdown-toggle ss-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Solutions & Services
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu  mega-menu v-2 z-depth-1 indigo py-5 px-3 ss-dropdown"
+                         aria-labelledby="navbarDropdownMenuLink2">
+                        <div class="row">
+                            <div class="col-md-4 col-xl-4 sub-menu mb-xl-0 mb-4 pl-5">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="menu-item pl-0" href="{{url('services1')}}">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Turnkey EPC Project & Solutions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="{{url('services2SEO')}}">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Fabrication & Plant Eraction
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Installation & Commissioning of Plant Machinery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            O&M Services
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-xl-4 sub-menu mb-xl-0 mb-4">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Manufacturing of Machine Element
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Overhauling of Diesel Engine & Parts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Design Engineering
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu
+                                            Project Management Consultancy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-xl-4 sub-menu mb-md-0 mb-xl-0 mb-4 pr-5">
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Plant Maintenance & Turnaround
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Infrastructure & MEP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Manpower Supply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item pl-0" href="#!">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
+                                            Equipment on Rent
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -65,9 +167,7 @@
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light" href="{{url('gallery')}}">Gallery</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('qhse_policy')}}">QHSE Policy</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light" href="{{url('about')}}">About</a>
                 </li>
