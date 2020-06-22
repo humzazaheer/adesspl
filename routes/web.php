@@ -47,3 +47,10 @@ Route::get('/admin/edit_experience/{exp}', 'ExperienceController@edit')->name('e
 Route::put('/admin/edit_experience/{exp}', 'ExperienceController@update')->name('expUpdate');
 Route::put('/admin/experience/{exp}', 'ExperienceController@destroy')->name('expDelete');
 
+//gallery controller
+
+Route::get('/admin/gallery', 'GalleryController@index')->name('galleryData.admin');
+Route::post('/admin/gallery/store', 'GalleryController@store')->name('galleryStore');
+Route::get('/admin/edit_gallery/{gallery}', 'GalleryController@edit')->name('galleryEdit');
+Route::put('/admin/edit_gallery/{gallery}', 'GalleryController@update')->name('galleryUpdate');
+Route::put('/admin/gallery/{gallery}', 'GalleryController@destroy')->name('galleryDelete');

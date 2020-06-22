@@ -72,4 +72,16 @@ $(document).ready(function() {
 
     // end scrolltop
 
+
+
+
 });
+
+
+function preview_images() {
+    $('#image-preview').empty();
+    var total_file = document.getElementById("gallery_images").files.length;
+    for (var i = 0; i < total_file; i++) {
+        $('#image-preview').append("<div class='col-md-3 col-sm-4 w-50'><img class='img-fluid mx-auto my-3' src='" + URL.createObjectURL(event.target.files[i]) + "'></div>");
+    }
+}
