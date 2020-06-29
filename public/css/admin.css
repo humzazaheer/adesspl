@@ -25,6 +25,12 @@ aside a {
 /*    opacity: 0;*/
 /*    cursor: pointer;*/
 /*}*/
+.admin_logo {
+    width: 250px;
+}
+.admin_logo img {
+    display: table-caption;
+}
 .nav-tabs, .nav-link {
     border: 0 !important;
     color: #fff;
@@ -41,4 +47,13 @@ aside a {
 td img {
   width: 60px;
 
+}
+.g_carousel .carousel-control-next-icon, .g_carousel .carousel-control-prev-icon
+{
+    background-color: #000 !important;
+    border-radius: 25px !important;
+}
+.g_carousel .carousel-item
+{
+    height: 100px;
 }

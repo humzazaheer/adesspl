@@ -1,7 +1,23 @@
 
 $(document).ready(function() {
 
+    //scrolltop
 
+    $('#btnTop').click(function() {
+
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > $('#top').height() + 200) {
+            $('#btnTop').fadeIn();
+        } else {
+            $('#btnTop').fadeOut();
+        }
+    });
+
+    // end scrolltop
 
     $('.mdb-select').materialSelect();
 
@@ -21,6 +37,9 @@ $(document).ready(function() {
     });
 
     // end admin navbar
+
+
+
 
     // lightslider
 
@@ -50,27 +69,12 @@ $(document).ready(function() {
             }
         ]
     });
+
     $('#total').text(autoplaySlider.getTotalSlideCount());
 
     // end lightslider
 
-    //scrolltop
 
-    $('#btnTop').click(function() {
-
-        $('html,body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > $('#top').height() + 200) {
-            $('#btnTop').fadeIn();
-        } else {
-            $('#btnTop').fadeOut();
-        }
-    });
-
-    // end scrolltop
 
 
 

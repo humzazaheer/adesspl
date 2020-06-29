@@ -108,18 +108,18 @@
                 <!-- Grid column -->
                 <div class="col-lg-4">
 
-                    <div class="card-body contact ad-orangeGradient text-center h-100 white-text">
+                    <div class="card-body contact ad-orangeGradient text-center h-100 text-white">
 
                         <h3 class="my-4 pb-2">Contact information</h3>
                         <ul class="text-lg-left list-unstyled ml-4">
                             <li>
-                                <p><i class="fas fa-map-marker-alt pr-2 text-white"></i> New York, 94126, USA</p>
+                                <p class="text-white"><i class="fas fa-map-marker-alt pr-3 text-white"></i> Office # 5, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-phone pr-2 text-white"></i> + 01 234 567 89</p>
+                                <p class="text-white"><i class="fas fa-phone pr-2 text-white"></i> +01 234 567 89</p>
                             </li>
                             <li>
-                                <p><i class="fas fa-envelope text-white"></i> contact@example.com</p>
+                                <p class="text-white"><i class="fas fa-envelope pr-2 text-white"></i> contact@example.com</p>
                             </li>
                         </ul>
                         <hr class="hr-light my-4">

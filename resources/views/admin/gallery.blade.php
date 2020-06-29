@@ -20,7 +20,7 @@
         </div>
     </div>
     <!--Table-->
-    <table id="dtMaterialDesignExample" class="ad-datatable table table-responsive-lg" width="100%">
+    <table id="dtMaterialDesignExample" class="ad-datatable table table-responsive-lg text-center" width="100%">
         <!--Table head-->
         <thead>
         <tr>
@@ -28,6 +28,7 @@
             <th class="th-sm">Gallery Description</th>
             <th class="th-sm">Gallery Thumbnail</th>
             <th class="th-sm">Gallery Images</th>
+            <th></th>
             <th class="th-sm">Created at</th>
             <th class="th-sm">Updated at</th>
             <th class="th-sm">Edit</th>
@@ -49,8 +50,40 @@
                 <tr>
                     <td>{{$sr}}</td>
                     <td>{{$data->gallery_description}}</td>
-                    <td><img src="{{asset('/uploads')}}/{{$data->gallery_thumbnail}}" alt="{{$data->gallery_thumbnail}}"></td>
-                    <td>{{$data->gallery_images}}</td>
+                    <td><img src="{{asset('/uploads')}}/{{$data->gallery_thumbnail}}" alt="{{$data->gallery_thumbnail}}" class="img-fluid w-75"></td>
+                    <td width="30%" colspan="2">
+
+                        @if($data->gallery_images)
+                        <div id="carouselExampleControls" class="carousel slide g_carousel" data-ride="carousel">
+                            <div class="carousel-inner">
+                                @php
+                                $i=1;
+                                @endphp
+
+                                @foreach(explode('|', $data->gallery_images) as $g_img)
+
+                                <div class="carousel-item @if($i==1) active @endif">
+                                    <img class="d-block w-50 m-auto" src="{{asset('/uploads')}}/{{$g_img}}"
+                                         alt="{{$g_img}}">
+                                </div>
+                                    @php
+                                        $i++;
+                                    @endphp
+                                    @endforeach
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+@endif
+
+                    </td>
                     <td>{{$data->created_at}}</td>
                     <td>{{$data->updated_at}}</td>
                     <td><a href="/admin/edit_gallery/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
@@ -75,6 +108,7 @@
             <th class="th-sm">Gallery Description</th>
             <th class="th-sm">Gallery Thumbnail</th>
             <th class="th-sm">Gallery Images</th>
+            <th></th>
             <th class="th-sm">Created at</th>
             <th class="th-sm">Updated at</th>
             <th class="th-sm">Edit</th>
