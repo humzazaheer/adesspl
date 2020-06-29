@@ -69,25 +69,25 @@
 
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="menu-item pl-0" href="{{url('services1')}}">
+                                        <a class="menu-item pl-0" href="{{url('turnkey_epc_project')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Turnkey EPC Project & Solutions
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="{{url('services2SEO')}}">
+                                        <a class="menu-item pl-0" href="{{url('fabrication_and_plant_eraction')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Fabrication & Plant Eraction
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('installation_and_commissioning_of_plant_machinery')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Installation & Commissioning of Plant Machinery
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('o_m_services')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             O&M Services
                                         </a>
@@ -99,27 +99,27 @@
 
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('manufacturing_of_machine_element')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Manufacturing of Machine Element
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('overhauling_of_diesel_engine_and_parts')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Overhauling of Diesel Engine & Parts
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('design_engineering')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Design Engineering
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
-                                            <i class="fas fa-caret-right pl-1 pr-3"></i>Esse cillum dolore eu
+                                        <a class="menu-item pl-0" href="{{url('project_management_consultancy')}}">
+                                            <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Project Management Consultancy
                                         </a>
                                     </li>
@@ -129,26 +129,26 @@
 
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('plant_maintenance_and_turnaround')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Plant Maintenance & Turnaround
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('infrastructure_and_mep')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Infrastructure & MEP
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('manpower_supply')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Manpower Supply
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="#!">
+                                        <a class="menu-item pl-0" href="{{url('equipment_on_rent')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Equipment on Rent
                                         </a>

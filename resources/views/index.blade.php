@@ -11,6 +11,8 @@
             <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-1z" data-slide-to="1"></li>
             <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+            <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+            <li data-target="#carousel-example-1z" data-slide-to="4"></li>
         </ol>
         <!--/.Indicators-->
         <!--Slides-->
@@ -18,23 +20,26 @@
             <!--First slide-->
             <div class="carousel-item active">
                 <div class="view"
-                     style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg'); background-repeat: no-repeat; background-size: cover">
+                     style="background-image: url('../images/slider/slider1.jpg'); background-repeat: no-repeat; background-size: cover">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
-                            <h1 class="mb-4">
-                                <strong>ALDIN ENGINEERING</strong>
-                            </h1>
+                            <span class="mb-4 carousel-title">
+                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide">
+                                <h1>AL DIN ENGINEERING</h1>
+                                <h2>SOLUTION & SERVICES PRIVATE LIMITED</h2>
+                            </span>
                         </div>
                     </div>
 
                 </div>
             </div>
+
             <!--/First slide-->
             <!--Second slide-->
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg'); background-repeat: no-repeat; background-size: cover">
+                     style="background-image: url('../images/slider/slider2.jpg'); background-repeat: no-repeat; background-size: cover">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
@@ -51,7 +56,7 @@
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg'); background-repeat: no-repeat; background-size: cover">
+                     style="background-image: url('../images/slider/slider3.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
@@ -65,6 +70,46 @@
             </div>
 
             <!--/Third slide-->
+
+            <!--4th slide-->
+            <div class="carousel-item">
+
+                <div class="view"
+                     style="background-image: url('../images/slider/slider4.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+                        <div class="text-center white-text mx-5">
+                            <h1 class="mb-4">
+                                <strong>Learn Bootstrap 4 with MDB</strong>
+                            </h1>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--/4th slide-->
+
+
+
+            <!--5th slide-->
+            <div class="carousel-item">
+
+                <div class="view"
+                     style="background-image: url('../images/slider/slider5.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+                        <div class="text-center white-text mx-5">
+                            <h1 class="mb-4">
+                                <strong>Learn Bootstrap 4 with MDB</strong>
+                            </h1>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--/5th slide-->
         </div>
         <!--/.Slides-->
         <!--Controls-->

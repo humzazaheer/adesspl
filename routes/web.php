@@ -26,7 +26,7 @@ Route::get('/project_gallery', 'PageController@project_gallery');
 Route::get('/experience', 'PageController@experience');
 //solution & services pages
 Route::get('/turnkey_epc_project', 'PageController@turnkey_epc_project');
-Route::get('/fabrication_and_plant_eraction', 'PageController@fabrication_and_flant_eraction');
+Route::get('/fabrication_and_plant_eraction', 'PageController@fabrication_and_plant_eraction');
 Route::get('/installation_and_commissioning_of_plant_machinery', 'PageController@installation_and_commissioning_of_plant_machinery');
 Route::get('/o_m_services', 'PageController@o_m_services');
 Route::get('/manufacturing_of_machine_element', 'PageController@manufacturing_of_machine_element');

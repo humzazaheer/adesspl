@@ -1,3 +1,17 @@
+.carousel-title h1{
+    font-family: helvetica-bold !important;
+    font-size: 4rem;
+    letter-spacing: 8px;
+}
+.carousel-title h2{
+
+    font-family: helvetica-light !important;
+    font-size: 2.3rem;
+    letter-spacing: 3.7px;
+    text-indent: -10px;
+}
+
+
 .timeline {
     position: relative;
     list-style: none;
@@ -437,4 +451,107 @@ section {
     border-image-slice: 1;
     border-left: 4px solid transparent;
     padding: .5rem 2.5rem;
+}
+.ss-text{
+    text-align: justify;
+    line-height: 2;
+}
+.ss-heading{
+    margin:0 0 5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img{
+        height: auto !important;
+    }
+    .manufacturing-img:first-child{
+        margin: 0 0 1.5rem;
+    }
+    .plant-img img{
+        height: auto !important;
+        width: 100% !important;
+    }
+    .plant-img:nth-child(2){
+        margin-top: 1.5rem;
+    }
+    .installation-img{
+        margin-top: 1.5rem;
+    }
+    .design-engineering-img{
+        margin-top: 1.5rem;
+    }
+    .om-img{
+        height: auto !important;
+        margin-top: 1.5rem;
+    }
+    .carousel-title h2{
+        font-size: 1.74rem !important;
+
+    }
+    .carousel-title h1{
+        font-size: 3rem !important;
+    }
+    .logo-on-slide{
+        width: 18% !important;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ss-img{
+       text-align: center !important;
+    }
+    .ss-text{
+        text-align: center;
+        margin: 2rem 0 !important;
+    }
+    .ss-heading{
+        margin: 0;
+    }
+    .carousel-title h2{
+        font-size: 1.16rem !important;
+
+    }
+    .carousel-title h1{
+        font-size: 2rem !important;
+    }
+    .logo-on-slide{
+        display: none !important;
+    }
+}
+
+.col-lg-8.manufacturing-img img{
+    height: 100%;
+}
+.plant-img img{
+    height: 25rem;
+}
+.logo-on-slide {
+    width: 23%;
+    margin: 0px auto 4rem;
+}
+.ss-section img.card-img-top{
+    margin:2rem auto auto;
+    width: 60% !important;
+}
+.ss-section img.tank-img{
+    width: 55%;
+    margin: 1rem auto;
+
+}
+.card{
+    height: 100%;
+}
+.fab-2{
+    height: 30rem;
+}
+.overhauling-img img{
+    height: 25rem;
+}
+.installation-ul li{
+    margin: 1rem 0 0;
+}
+.om-img{
+    height: 100% !important;
 }
