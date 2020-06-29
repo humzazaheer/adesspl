@@ -24,27 +24,27 @@
             </p>
             <div class="row mt-5">
 
-                <div class="col-lg-3 design-engineering-img">
+                <div class="col-lg-3 manpower-img">
                     <div class="waves-effect z-depth-1">
                         <img src="{{asset('images/solution&services/manpower/manpower1.jpg')}}"
                              class="img-fluid  rounded"/>
                     </div>
                 </div>
 
-                <div class="col-lg-3 design-engineering-img">
+                <div class="col-lg-3 manpower-img">
                     <div class="waves-effect z-depth-1">
                         <img src="{{asset('images/solution&services/manpower/manpower2.jpg')}}"
                              class="img-fluid  rounded"/>
                     </div>
                 </div>
 
-                <div class="col-lg-3 design-engineering-img">
+                <div class="col-lg-3 manpower-img">
                     <div class="waves-effect z-depth-1">
                         <img src="{{asset('images/solution&services/manpower/manpower3.jpg')}}"
                              class="img-fluid rounded"/>
                     </div>
                 </div>
-                <div class="col-lg-3 design-engineering-img">
+                <div class="col-lg-3 manpower-img">
                     <div class="waves-effect z-depth-1">
                         <img src="{{asset('images/solution&services/manpower/manpower4.jpg')}}"
                              class="img-fluid rounded"/>

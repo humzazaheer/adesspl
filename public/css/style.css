@@ -244,11 +244,11 @@
     padding:0px !important;
 }
 
-.navbar.scrolling-navbar.top-nav-collapse {
-    padding: 5px 0px !important;
+.navbar.scrolling-navbar.top-nav-collapse .nav-link {
+    padding: 2rem 0.6rem !important;
 }
 .nav-link{
-    padding: 2.2rem 0.6rem;
+    padding: 2.5rem 0.6rem;
 }
 .ss-link{
     padding-left: 1.6rem !important;
@@ -303,17 +303,7 @@ section {
     background-color: #f4f7fa;
 }
 
-.contact-banner {
-    background-image: url("../images/map.png");
-}
 
-.solution-service-banner {
-    background-image: url("../images/solutionservice-banner.jpg");
-}
-
-.about-banner {
-    background-image: url("");
-}
 .gallery a{
     color: #fff;
 }
@@ -521,9 +511,10 @@ section {
     }
 }
 
-.col-lg-8.manufacturing-img img{
+.col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img, .col-lg-3.manpower-img img{
     height: 100%;
 }
+
 .plant-img img{
     height: 25rem;
 }
@@ -554,4 +545,54 @@ section {
 }
 .om-img{
     height: 100% !important;
+}
+
+/* Banners */
+.contact-banner {
+    background-image: url("");
+}
+
+.manufacturing-of-machine-element-banner {
+    background-image: url("/images/banners/manufac.jpg");
+}
+.plant-maintenance-banner{
+    background-image: url("/images/banners/plant-banner.jpg");
+}
+.fabrication-banner{
+    background-image: url("/images/banners/fabrication.jpg");
+}
+.overhauling-of-diesel-engine-banner{
+    background-image: url("/images/banners/overhauling.jpg");
+}
+.infrastructure-banner{
+    background-image: url("/images/banners/infrastructure.jpg");
+}
+.installation-commissioning-banner{
+    background-image: url("/images/banners/installation.jpg");
+}
+.design-engineeirng-banner{
+    background-image: url("/images/banners/design-engineering.jpg");
+}
+.manpower-supply-banner{
+    background-image: url("/images/banners/man-power.jpg");
+}
+.om-services-banner{
+    background-image: url("/images/banners/o_m.jpg");
+}
+.project-management-consultancy-banner{
+    background-image: url("/images/banners/consultancy.jpg");
+}
+.equipment-on-rent-banner{
+    background-image: url("/images/banners/equipment.jpg");
+}
+.workshop-banner{
+    background-image: url("/images/banners/workshop.jpg");
+}
+.experience-banner{
+    background-image: url("/images/banners/");
+}
+
+.about-banner{
+    background-image: url("/images/banners/about.png");
+
 }

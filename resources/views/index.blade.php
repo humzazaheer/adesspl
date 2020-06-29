@@ -43,7 +43,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-                                <strong>Learn Bootstrap 4 with MDB</strong>
+{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-                                <strong>Learn Bootstrap 4 with MDB</strong>
+{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-                                <strong>Learn Bootstrap 4 with MDB</strong>
+{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-                                <strong>Learn Bootstrap 4 with MDB</strong>
+{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="banner  fabrication-&-plant-eraction-banner">
+    <section class="banner  fabrication-banner">
 
         <div class="mask rgba-black-strong">
 
