@@ -31,6 +31,10 @@ textarea {
 abbr[title] {
     text-decoration: none;
 }
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
 section {
     padding: 70px 0px;
 }

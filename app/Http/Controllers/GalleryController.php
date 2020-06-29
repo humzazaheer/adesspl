@@ -78,13 +78,34 @@ class GalleryController extends Controller
         $gallery_current_thumb = $request->get('gallery_current_thumbnail');
         $thumb = $request->file('gallery_thumbnail');
         if ($thumb) {
-            if (file_exists('/uploads/' . $gallery_current_thumb)) {
-                unlink('/uploads/' . $gallery_current_thumb);
+            if (file_exists(public_path() . '/uploads/' . $gallery_current_thumb)) {
+                unlink(public_path() . '/uploads/' . $gallery_current_thumb);
             }
             $thumb_fname = pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME);
-            $thumb_name = $thumb_fname . '_thumb_' . date('d_m_y_H_s_i') . '.' . $thumb->getgalleryOriginalExtension();
+            $thumb_name = $thumb_fname . '_thumb_' . date('d_m_y_H_s_i') . '.' . $thumb->getClientOriginalExtension();
             $thumb->move(public_path('/uploads'), $thumb_name);
-            $gallery->gallery_logo = $thumb_name;
+            $gallery->gallery_thumbnail = $thumb_name;
+        }
+
+        $gallery_current_images = $request->get('gallery_current_images');
+        $g_images = $request->file('gallery_images');
+        if ($g_images) {
+            if($gallery_current_images){
+                foreach (explode('|', $gallery_current_images) as $c_img){
+                    if (file_exists(public_path() . '/uploads/' . $c_img)) {
+                        unlink(public_path() . '/uploads/' . $c_img);
+                    }
+                }
+            }
+
+            foreach ($g_images as $g_image) {
+                $img_fname = pathinfo($g_image->getClientOriginalName(), PATHINFO_FILENAME);
+                $image_name = $img_fname . '_' . date('d_m_y_H_s_i') . '.' . $g_image->getClientOriginalExtension();
+                $g_image->move(public_path('/uploads'), $image_name);
+                $img_array[] = $image_name;
+            }
+            $all_images = implode('|', $img_array);
+            $gallery->gallery_images = $all_images;
         }
         $gallery->save();
         return Redirect::route('galleryData.admin')->with('success', 'gallery updated successfully.');

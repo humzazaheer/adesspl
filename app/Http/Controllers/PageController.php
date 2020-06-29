@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class PageController extends Controller
 {
@@ -21,6 +24,20 @@ class PageController extends Controller
     public function contact()
     {
         return view('contact', []);
+    }
+
+    public function sendMail(Request $request)
+    {
+        $name = $request->get('name');
+        $email = $request->get('email');
+        $phone = $request->get('phone');
+        $company = $request->get('company');
+        $message = $request->get('message');
+
+        $data = [$name, $email, $phone, $company,$message];
+
+        Mail::to('faiqueimtiaz123@gmail.com')->send(new ContactMail($data));
+        return Redirect::route('contact');
     }
 
     public function solutionservice()

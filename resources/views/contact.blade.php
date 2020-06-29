@@ -31,13 +31,16 @@
                         <!-- Header -->
                         <h3 class="mt-4 ad-black"><i class="fas fa-envelope pr-2"></i>Write to us:</h3>
 
+                        <form action="/sendMail" method="post">
+                            @csrf
                         <!-- Grid row -->
+
                         <div class="row">
 
                             <!-- Grid column -->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-name" class="form-control">
+                                    <input type="text" id="form-contact-name" class="form-control" name="name">
                                     <label for="form-contact-name" class="">Your name</label>
                                 </div>
                             </div>
@@ -46,7 +49,7 @@
                             <!-- Grid column -->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-email" class="form-control">
+                                    <input type="email" id="form-contact-email" class="form-control" name="email">
                                     <label for="form-contact-email" class="">Your email</label>
                                 </div>
                             </div>
@@ -61,7 +64,7 @@
                             <!-- Grid column -->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-phone" class="form-control">
+                                    <input type="number" id="form-contact-phone" class="form-control" name="phone">
                                     <label for="form-contact-phone" class="">Your phone</label>
                                 </div>
                             </div>
@@ -70,7 +73,7 @@
                             <!-- Grid column -->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="form-contact-company" class="form-control">
+                                    <input type="text" id="form-contact-company" class="form-control" name="company">
                                     <label for="form-contact-company" class="">Your company</label>
                                 </div>
                             </div>
@@ -85,18 +88,18 @@
                             <!-- Grid column -->
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
-                                    <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                    <textarea id="form-contact-message" class="form-control md-textarea" rows="3" name="message"></textarea>
                                     <label for="form-contact-message">Your message</label>
-                                    <a class="btn-floating btn-lg ad-redBtn">
+                                    <button type="submit" name="sendEmail" class="btn-floating btn-lg ad-redBtn">
                                         <i class="fad fa-paper-plane"></i>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                             <!-- Grid column -->
 
                         </div>
                         <!-- Grid row -->
-
+                        </form>
                     </div>
 
                 </div>

@@ -6,6 +6,7 @@ use App\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\File;
 
 class ClientController extends Controller
 {
@@ -68,8 +69,8 @@ class ClientController extends Controller
         $client_current_logo = $request->get('client_current_logo');
         $logo = $request->file('client_logo');
         if ($logo) {
-            if (file_exists('/uploads/' . $client_current_logo)) {
-                unlink('/uploads/' . $client_current_logo);
+            if (file_exists(public_path() . '/uploads/' . $client_current_logo)) {
+                unlink(public_path() . '/uploads/' . $client_current_logo);
             }
             $file_name = $request->client_name . '_' . date('d_m_y_H_s_i') . '.' . $logo->getClientOriginalExtension();
             $logo->move(public_path('/uploads'), $file_name);

@@ -53,7 +53,7 @@
                     <td>{{$data->gallery_images}}</td>
                     <td>{{$data->created_at}}</td>
                     <td>{{$data->updated_at}}</td>
-                    <td><a href="/admin/edit_experience/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
+                    <td><a href="/admin/edit_gallery/{{$data->id}}"><i class="fa fa-edit"></i></a></td>
                     <td>
                         <form method="post" action="/admin/gallery/{{$data->id}}"> @csrf @method('put')
                             <button type="submit" name="delete_gallery" value="{{$data->id}}"><i class="fa fa-trash"></i>

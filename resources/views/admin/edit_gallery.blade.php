@@ -12,7 +12,7 @@
         <div class="modal-body mx-3">
 
             <div class="md-form">
-                <input type="text" id="client_name" name="client_name" class="form-control validate" value="{{$gallery->gallery_description}}">
+                <input type="text" id="client_name" name="gallery_description" class="form-control validate" value="{{$gallery->gallery_description}}">
                 <label data-error="wrong" data-success="right">Gallery Description</label>
             </div>
             <div class="md-form file-field">
@@ -29,6 +29,28 @@
                 <img src="{{asset('/uploads')}}/{{$gallery->gallery_thumbnail}}" alt="{{$gallery->gallery_thumbnail}}" class="img-fluid w-25">
                 <input type="hidden" id="client_thumbnail" name="gallery_current_thumbnail" class="form-control validate" value="{{$gallery->gallery_thumbnail}}">
             </div>
+
+            <div class="md-form file-field">
+                <div class="btn ad-orangeGradient btn-sm float-left text-white">
+                    <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
+                    <input type="file" name="gallery_images[]" id="gallery_images" multiple onchange="preview_images()">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload gallery images">
+                </div>
+            </div>
+
+            <label class="font-weight-bold">Current Gallery</label>
+            <div class="row" id="gallery-preview">
+
+                @foreach(explode('|', $gallery->gallery_images) as $g_images)
+
+                <div class='col-md-3 col-sm-4 w-50'><img class='img-fluid mx-auto my-3' src="{{asset('/uploads')}}/{{$g_images}}"></div>
+            @endforeach
+                    <input type="hidden" id="client_gallery" name="gallery_current_images" class="form-control validate" value="{{$gallery->gallery_images}}">
+            </div>
+            <label class="font-weight-bold">Selected Gallery</label>
+            <div class="row" id="image-preview"></div>
 
         </div>
 
