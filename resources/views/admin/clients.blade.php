@@ -16,7 +16,7 @@
         </div>
     </div>
     <!--Table-->
-    <table id="dtMaterialDesignExample" class="ad-datatable table table-responsive-md text-center" width="100%">
+    <table id="dtMaterialDesignExample" class="ad-datatable table table-responsive-md" width="100%">
         <!--Table head-->
         <thead>
         <tr>

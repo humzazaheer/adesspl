@@ -1,3 +1,17 @@
+.carousel-title h1{
+    font-family: helvetica-bold !important;
+    font-size: 4rem;
+    letter-spacing: 8px;
+}
+.carousel-title h2{
+
+    font-family: helvetica-light !important;
+    font-size: 2.3rem;
+    letter-spacing: 3.7px;
+    text-indent: -10px;
+}
+
+
 .timeline {
     position: relative;
     list-style: none;
@@ -109,7 +123,8 @@
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, .3)
+    background-color: rgba(0, 0, 0, .3);
+
 }
 
 .top-nav-collapse {
@@ -125,34 +140,72 @@
         background-color: #1C2331;
 
     }
+
+    .project-gallery figure {
+        display: flex;
+        justify-content: center;
+    }
 }
+.ss-dropdown{
+    margin: 0 !important;
+    background-color: rgba(0,0,0,.8) !important;
+}
+.ss-dropdown ul li{
+    margin: .5rem 0 !important;
+
+}
+@media screen and (max-width: 992px){
+    .ss-dropdown ul li{
+        margin: 0 !important;
+
+    }
+    .nav-link {
+        padding: .5rem 1rem !important;
+    }
+    .ss-link{
+        padding: .5rem 1rem !important;
+    }
+    .ss-dropdown div{
+        padding-right: 1.5em !important;
+        padding-left: 1.5em !important;
+    }
+}
+
 .navbar.scrolling-navbar .dropdown-menu {
     background-color: rgba(0, 0, 0, .3);
     margin-top: 2.06rem;
 }
+
+
 .navbar.scrolling-navbar .dropdown-item {
     color: #fff !important;
 }
+
 .navbar.scrolling-navbar.top-nav-collapse .dropdown-item {
     color: #4d4b4b !important;
 }
-.navbar.scrolling-navbar.top-nav-collapse .dropdown-menu {
-    background-color: rgba(255,255,255);
-    margin-top: 1.6rem;
-}
-.navbar.scrolling-navbar.top-nav-collapse .dropdown-item:hover {
+
+.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .ss-dropdown .sub-menu a:hover {
     color: #fff !important;
+    transition: unset !important;
 }
+
 .navbar.scrolling-navbar .dropdown-menu {
     border: 0;
     border-radius: 0;
 }
-.navbar .dropdown-item:hover {
+
+.menu-item{
+    border-radius:5px;
+    padding: 10px 0 10px 20px !important;
+}
+.menu-item:hover {
     background: linear-gradient(125deg, #F46262, #F2AB21);
     background-color: transparent !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
+
 .navbar-brand-text {
     text-align: center;
     display: table;
@@ -161,10 +214,12 @@
     line-height: 1.5rem;
 
 }
+
 .navbar.scrolling-navbar .navbar-brand .navbar-brand-text {
     font-size: 0.78rem;
     /*transform: scale(1);*/
 }
+
 .navbar.scrolling-navbar.top-nav-collapse .navbar-brand .navbar-brand-text {
     color: #000;
     font-size: 0.7rem;
@@ -172,27 +227,51 @@
     /*transform: scale(0.9);*/
 
 }
+
 .navbar.scrolling-navbar .navbar-brand img {
     max-width: 4rem;
     /*transform: scale(1);*/
     transition: all ease 0.4s;
 }
+
 .navbar.scrolling-navbar.top-nav-collapse .navbar-brand img {
     max-width: 3.5rem;
     /*transform: scale(0.8);*/
     transition: all ease 0.4s;
 }
+
 .navbar.scrolling-navbar {
-    padding: 5px 0px !important;
+    padding:0px !important;
 }
 
-.navbar.scrolling-navbar.top-nav-collapse {
-    padding: 5px 0px !important;
+.navbar.scrolling-navbar.top-nav-collapse .nav-link {
+    padding: 2rem 0.6rem !important;
+}
+.nav-link{
+    padding: 2.5rem 0.6rem;
+}
+.ss-link{
+    padding-left: 1.6rem !important;
+    padding-right: 1.6rem !important;
+}
+.nav-item.show .nav-link{
+    background-color: rgba(0,0,0,0.7) !important;
+}
+.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link {
+    color: #000 !important;
+    background-color: unset !important;
+    font-size: 0.9rem;
 }
 
 .navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link {
-    color: black;
+    color: #000 !important;
     font-size: 0.9rem;
+}
+.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .ss-dropdown{
+    background-color: rgba(255,255,255,0.9) !important;
+}
+.navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .ss-dropdown .sub-menu a{
+    color: #000;
 }
 
 @media screen and (max-width: 852px) {
@@ -210,9 +289,11 @@ section {
 .why-aldin-row {
     margin-top: 50px;
 }
+
 .why-aldin-row h6 {
     color: #4d4b4b;
 }
+
 .why-aldin {
     font-weight: lighter;
 
@@ -222,20 +303,17 @@ section {
     background-color: #f4f7fa;
 }
 
-.contact-banner {
-    background-image: url("../images/map.png");
-}
 
-.solution-service-banner {
-    background-image: url("../images/solutionservice-banner.jpg");
+.gallery a{
+    color: #fff;
 }
-
-.about-banner {
-    background-image: url("");
+.gallery a:hover{
+    color: #fff;
 }
 .gallery-banner {
     background-image: url("");
 }
+
 .core-values h5 {
     color: #4d4b4b;
 }
@@ -253,7 +331,6 @@ section {
 }
 
 
-
 .nav-item {
     margin-left: 15px;
 }
@@ -265,6 +342,7 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .statements .card-icon i.fa-eye {
 
     background-color: transparent;
@@ -284,23 +362,233 @@ section {
 .footer-logo img {
     max-width: 3.5rem;
 }
+
 .footer-logo-text {
     line-height: 1.5rem;
     text-transform: uppercase;
 }
+
 .footer-logo-text span {
     font-size: 1.14rem;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .footer-logo img {
         max-width: 3rem;
     }
-     .footer-logo-text {
-         line-height: 1.2rem;
-         font-size: 1.2rem;
-     }
+
+    .footer-logo-text {
+        line-height: 1.2rem;
+        font-size: 1.2rem;
+    }
+
     .footer-logo-text span {
         font-size: 0.786rem;
     }
+}
+
+/* Gallery */
+
+
+.project-gallery-detail .gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.project-gallery-detail .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.project-gallery-detail .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .project-gallery-detail .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+
+.project-gallery figure, .mdb-lightbox figure {
+    padding: 0 9px 9px 0 !important;
+    margin: 0;
+}
+.ad-bq{
+    border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
+    border-image-slice: 1;
+    border-left: 4px solid transparent;
+    padding: .5rem 2.5rem;
+}
+.ss-text{
+    text-align: justify;
+    line-height: 2;
+}
+.ss-heading{
+    margin:0 0 5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img{
+        height: auto !important;
+    }
+    .manufacturing-img:first-child{
+        margin: 0 0 1.5rem;
+    }
+    .plant-img img{
+        height: auto !important;
+        width: 100% !important;
+    }
+    .plant-img:nth-child(2){
+        margin-top: 1.5rem;
+    }
+    .installation-img{
+        margin-top: 1.5rem;
+    }
+    .design-engineering-img{
+        margin-top: 1.5rem;
+    }
+    .om-img{
+        height: auto !important;
+        margin-top: 1.5rem;
+    }
+    .carousel-title h2{
+        font-size: 1.74rem !important;
+
+    }
+    .carousel-title h1{
+        font-size: 3rem !important;
+    }
+    .logo-on-slide{
+        width: 18% !important;
+        margin: 0 auto 2rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ss-img{
+       text-align: center !important;
+    }
+    .ss-text{
+        text-align: center;
+        margin: 2rem 0 !important;
+    }
+    .ss-heading{
+        margin: 0;
+    }
+    .carousel-title h2{
+        font-size: 1.16rem !important;
+
+    }
+    .carousel-title h1{
+        font-size: 2rem !important;
+    }
+    .logo-on-slide{
+        display: none !important;
+    }
+}
+
+.col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img, .col-lg-3.manpower-img img{
+    height: 100%;
+}
+
+.plant-img img{
+    height: 25rem;
+}
+.logo-on-slide {
+    width: 23%;
+    margin: 0px auto 4rem;
+}
+.ss-section img.card-img-top{
+    margin:2rem auto auto;
+    width: 60% !important;
+}
+.ss-section img.tank-img{
+    width: 55%;
+    margin: 1rem auto;
+
+}
+.card{
+    height: 100%;
+}
+.fab-2{
+    height: 30rem;
+}
+.overhauling-img img{
+    height: 25rem;
+}
+.installation-ul li{
+    margin: 1rem 0 0;
+}
+.om-img{
+    height: 100% !important;
+}
+
+/* Banners */
+.contact-banner {
+    background-image: url("");
+}
+
+.manufacturing-of-machine-element-banner {
+    background-image: url("/images/banners/manufac.jpg");
+}
+.plant-maintenance-banner{
+    background-image: url("/images/banners/plant-banner.jpg");
+}
+.fabrication-banner{
+    background-image: url("/images/banners/fabrication.jpg");
+}
+.overhauling-of-diesel-engine-banner{
+    background-image: url("/images/banners/overhauling.jpg");
+}
+.infrastructure-banner{
+    background-image: url("/images/banners/infrastructure.jpg");
+}
+.installation-commissioning-banner{
+    background-image: url("/images/banners/installation.jpg");
+}
+.design-engineeirng-banner{
+    background-image: url("/images/banners/design-engineering.jpg");
+}
+.manpower-supply-banner{
+    background-image: url("/images/banners/man-power.jpg");
+}
+.om-services-banner{
+    background-image: url("/images/banners/o_m.jpg");
+}
+.project-management-consultancy-banner{
+    background-image: url("/images/banners/consultancy.jpg");
+}
+.equipment-on-rent-banner{
+    background-image: url("/images/banners/equipment.jpg");
+}
+.workshop-banner{
+    background-image: url("/images/banners/workshop.jpg");
+}
+.experience-banner{
+    background-image: url("/images/banners/");
+}
+
+.about-banner{
+    background-image: url("/images/banners/about.png");
+
 }

@@ -15,13 +15,54 @@
     </section>
 
     <section class="workshop">
-        <div class="container text-justify">
+        <div class="container">
+            <section class="ss-section mt-2">
+                <h1 class="text-center ad-black ss-heading">ADSSPL Workshop</h1>
 
-        <h1 class="text-center mb-4"></h1>
-        <p>ADESSPL is an engineering services, manufacturing and construction company op­erating in Pakistan. We are in the business of delivering client-specific solutions for projects related to Energy, Infrastructure and Other Process industry. The package of services encompasses engineering, procurement, manufacturing, commission­ing and maintenance. We are a superior company renowned in the region for its quality, safety and on-time delivery of projects and products. All the faculties required to deliver turnkey projects, reside within the company. This unique strength enables us to provide solutions as EPCC (Engineering, Procurement, Construction and Commissioning) services provider to a host of clients.
-            ADESSPL's employees qualified & highly experienced personnel are capable of or­ganizing, executing & handling of al kind of mechanics construction projects from start to completion. ADESSPL's design team is fully capable, competent of under­taking design, engineering of steel structures, Fabrication of any size & application.</p>
-        <img src="{{asset('images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG')}}" class="img-fluid w-75 mx-auto d-block my-4 shadow"/>
-        <p>ADESSPL is an QMS ISO 9001:2015, EMS ISO 14001:2015 and OHSMS ISO 45001:2018 certified company, providing quality services in the area of project management, engineering, manufacturing and construction to domestic and over­seas clients. ADESSPL project teams have internationally operated in all avenues of project implementation as general construction contractor, maintenance turn­around planner and turnkey (EPC) solution provider. ADESSPL's personnel have a long & distinguished record of teamwork developed over year of association at vari­ous projects.</p>
+                <div class="row">
+                    <div class="col-md-6 d-flex align-content-center flex-wrap">
+                        <div class="ss-text rounded">
+                            <p>
+                                ADESSPL by virtue of its unique advantage of having a diversified workshop to meet the challenging tasks
+                                and provide quality works.
+                                <br>
+                                Our goal is to provide superior project management services from project initiation to completion on a turnkey basis
+                                with total commitment towards; timeliness, safety and quality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ss-img text-right waves-light">
+                            <img src="{{asset('images/solution&services/workshop/workshop2.jpg')}}"
+                                 class="img-fluid w-75  z-depth-1 rounded"/>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <div class="ss-img text-left waves-light">
+                            <img src="{{asset('images/solution&services/workshop/workshop1.jpg')}}"
+                                 class="img-fluid w-75  z-depth-1 rounded"/>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6 d-flex align-content-center flex-wrap">
+                        <div class="ss-text rounded">
+                            <p>From inspection, the company has enjoyed continual growth and expanded its capabilities to provide a full range services
+                                in fabrication, installation, commissioning and erection of mechanical and construction project.
+                                <br>
+                                The company has successfully executed many Power-plant, Petrochemical, Food, Cement, Fertilizer, Chemical, Pipe-work,
+                                Oil Storage, Structure Steel Fabrication & installation and Fire-fighting networks on a turnkey basis.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </div>
 
 

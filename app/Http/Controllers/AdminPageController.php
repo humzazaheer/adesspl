@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 class AdminPageController extends Controller
@@ -19,7 +18,7 @@ class AdminPageController extends Controller
         return view('admin/index');
     }
     public function clients(){
-        return view('admin/clients');
+        return view('admin/client');
     }
     public function gallery(){
         return view('admin/gallery');

@@ -39,7 +39,9 @@ $(document).ready(function() {
     // end admin navbar
 
 
-
+    // MDB Lightbox Inintialize
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    // End MDB Lightbox Inintialize
 
     // lightslider
 
@@ -47,6 +49,7 @@ $(document).ready(function() {
         auto: true,
         loop: true,
         item: 4,
+        thumbMargin: 3,
         pauseOnHover: true,
         onBeforeSlide: function(el) {
             $('#current').text(el.getCurrentSlideCount());

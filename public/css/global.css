@@ -22,6 +22,10 @@ p {
     color: #4d4b4b;
 
 }
+.mdb-lightbox img{
+    cursor: pointer !important;
+}
+
 button {
     border: none;
 }
@@ -39,7 +43,7 @@ section {
     padding: 70px 0px;
 }
 .banner-icon img{
-    margin-bottom: .5em;
+    margin-bottom: .2em;
 }
 .ad-orangeGradient {
     background: linear-gradient(125deg, #F46262, #F2AB21);

@@ -7,3 +7,12 @@
     font-family: 'segoe-semi-bold';
     src: url("../fonts/Segoe/seguisb.ttf");
 }
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url("../fonts/helveticaneue/HelveticaNeueBd.ttf");
+}
+@font-face {
+    font-family: 'helvetica-light';
+    src: url("../fonts/helveticaneue/HelveticaNeueLight.ttf");
+}
+
