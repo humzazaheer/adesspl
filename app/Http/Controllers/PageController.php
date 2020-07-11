@@ -57,7 +57,8 @@ class PageController extends Controller
 
     public function experience()
     {
-        return view('experience', []);
+        $exps = DB::table('experiences')->join('clients', 'experiences.client_id', '=', 'clients.id')->select( 'clients.client_logo', 'experiences.exp_description')->where('exp_active_status','1')->get();
+        return view('experience', ['exps'=>$exps]);
     }
     public function project_gallery()
     {
