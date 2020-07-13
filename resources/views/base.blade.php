@@ -13,6 +13,7 @@
     <link href="{{asset('css/global.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('fonts/font-awesome/css/all.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/lightslider.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/animate.css')}}" rel="stylesheet" type="text/css">
 
 
 </head>
@@ -199,11 +200,15 @@
         <div class="row">
 
             <!-- Grid column -->
-            <div class="col-lg-6 col-sm-12 mt-lg-0 mt-3">
+            <div class="col-lg-5 col-sm-12 mt-lg-0 mt-3">
 
                 <div class="footer-logo">
+                    <a href="/">
                         <img src="{{asset('images/logo.png')}}" alt="ADESSPL" class="img-fluid float-left"><h3 class="footer-logo-text ml-2 mt-1 float-left">Al-Din Engineering <br><span>Solutions & Services <abbr title="Private">PVT.</abbr> <abbr
                                 title="Limited">LTD</abbr></span></h3>
+                    </a>
+
+
                 </div>
 
             </div>
@@ -212,25 +217,22 @@
             <hr class="clearfix w-100 d-lg-none pb-3">
 
             <!-- Grid column -->
-            <div class="col-lg-3 col-sm-6 mb-lg-0 mb-3">
+            <div class="col-lg-4 col-sm-6 mb-lg-0 mb-3">
 
                 <!-- Links -->
                 <h5 class="text-uppercase">Get in touch</h5>
-
-                <ul class="list-unstyled">
+                <ul class="text-lg-left list-unstyled mt-4">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <p class="text-white"><i class="fas fa-map-marker-alt pr-3 text-white"></i> Office # 5, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <p class="text-white"><i class="fas fa-phone pr-2 text-white"></i> +01 234 567 89</p>
                     </li>
                     <li>
-                        <a href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 4</a>
+                        <p class="text-white"><i class="fas fa-envelope pr-2 text-white"></i> contact@example.com</p>
                     </li>
                 </ul>
+
 
             </div>
             <!-- Grid column -->
@@ -241,18 +243,18 @@
                 <!-- Links -->
                 <h5 class="text-uppercase">Follow us</h5>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-social-icons">
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="#!"><i class="fab fa-facebook-f"></i></a>
                     </li>
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="#!"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="#!">Link 3</a>
+                        <a href="#!"><i class="fab fa-youtube"></i></a>
                     </li>
                     <li>
-                        <a href="#!">Link 4</a>
+                        <a href="#!"><i class="fab fa-twitter"></i></a>
                     </li>
                 </ul>
 
@@ -282,6 +284,7 @@
 <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/lightslider.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/wow.js')}}"></script>
 
 
 </body>

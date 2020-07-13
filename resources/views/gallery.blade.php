@@ -16,19 +16,19 @@
     <div class="container">
 
         <section class="gallery text-center">
-            <h1 class="text-center mb-4 ad-black">Projects Lightbox</h1>
-            <p>Check out our works gallery.</p>
+            <h1 class="text-center mb-4 ad-black wow bounceInDown">Projects Lightbox</h1>
+            <p class="wow fadeInUp" >Check out our works gallery.</p>
 
             <div class="row">
                 <div class=" col-lg-4 col-md-6">
-                    <div class="card card-cascade wider mt-2 mb-3 ">
+                    <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
 
                         <!-- Card image -->
 
-                        <div class="view view-cascade overlay">
+                        <div class="view view-cascade overlay ">
                             <img class="card-img-top" src="http://127.0.0.1:8000/images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG" alt="Card image cap">
                             <a href="project_gallery">
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
 
@@ -47,14 +47,14 @@
 
                 </div>
                 <div class=" col-lg-4 col-md-6">
-                    <div class="card card-cascade wider mt-2 mb-3 ">
+                    <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
 
                         <!-- Card image -->
 
                         <div class="view view-cascade overlay">
                             <img class="card-img-top" src="http://127.0.0.1:8000/images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG" alt="Card image cap">
                             <a href="project_gallery">
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
 
@@ -73,14 +73,14 @@
 
                 </div>
                 <div class=" col-lg-4 col-md-6">
-                    <div class="card card-cascade wider mt-2 mb-3 ">
+                    <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
 
                         <!-- Card image -->
 
                         <div class="view view-cascade overlay">
                             <img class="card-img-top" src="http://127.0.0.1:8000/images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG" alt="Card image cap">
                             <a href="project_gallery">
-                                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                                <div class="mask rgba-white-slight "></div>
                             </a>
                         </div>
 

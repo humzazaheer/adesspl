@@ -14,14 +14,14 @@
         </div>
     </section>
 
-    <section class="workshop">
+
         <div class="container">
-            <section class="ss-section mt-2">
-                <h1 class="text-center ad-black ss-heading">ADSSPL Workshop</h1>
+            <section class="ss-section">
+                <h1 class="text-center ad-black ss-heading wow bounceInDown">ADSSPL Workshop</h1>
 
                 <div class="row">
                     <div class="col-md-6 d-flex align-content-center flex-wrap">
-                        <div class="ss-text rounded">
+                        <div class="ss-text rounded wow bounceInLeft">
                             <p>
                                 ADESSPL by virtue of its unique advantage of having a diversified workshop to meet the challenging tasks
                                 and provide quality works.
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="ss-img text-right waves-light">
+                        <div class="ss-img text-right waves-light wow bounceInRight">
                             <img src="{{asset('images/solution&services/workshop/workshop2.jpg')}}"
                                  class="img-fluid w-75  z-depth-1 rounded"/>
                         </div>
@@ -42,7 +42,7 @@
 
                 <div class="row my-5">
                     <div class="col-md-6">
-                        <div class="ss-img text-left waves-light">
+                        <div class="ss-img text-left waves-light wow bounceInLeft">
                             <img src="{{asset('images/solution&services/workshop/workshop1.jpg')}}"
                                  class="img-fluid w-75  z-depth-1 rounded"/>
 
@@ -51,7 +51,7 @@
 
                     </div>
                     <div class="col-md-6 d-flex align-content-center flex-wrap">
-                        <div class="ss-text rounded">
+                        <div class="ss-text rounded wow bounceInRight">
                             <p>From inspection, the company has enjoyed continual growth and expanded its capabilities to provide a full range services
                                 in fabrication, installation, commissioning and erection of mechanical and construction project.
                                 <br>
@@ -66,4 +66,3 @@
         </div>
 
 
-    </section>

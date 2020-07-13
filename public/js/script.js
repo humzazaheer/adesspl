@@ -92,3 +92,6 @@ function preview_images() {
         $('#image-preview').append("<div class='col-md-3 col-sm-4 w-50'><img class='img-fluid mx-auto my-3' src='" + URL.createObjectURL(event.target.files[i]) + "'></div>");
     }
 }
+// Wow.js Initialization
+
+new WOW().init();

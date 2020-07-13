@@ -111,15 +111,16 @@
                     <div class="card-body contact ad-orangeGradient text-center h-100 text-white">
 
                         <h3 class="my-4 pb-2">Contact information</h3>
-                        <ul class="text-lg-left list-unstyled ml-4">
-                            <li>
-                                <p class="text-white"><i class="fas fa-map-marker-alt pr-3 text-white"></i> Office # 5, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
+                        <ul class="text-lg-left list-unstyled ">
+
+                            <li class="text-center mb-4">
+                                <i class="fas fa-map-marker-alt pr-3 text-white fa-2x mb-2"></i> <p class="text-white"> Office # 5, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
                             </li>
-                            <li>
-                                <p class="text-white"><i class="fas fa-phone pr-2 text-white"></i> +01 234 567 89</p>
+                            <li class="text-center mb-4">
+                                <i class="fas fa-phone pr-2 text-white fa-2x mb-2"></i> <p class="text-white"> +01 234 567 89</p>
                             </li>
-                            <li>
-                                <p class="text-white"><i class="fas fa-envelope pr-2 text-white"></i> contact@example.com</p>
+                            <li class="text-center">
+                                <i class="fas fa-envelope pr-2 text-white fa-2x mb-2"></i><p class="text-white"> contact@example.com</p>
                             </li>
                         </ul>
                         <hr class="hr-light my-4">

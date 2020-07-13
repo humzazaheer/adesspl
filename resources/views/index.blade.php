@@ -23,10 +23,10 @@
                      style="background-image: url('../images/slider/slider1.jpg'); background-repeat: no-repeat; background-size: cover">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
-                            <span class="mb-4 carousel-title">
-                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide">
-                                <h1>AL DIN ENGINEERING</h1>
-                                <h2>SOLUTION & SERVICES PRIVATE LIMITED</h2>
+                            <span class="mb-4 carousel-title ">
+                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide wow bounceInDown" data-wow-duration="3s">
+                                <h1 class="wow slideInRight">AL DIN ENGINEERING</h1>
+                                <h2 class="wow fadeInUp" data-wow-delay="0.5s">SOLUTION & SERVICES PRIVATE LIMITED</h2>
                             </span>
                         </div>
                     </div>
@@ -129,9 +129,9 @@
     {{--  Why Aldin?  --}}
     <section class="why-aldin">
         <div class="container ">
-            <h1 class="text-center ad-black">Why ADESSPL?</h1>
+            <h1 class="text-center ad-black wow bounceInDown">Why ADESSPL?</h1>
 
-            <div class="row  why-aldin-row">
+            <div class="row  why-aldin-row wow zoomInUp" data-wow-delay="0.3s">
 
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="media">
@@ -281,13 +281,13 @@
     {{--  Core Values  --}}
     <section class=" core-values section-highlight">
         <div class="container">
-            <h1 class="text-center ad-black">Core Values</h1>
+            <h1 class="text-center ad-black wow bounceInDown">Core Values</h1>
 
             <div class="row my-5">
                 <div class="col-lg-8 mx-auto">
 
                     <ol class="timeline">
-                        <li class="timeline-element">
+                        <li class="timeline-element wow bounceInLeft">
 
                             <h5 class="font-weight-bold  mb-3">
                                 <span class="text-danger mr-4"><i class="fad fa-users fa-2x"></i></span>
@@ -297,7 +297,7 @@
                                 fosters partnerships through communication, mutual respect, cooperation & trust.</p>
                         </li>
 
-                        <li class="timeline-element">
+                        <li class="timeline-element wow bounceInRight">
                             <h5 class="font-weight-bold  mb-3">
                                 Quality
                                 <span class="text-warning ml-4"><i class="fad fa-award fa-2x"></i></span>
@@ -308,7 +308,7 @@
                                 community.</p>
                         </li>
 
-                        <li class="timeline-element">
+                        <li class="timeline-element wow bounceInLeft">
 
                             <h5 class="font-weight-bold  mb-3">
                                 <span class="text-danger mr-4"><i class="fad fa-people-carry fa-2x"></i></span>
@@ -318,7 +318,7 @@
                                 & leade us to innovation.</p>
                         </li>
 
-                        <li class="timeline-element">
+                        <li class="timeline-element wow bounceInRight">
                             <h5 class="font-weight-bold  mb-3">
                                 No Politics
                                 <span class="text-warning ml-4"><i class="fad fa-landmark fa-2x"></i></span>
@@ -327,7 +327,7 @@
                             <p class="">As a team we struggle for results & collective success. Internal politics is not
                                 bearable.</p>
                         </li>
-                        <li class="timeline-element">
+                        <li class="timeline-element wow bounceInLeft">
 
                             <h5 class="font-weight-bold  mb-3">
                                 <span class="text-danger     mr-4"><i class="fad fa-balance-scale fa-2x"></i></span>
@@ -349,11 +349,11 @@
     {{--    clients--}}
     <section id="clients" class="our-clients container-fluid">
 
-        <h1 class="text-center ad-black">Our Clients</h1>
+        <h1 class="text-center ad-black wow bounceInDown">Our Clients</h1>
 
         <div class="container my-5">
 
-            <ul id="client_slider" class="client_slider">
+            <ul id="client_slider" class="client_slider wow zoomIn">
                 @if($clientLogos)
                     @foreach($clientLogos as $client_logo)
                         <li>

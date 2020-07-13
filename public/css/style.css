@@ -282,9 +282,6 @@
 }
 
 
-section {
-    padding: 70px 0px;
-}
 
 .why-aldin-row {
     margin-top: 50px;
@@ -303,7 +300,9 @@ section {
     background-color: #f4f7fa;
 }
 
-
+.gallery .view{
+    height: auto;
+}
 .gallery a{
     color: #fff;
 }
@@ -323,18 +322,23 @@ section {
 }
 
 .timeline::before {
-    background-color: #b7d9fb;
+    background: none !important;
+    border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
+    border-image-slice: 1;
+    border-left: 2px solid transparent;
 }
 
 .timeline-element::before {
-    border: 2px solid #b7d9fb;
+    border: 2px solid #f46361;
 }
 
 
 .nav-item {
     margin-left: 15px;
 }
-
+.card-body{
+    flex: unset;
+}
 .statements .card-icon i.fa-bullseye-arrow {
 
     background-color: transparent;
@@ -354,9 +358,11 @@ section {
 /*experience*/
 
 .work-experience .company-logo {
-    max-width: 3rem;
+    max-width: 4rem;
 }
-
+.work-experience .blockquote{
+    margin-bottom: 3rem !important;
+}
 /*footer*/
 
 .footer-logo img {
@@ -445,8 +451,29 @@ section {
 .ss-heading{
     margin:0 0 5rem;
 }
-
-
+#client_slider li img{
+    height: 110px;
+    margin: 0 auto;
+}
+.lSSlideOuter .lSPager.lSpg{
+    margin: 50px 0 0 !important;
+}
+.lslide{
+    width:250px !important;
+    display: flex;
+    align-items: center;
+}
+#client_slider li.clone{
+    display: flex;
+    align-items: center;
+}
+.footer-social-icons li{
+    display: inline-block;
+    margin: 15px 20px 0 0;
+}
+.footer-social-icons li a i{
+    font-size: 20px;
+}
 @media screen and (max-width: 992px) {
     .col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img{
         height: auto !important;
