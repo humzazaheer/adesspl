@@ -57,3 +57,7 @@ td img {
 {
     height: 100px;
 }
+.dropdown .dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(125deg, #F46262, #F2AB21) !important;
+    color: #fff !important;
+}

@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
 //page controller
 Route::get('/', 'PageController@index');
 Route::get('/about', 'PageController@about');
@@ -42,7 +41,7 @@ Route::get('/equipment_on_rent', 'PageController@equipment_on_rent');
 
 //admin controller
 
-Route::get('/admin', 'AdminPageController@dashboard');
+Route::get('/admin', 'AdminPageController@dashboard')->name('admin.dashboard');
 Route::get('/admin/clients', 'AdminPageController@clients')->name('admin.clients');
 Route::get('/admin/work_experience', 'AdminPageController@experience')->name('admin.experience');
 Route::get('/admin/gallery', 'AdminPageController@gallery')->name('admin.gallery');
@@ -70,3 +69,7 @@ Route::post('/admin/gallery/store', 'GalleryController@store')->name('gallerySto
 Route::get('/admin/edit_gallery/{gallery}', 'GalleryController@edit')->name('galleryEdit');
 Route::put('/admin/edit_gallery/{gallery}', 'GalleryController@update')->name('galleryUpdate');
 Route::put('/admin/gallery/{gallery}', 'GalleryController@destroy')->name('galleryDelete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

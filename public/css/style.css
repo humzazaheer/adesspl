@@ -358,7 +358,7 @@
 /*experience*/
 
 .work-experience .company-logo {
-    max-width: 4rem;
+    max-width: 3.8rem;
 }
 .work-experience .blockquote{
     margin-bottom: 3rem !important;
@@ -554,9 +554,9 @@
     margin: 1rem auto;
 
 }
-.card{
-    height: 100%;
-}
+/*.card{*/
+/*    height: 100%;*/
+/*}*/
 .fab-2{
     height: 30rem;
 }

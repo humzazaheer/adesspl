@@ -5,14 +5,9 @@ use Illuminate\Http\Request;
 
 class AdminPageController extends Controller
 {
-    public function register(){
-        return view('admin/register');
-    }
-    public function login(){
-        return view('admin/login');
-    }
-    public function forgot_password(){
-        return view('admin/forgot-password');
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
     public function dashboard(){
         return view('admin/index');
