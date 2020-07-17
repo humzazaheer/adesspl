@@ -15,7 +15,7 @@
     </section>
     <section class="work-experience">
         <div class="container">
-            <h1 class="text-center ad-black mb-5 wow bounceInDown">We Have Served At</h1>
+            <h1 class="text-center ad-black mb-5 wow fadeInDown">We Have Served At</h1>
             <div class="experience-block">
 
                 @if ($exps)

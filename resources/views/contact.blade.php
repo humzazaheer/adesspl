@@ -16,9 +16,9 @@
 
 <div class="container">
     <section class="contact-section mt-5">
-<h1 class="text-center mb-5 ad-black">Get In Touch</h1>
+<h1 class="text-center mb-5 ad-black wow fadeInDown">Get In Touch</h1>
         <!-- Form with header -->
-        <div class="card">
+        <div class="card wow zoomIn">
 
             <!-- Grid row -->
             <div class="row">
@@ -155,7 +155,7 @@
 
     </section>
     <section class="mapSection">
-        <h1 class="mb-5 text-center ad-black">Our Location</h1>
-        <iframe  width="100%" height="350" frameborder="0" class="map shadow mb-5 rounded z-depth-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7787349353034!2d74.32010231481888!3d31.53023655381027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919049a66feaf99%3A0x9816f44b8f4fadb6!2sAl-Din+Engineering+Solutions+and+Services+(Pvt.)+Ltd.!5e0!3m2!1sen!2s!4v1471667656830"  allowfullscreen=""></iframe>
+        <h1 class="mb-5 text-center ad-black wow fadeInDown">Our Location</h1>
+        <iframe  width="100%" height="350" frameborder="0" class="map shadow mb-5 rounded z-depth-1 wow zoomIn" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7787349353034!2d74.32010231481888!3d31.53023655381027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919049a66feaf99%3A0x9816f44b8f4fadb6!2sAl-Din+Engineering+Solutions+and+Services+(Pvt.)+Ltd.!5e0!3m2!1sen!2s!4v1471667656830"  allowfullscreen=""></iframe>
     </section>
 </div>

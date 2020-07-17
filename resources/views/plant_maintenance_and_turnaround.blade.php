@@ -16,14 +16,14 @@
     </section>
     <div class="container">
         <section class="ss-section mt-5 text-center">
-            <h1 class="text-center mb-5 ad-black">Plant Maintenance & Turnaround</h1>
-            <p class="mb-5"><strong>ADSSPL</strong> management team possesses vast experience of plan, manage, execute large number of turnaround
+            <h1 class="text-center mb-5 ad-black wow fadeInDown">Plant Maintenance & Turnaround</h1>
+            <p class="mb-5 wow fadeInUp"><strong>ADSSPL</strong> management team possesses vast experience of plan, manage, execute large number of turnaround
                 and maintenance contracts for power, (LNG) Liquefied Natural Gas, refining and petrochemical facilities.
             </p>
 
             <div class="row mb-4">
                 <div class="col-lg-12 plant-img">
-                    <div class="waves-light">
+                    <div class="waves-light wow zoomIn">
                         <img src="{{asset('images/solution&services/plant-maintenance/plant1.jpg')}}"
                              class="img-fluid w-75 rounded"/>
                     </div>
@@ -31,13 +31,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 plant-img">
-                    <div class="waves-light">
+                    <div class="waves-light  wow zoomIn">
                         <img src="{{asset('images/solution&services/plant-maintenance/plant2.jpg')}}"
                              class="img-fluid rounded"/>
                     </div>
                 </div>
                 <div class="col-lg-6 plant-img">
-                    <div class="waves-light">
+                    <div class="waves-light  wow zoomIn">
 
                         <img src="{{asset('images/solution&services/plant-maintenance/plant3.jpg')}}"
                              class="img-fluid  z-depth-1<<  rounded"/>

@@ -23,19 +23,19 @@
 
 
                 <div class="row">
-
+                    <div class="col-md-12">
                     <div id="mdb-lightbox-ui"></div>
+
 
                     <div class="mdb-lightbox">
                         @foreach(explode('|', $gallery->gallery_images) as $g_image)
                             <figure class="col-lg-4 col-md-6 wow flipInX">
                                 <a href="{{asset('/uploads')}}/{{$g_image}}" data-size="1600x1067">
-                                    <img alt="picture" src="{{asset('/uploads')}}/{{$g_image}}"
-                                         class="img-fluid rounded">
-
+                                    <img alt="picture" src="{{asset('/uploads')}}/{{$g_image}}" class="img-fluid rounded z-depth-1">
                                 </a>
                             </figure>
                         @endforeach
+                    </div>
                     </div>
                 </div>
             </section>

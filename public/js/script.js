@@ -40,7 +40,9 @@ $(document).ready(function() {
 
 
     // MDB Lightbox Inintialize
-    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
 
     // End MDB Lightbox Inintialize
 
@@ -94,6 +96,8 @@ function preview_images() {
     }
 }
 // Wow.js Initialization
+
+
 
 new WOW().init();
 

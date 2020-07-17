@@ -15,14 +15,14 @@
     </section>
     <div class="container">
         <section class="ss-section mt-5 text-center">
-            <h1 class=" mb-5 ad-black">Infrastructure & MEP</h1>
+            <h1 class="mb-5 ad-black wow fadeInDown">Infrastructure & MEP</h1>
 
 {{--    Infrastructure services     --}}
 
-            <h2>Infrastructure Services</h2>
+            <h2 class="wow fadeInUp">Infrastructure Services</h2>
             <div class="row mt-5 ">
                 <div class="col-md-6 col-xl-3 mb-4">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top building-img" src="{{asset('images/solution&services/infrastructure/building.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3 mb-4">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top generator-img" src="{{asset('images/solution&services/infrastructure/generator.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3 mb-4">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top water-plant-img" src="{{asset('images/solution&services/infrastructure/water-plant.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-3 mb-4">
-                    <div class="card text-center waves-effect ">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top building-manage-img" src="{{asset('images/solution&services/infrastructure/building-manage.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -73,11 +73,11 @@
 
 
 {{--MEP Services--}}
-            <h2 class="mt-5 mb-5">MEP Services</h2>
+            <h2 class="mt-5 mb-5 wow fadeInUp">MEP Services</h2>
             <div class="row mt-5 mep-row mep">
 
                 <div class="col-md-6 col-xl-4 mb-4">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top building-img" src="{{asset('images/solution&services/infrastructure/fire-protection.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4 mb-4">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top " src="{{asset('images/solution&services/infrastructure/ibms.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4 mb-4">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top water-plant-img" src="{{asset('images/solution&services/infrastructure/ozone.png')}}" alt="">
                         <div class="card-body">
                             <br>
@@ -116,7 +116,7 @@
 
 
                 <div class="col-md-6 col-xl-4 mb-4 mep-col d-block m-auto">
-                    <div class="card text-center waves-effect ">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top water-plant-img" src="{{asset('images/solution&services/infrastructure/electrical.png')}}" alt="">
                         <div class="card-body">
 
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4 mb-4 mep-col m-auto d-block">
-                    <div class="card text-center waves-effect">
+                    <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top water-plant-img" src="{{asset('images/solution&services/infrastructure/mechanical-jobs.png')}}" alt="">
                         <div class="card-body">
                             <h5 class="font-weight-normal">
@@ -147,7 +147,7 @@
 
             <div class="row mb-4 mt-5">
                 <div class="col-lg-12 overhauling-img">
-                    <div class="waves-light waves-effect waves-light">
+                    <div class="waves-light waves-effect waves-light wow zoomIn">
                         <img src="{{asset('images/solution&services/infrastructure/infrastructure3.jpg')}}" class="img-fluid z-depth-1 w-100 rounded">
                     </div>
                 </div>
@@ -155,12 +155,12 @@
 
             <div class="row">
                 <div class="col-lg-6 mb-4 overhauling-img">
-                    <div class="waves-light waves-effect waves-light">
+                    <div class="waves-light waves-effect waves-light wow zoomIn">
                         <img src="{{asset('images/solution&services/infrastructure/infrastructure1.jpg')}}" class="img-fluid z-depth-1 w-100 rounded">
                     </div>
                 </div>
                 <div class="col-lg-6 overhauling-img">
-                    <div class="waves-light waves-effect waves-light">
+                    <div class="waves-light waves-effect waves-light wow zoomIn">
                         <img src="{{asset('images/solution&services/infrastructure/infrastructure2.jpg')}}" class="img-fluid z-depth-1 w-100 rounded">
                     </div>
                 </div>

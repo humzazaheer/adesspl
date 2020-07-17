@@ -425,7 +425,9 @@
     -ms-transform: scale(1);
     transform: scale(1);
 }
-
+.gallery .card img{
+    height: 14rem;
+}
 @media (max-width: 450px) {
     .project-gallery-detail .gallery {
         -webkit-column-count: 1;
@@ -448,6 +450,10 @@
     padding: 0 9px 9px 0 !important;
     margin: 0;
 }
+.mdb-lightbox img{
+    height: 15rem;
+}
+
 .ad-bq{
     border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
     border-image-slice: 1;
@@ -542,12 +548,26 @@
     .logo-on-slide{
         display: none !important;
     }
+    .gallery .card img{
+        height: auto;
+    }
 }
 
-.col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img, .col-lg-3.manpower-img img{
+/*.col-lg-8.manufacturing-img img, .manufacturing-img img, .col-lg-3.manpower-img img{*/
+/*    height: 100%;*/
+/*}*/
+.manufacturing-img{
     height: 100%;
 }
-
+.manpower-img img{
+    height: 18rem !important;
+}
+.manpower-img {
+    margin-top: 15px;
+}
+.ss-section .card{
+    height: 100% !important;
+}
 .plant-img img{
     height: 25rem;
 }
@@ -628,4 +648,14 @@
 .about-banner{
     background-image: url("/images/banners/about.png");
 
+}
+
+label.active{
+    color: #f46361 !important;
+}
+
+.md-form input:not([type]):focus:not([readonly]), .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search-md"]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #f46361 !important;
+    -webkit-box-shadow: 0 1px 0 0 #f46361 !important;
+    box-shadow: 0 1px 0 0 #f46361 !important;
 }
