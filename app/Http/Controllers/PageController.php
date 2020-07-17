@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Gallery;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -52,7 +53,8 @@ class PageController extends Controller
 
     public function gallery()
     {
-        return view('gallery', []);
+        $galleries = DB::table('galleries')->select('id', 'gallery_description', 'gallery_thumbnail')->where('gallery_active_status','1')->get();
+        return view('gallery', ['galleries'=>$galleries]);
     }
 
     public function experience()
@@ -60,9 +62,9 @@ class PageController extends Controller
         $exps = DB::table('experiences')->join('clients', 'experiences.client_id', '=', 'clients.id')->select( 'clients.client_logo', 'experiences.exp_description')->where('exp_active_status','1')->get();
         return view('experience', ['exps'=>$exps]);
     }
-    public function project_gallery()
+    public function project_gallery(Gallery $gallery)
     {
-        return view('project_gallery', []);
+        return view('project_gallery', compact('gallery'));
     }
 
 

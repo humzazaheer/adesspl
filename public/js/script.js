@@ -41,6 +41,7 @@ $(document).ready(function() {
 
     // MDB Lightbox Inintialize
     $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+
     // End MDB Lightbox Inintialize
 
     // lightslider

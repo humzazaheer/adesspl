@@ -33,6 +33,11 @@ class GalleryController extends Controller
      */
     public function store(Request $request, Gallery $gallery)
     {
+        $request->validate([
+            'gallery_thumbnail' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
+            'gallery_images' => 'required',
+            'gallery_images.*' => 'image|mimes:jpg,png,jpeg,gif,svg',
+        ]);
         $gallery->gallery_description = $request->get('gallery_description');
         $gallery->gallery_thumbnail = $request->get('gallery_thumbnail');
         $thumb = $request->file('gallery_thumbnail');
@@ -78,6 +83,10 @@ class GalleryController extends Controller
      */
     public function update(Request $request, gallery $gallery)
     {
+        $request->validate([
+            'gallery_thumbnail' => 'image|mimes:jpg,png,jpeg,gif,svg',
+            'gallery_images.*' => 'image|mimes:jpg,png,jpeg,gif,svg',
+        ]);
         $gallery->gallery_description = $request->get('gallery_description');
         $gallery_current_thumb = $request->get('gallery_current_thumbnail');
         $thumb = $request->file('gallery_thumbnail');

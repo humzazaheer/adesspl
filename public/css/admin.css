@@ -10,9 +10,9 @@ aside {
     min-height: 100vh;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-aside li {
-    padding-left: 15px;
-}
+/*aside li {*/
+/*    padding-left: 15px;*/
+/*}*/
 aside a {
     padding: 5px 60px 5px 30px;
 }
@@ -60,4 +60,7 @@ td img {
 .dropdown .dropdown-menu .dropdown-item:hover {
     background: linear-gradient(125deg, #F46262, #F2AB21) !important;
     color: #fff !important;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+    color: #4d4b4b !important;
 }

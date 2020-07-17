@@ -17,91 +17,47 @@
 
         <section class="gallery text-center">
             <h1 class="text-center mb-4 ad-black wow bounceInDown">Projects Lightbox</h1>
-            <p class="wow fadeInUp" >Check out our works gallery.</p>
+            <p class="wow fadeInUp">Check out our works gallery.</p>
 
             <div class="row">
-                <div class=" col-lg-4 col-md-6">
-                    <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
+                @if($galleries)
+                    @foreach($galleries as $gallery)
+                        <div class=" col-lg-4 col-md-6">
+                            <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
 
-                        <!-- Card image -->
+                                <!-- Card image -->
 
-                        <div class="view view-cascade overlay ">
-                            <img class="card-img-top" src="http://127.0.0.1:8000/images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG" alt="Card image cap">
-                            <a href="project_gallery">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
+                                <div class="view view-cascade overlay ">
+                                    <img class="card-img-top"
+                                         src="{{asset('/uploads')}}/{{$gallery->gallery_thumbnail}}"
+                                         alt="{{$gallery->gallery_thumbnail}}">
+                                    <a href="project_gallery">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>{{$gallery->gallery_description}}</strong></h4>
+
+
+                                    <!-- Text -->
+                                    <a href="project_gallery/{{$gallery->id}}" class="btn btn-rounded ad-orangeGradient font-weight-bold">See
+                                        More</a>
+                                </div>
+
+                            </div>
+
                         </div>
+                    @endforeach
+                @endif
 
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade text-center">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><strong>Project Title</strong></h4>
+    </div>
 
 
-                            <!-- Text -->
-                            <a href="project_gallery" class="btn btn-rounded ad-orangeGradient font-weight-bold">See More</a>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class=" col-lg-4 col-md-6">
-                    <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
-
-                        <!-- Card image -->
-
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="http://127.0.0.1:8000/images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG" alt="Card image cap">
-                            <a href="project_gallery">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade text-center">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><strong>Project Title</strong></h4>
-
-
-                            <!-- Text -->
-                            <a href="project_gallery" class="btn btn-rounded ad-orangeGradient font-weight-bold">See More</a>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class=" col-lg-4 col-md-6">
-                    <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
-
-                        <!-- Card image -->
-
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="http://127.0.0.1:8000/images/92c9b701-0f3d-42bc-823d-8d66e4c82918.JPG" alt="Card image cap">
-                            <a href="project_gallery">
-                                <div class="mask rgba-white-slight "></div>
-                            </a>
-                        </div>
-
-                        <!-- Card content -->
-                        <div class="card-body card-body-cascade text-center">
-
-                            <!-- Title -->
-                            <h4 class="card-title"><strong>Project Title</strong></h4>
-
-
-                            <!-- Text -->
-                            <a href="project_gallery" class="btn btn-rounded ad-orangeGradient font-weight-bold">See More</a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-        </section>
+    </section>
     </div>
 
 

@@ -102,24 +102,29 @@
                     <div class="modal-body mx-3">
 
                         <div class="md-form">
-                            <input type="text" id="client_name" name="client_name" class="form-control validate">
-                            <label data-error="wrong" data-success="right">Client name</label>
+                            <input type="text" id="client_name" name="client_name" class="form-control validate" required>
+                            <label>Client name</label>
                         </div>
 
-                        <select class="mdb-select md-form" id="locale" name="locale">
+                        <select class="mdb-select md-form" id="locale" name="locale" required>
                             <option value="" disabled selected>Choose your option</option>
                             <option value="National">National</option>
                             <option value="International">International</option>
                         </select>
+
                         <div class="md-form file-field">
                             <div class="btn ad-orangeGradient btn-sm float-left text-white">
                                 <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
-                                <input type="file" name="client_logo" id="client_logo">
+                                <input type="file" name="client_logo" id="client_logo" required>
                             </div>
-                            <div class="file-path-wrapper">
+                            <div class="file-path-wrapper @error('client_logo') is-invalid @enderror">
                                 <input class="file-path validate" type="text" placeholder="Upload client's logo">
                             </div>
+                            @error('client_logo')
+                            <span class="invalid-feedback"> {{$message}} </span>
+                            @enderror
                         </div>
+
 
                     </div>
 

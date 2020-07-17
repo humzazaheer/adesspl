@@ -141,26 +141,37 @@
 
                         <div class="md-form">
                             <input type="text" id="gallery_description" name="gallery_description"
-                                   class="form-control validate">
-                            <label data-error="wrong" data-success="right">Gallery Description</label>
+                                   class="form-control validate" required>
+                            <label>Gallery Description</label>
                         </div>
                         <div class="md-form file-field">
                             <div class="btn ad-orangeGradient btn-sm float-left text-white">
                                 <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
-                                <input type="file" name="gallery_thumbnail" id="gallery_thumbnail">
+                                <input type="file" name="gallery_thumbnail" id="gallery_thumbnail" required>
                             </div>
-                            <div class="file-path-wrapper">
+                            <div class="file-path-wrapper @error('gallery_thumbnail') is-invalid @enderror">
                                 <input class="file-path validate" type="text" placeholder="Upload gallery thumbnail">
                             </div>
+
+                            @error('gallery_thumbnail')
+                            <span class="invalid-feedback"> {{$message}} </span>
+                            @enderror
                         </div>
                         <div class="md-form file-field">
                             <div class="btn ad-orangeGradient btn-sm float-left text-white">
                                 <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
-                                <input type="file" name="gallery_images[]" id="gallery_images" multiple onchange="preview_images()">
+                                <input type="file" name="gallery_images[]" id="gallery_images" required multiple onchange="preview_images()">
                             </div>
-                            <div class="file-path-wrapper">
+                            <div class="file-path-wrapper @error('gallery_images') is-invalid @enderror @error('gallery_images.*') is-invalid @enderror">
                                 <input class="file-path validate" type="text" placeholder="Upload gallery images">
                             </div>
+
+                            @error('gallery_images')
+                            <span class="invalid-feedback"> {{$message}} </span>
+                            @enderror
+                            @error('gallery_images.*')
+                                <span class="invalid-feedback"> {{$message}} </span>
+                            @enderror
                         </div>
 
                         <div class="row" id="image-preview"></div>

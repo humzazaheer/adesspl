@@ -34,6 +34,9 @@ class ClientController extends Controller
      */
     public function store(Request $request, Client $client)
     {
+        $request->validate([
+            'client_logo' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
+        ]);
         $client->client_name = $request->get('client_name');
         $client->locale = $request->get('locale');
         $logo = $request->file('client_logo');
@@ -68,6 +71,9 @@ class ClientController extends Controller
      */
     public function update(Request $request, Client $client)
     {
+        $request->validate([
+            'client_logo' => 'image|mimes:jpg,png,jpeg,gif,svg',
+        ]);
         $client->client_name = $request->get('client_name');
         $client->locale = $request->get('locale');
         $client_current_logo = $request->get('client_current_logo');

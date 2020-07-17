@@ -13,7 +13,7 @@
 
             <div class="md-form">
                 <input type="text" id="client_name" name="client_name" class="form-control validate" value="{{$client->client_name}}">
-                <label data-error="wrong" data-success="right">Client name</label>
+                <label>Client name</label>
             </div>
             <select class="mdb-select md-form" id="locale" name="locale">
                 @if($client->locale == 'National')
@@ -30,9 +30,12 @@
                     <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
                     <input type="file" name="client_logo" id="client_logo">
                 </div>
-                <div class="file-path-wrapper">
+                <div class="file-path-wrapper @error('client_logo') is-invalid @enderror">
                     <input class="file-path validate" type="text" placeholder="Upload new logo">
                 </div>
+                @error('client_logo')
+                <span class="invalid-feedback"> {{$message}} </span>
+                @enderror
             </div>
             <label data-error="wrong" data-success="right" class="font-weight-bold">Current logo</label>
             <div class="current_logo">

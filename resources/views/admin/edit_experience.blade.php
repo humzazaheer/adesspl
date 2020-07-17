@@ -25,7 +25,7 @@
             </select>
             <div class="md-form">
                 <input type="text" id="exp_description" name="exp_description" class="form-control validate" value="{{$exp->exp_description}}">
-                <label data-error="wrong" data-success="right">Experience Description</label>
+                <label>Experience Description</label>
             </div>
 
         </div>

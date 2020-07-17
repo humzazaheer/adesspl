@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
     <aside class="navbar-expand bg-white position-fixed py-5 animate__animated animate__faster" id="nav">
         <div class="container-fluid">
             <div class="navbar-brand admin_logo m-auto px-5 font-weight-bold">
@@ -28,11 +29,11 @@
             </div>
             <ul class="list-unstyled mt-5">
                 <li class="nav-item waves-effect">
-                    <a class="nav-link ad-black" href="{{url('/admin')}}"><i class="fad fa-tachometer mr-2"></i> Dashboard</a>
+                    <a class="nav-link pl-4 {{Request::path()==='admin' ? 'ad-active':'ad-black'}}" href="{{url('/admin')}}"><i class="fad fa-tachometer mr-2"></i> Dashboard</a>
                 </li>
-                <li class="nav-item waves-effect {{Request::path()==='/admin/clients'?'active':''}}"><a class="nav-link ad-black" href="{{url('/admin/clients')}}"><i class="fad fa-users mr-2"></i> Clients</a></li>
-                <li class="nav-item waves-effect {{Request::path()==='/admin/gallery'?'active':''}}"><a class="nav-link ad-black" href="{{url('/admin/gallery')}}"><i class="fad fa-images mr-2"></i> Gallery</a></li>
-                <li class="nav-item waves-effect {{Request::path()==='/admin/experience'?'active':''}}"><a class="nav-link ad-black" href="{{url('/admin/experience')}}"><i class="fad fa-tasks mr-2"></i> Work Experience</a></li>
+                <li class="nav-item waves-effect"><a class="nav-link pl-4 {{Request::path()==='admin/clients'?'ad-active':'ad-black'}}" href="{{url('/admin/clients')}}"><i class="fad fa-users mr-2"></i> Clients</a></li>
+                <li class="nav-item waves-effect"><a class="nav-link pl-4 {{Request::path()==='admin/gallery'?'ad-active':'ad-black'}}" href="{{url('/admin/gallery')}}"><i class="fad fa-images mr-2"></i> Gallery</a></li>
+                <li class="nav-item waves-effect"><a class="nav-link pl-4 {{Request::path()==='admin/experience'?'ad-active':'ad-black'}}" href="{{url('/admin/experience')}}"><i class="fad fa-tasks mr-2"></i> Work Experience</a></li>
             </ul>
 
         </div>
@@ -47,6 +48,7 @@
             <div class="justify-content-end">
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link btn ad-orangeGradient" href="/"><i class="fas fa-globe"></i> Visit Website</a></li>
+
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle ad-orangeGradient btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <i class="fas fa-user"></i>
@@ -59,6 +61,7 @@
                             <a class="dropdown-item" href="{{ route('register') }}">Add User</a>
 
                              @endif
+                                <a href="{{route('profile')}}" class="dropdown-item">Manage Profile</a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

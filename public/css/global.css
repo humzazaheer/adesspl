@@ -45,7 +45,7 @@ section {
 .banner-icon img{
     margin-bottom: .2em;
 }
-.ad-orangeGradient {
+.ad-orangeGradient, .ad-active {
     background: linear-gradient(125deg, #F46262, #F2AB21);
     color: #fff !important;
 }

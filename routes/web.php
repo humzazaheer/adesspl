@@ -22,7 +22,7 @@ Route::post('/sendMail', 'PageController@sendMail');
 Route::get('/solutionservice', 'PageController@solutionservice');
 Route::get('/workshop', 'PageController@workshop');
 Route::get('/gallery', 'PageController@gallery');
-Route::get('/project_gallery', 'PageController@project_gallery');
+Route::get('/project_gallery/{gallery}', 'PageController@project_gallery');
 Route::get('/experience', 'PageController@experience');
 //solution & services pages
 Route::get('/turnkey_epc_project', 'PageController@turnkey_epc_project');
@@ -45,6 +45,9 @@ Route::get('/admin', 'AdminPageController@dashboard')->name('admin.dashboard');
 Route::get('/admin/clients', 'AdminPageController@clients')->name('admin.clients');
 Route::get('/admin/work_experience', 'AdminPageController@experience')->name('admin.experience');
 Route::get('/admin/gallery', 'AdminPageController@gallery')->name('admin.gallery');
+Route::get('/admin/profile', 'AdminPageController@profile')->name('profile');
+Route::put('/admin/profile/{profile}', 'AdminPageController@update_password')->name('updatePassword');
+Route::put('/admin/profile', 'AdminPageController@update_profile')->name('updateProfile');
 
 //client controller
 
@@ -71,5 +74,3 @@ Route::put('/admin/edit_gallery/{gallery}', 'GalleryController@update')->name('g
 Route::put('/admin/gallery/{gallery}', 'GalleryController@destroy')->name('galleryDelete');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

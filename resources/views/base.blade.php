@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('/')}}">Home</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='/'?'nav-active':''}}" href="{{url('/')}}">Home</a>
                 </li>
 {{--                <li class="nav-item dropdown">--}}
 {{--                    <a class="nav-link waves-effect waves-light dropdown-toggle" href="{{url('solutionservice')}}" id="navbarDropdownMenuLink" data-toggle="dropdown"--}}
@@ -160,20 +160,20 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('workshop')}}">Workshop</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='workshop'?'nav-active':''}}" href="{{url('workshop')}}">Workshop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('experience')}}">Experience</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='experience'?'nav-active':''}}" href="{{url('experience')}}">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('gallery')}}">Gallery</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='gallery'?'nav-active':''}}" href="{{url('gallery')}}">Gallery</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('about')}}">About</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='about'?'nav-active':''}}" href="{{url('about')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="{{url('contact')}}">Contact</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='contact'?'nav-active':''}}" href="{{url('contact')}}">Contact</a>
                 </li>
 
             </ul>

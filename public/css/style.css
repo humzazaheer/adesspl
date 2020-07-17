@@ -243,9 +243,19 @@
 .navbar.scrolling-navbar {
     padding:0px !important;
 }
-
-.navbar.scrolling-navbar.top-nav-collapse .nav-link {
+.nav-active {
+    border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
+    border-image-slice: 1;
+    border-bottom: 5px solid transparent;
+}
+.navbar .nav-link {
     padding: 2rem 0.6rem !important;
+    border-bottom: 5px solid transparent;
+}
+.navbar .nav-link:hover {
+    border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
+    border-image-slice: 1;
+    border-bottom: 5px solid transparent;
 }
 .nav-link{
     padding: 2.5rem 0.6rem;
