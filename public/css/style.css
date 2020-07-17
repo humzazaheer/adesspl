@@ -244,7 +244,7 @@
     padding:0px !important;
 }
 .nav-active {
-    border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
+    border-image-source: linear-gradient(to right,  #F46262 0%,  #F2AB21 100%);
     border-image-slice: 1;
     border-bottom: 5px solid transparent;
 }
@@ -253,7 +253,7 @@
     border-bottom: 5px solid transparent;
 }
 .navbar .nav-link:hover {
-    border-image-source: linear-gradient(to bottom,  #F46262 0%,  #F2AB21 100%);
+    border-image-source: linear-gradient(to right,  #F46262 0%,  #F2AB21 100%);
     border-image-slice: 1;
     border-bottom: 5px solid transparent;
 }

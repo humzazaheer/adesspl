@@ -46,14 +46,13 @@ class AdminPageController extends Controller
         $password = $request->get('password');
         $c_pass = $request->get('confirm_password');
         if(!$current_password){
-            return Redirect::route('profile')->with('current_password','Your current password is wrong');
+            return back()->with('current_password','Your current password is wrong');
         }
-        if($password) {
-            return Redirect::route('profile')->with('success','something wrong');
-        }
+
         $user = Auth::user();
         $user->password = $password;
-
+$user->save();
+        return Redirect::route('profile')->with('success','succeed pass');
     }
 
 }
