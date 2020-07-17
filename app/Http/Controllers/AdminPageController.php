@@ -34,25 +34,24 @@ class AdminPageController extends Controller
         $name = $request->get('name');
         DB::update('update users set name = ? where id = ?', [$name,Auth::user()->id]);
 
-        return Redirect::route('profile')->with('success','succeed');
+        return Redirect::route('profile')->with('success','Information successfully updated');
     }
     public function update_password(Request $request){
         $request->validate([
             'current_password' => 'required',
             'password' => 'required|confirmed',
-            'confirm_password' => 'required|same:password',
+            'password_confirmation' => 'required|same:password',
         ]);
         $current_password = Hash::check($request->get('current_password'),Auth::user()->password);
         $password = $request->get('password');
-        $c_pass = $request->get('confirm_password');
         if(!$current_password){
             return back()->with('current_password','Your current password is wrong');
         }
 
         $user = Auth::user();
-        $user->password = $password;
-$user->save();
-        return Redirect::route('profile')->with('success','succeed pass');
+        $user->password = bcrypt($password);
+        $user->save();
+        return Redirect::route('profile')->with('success','Password successfully updated');
     }
 
 }

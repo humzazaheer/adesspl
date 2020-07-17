@@ -1,9 +1,17 @@
 @extends('admin.base')
 
 @section('content')
-    {{Session::get('success')}}
     <div class="container">
+        @if($msg = Session::get('success'))
+            <div id="toast-container">
+                <div class="md-toast md-toast-success col-md-8 mx-auto my-5">
+                    <div class="md-toast-message">{{$msg}}</div>
+                </div>
+            </div>
+        @endif
+
         <div class="row justify-content-center my-5">
+
             <div class="col-md-8">
                 <div class="card">
                     <div
@@ -62,7 +70,7 @@
                                        required>
                                 <label for="password">Current Password</label>
 
-                                {{ Session::get('current_password') }}
+
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ Session::get('current_password') }}</strong>
                                     </span>
@@ -85,7 +93,7 @@
 
                             <div class="md-form">
                                 <input id="password-confirm" type="password" class="form-control"
-                                       name="confirm_password" required autocomplete="new-password">
+                                       name="password_confirmation" required autocomplete="new-password">
                                 <label for="password-confirm">{{ __('Confirm Password') }}</label>
 
                             </div>
