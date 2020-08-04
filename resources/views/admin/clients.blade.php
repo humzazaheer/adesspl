@@ -12,11 +12,11 @@
         @endif
 
         <div class="ml-auto">
-            <button class="btn ad-orangeGradient" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
+            <button class="btn ad-orangeGradient" data-toggle="modal" data-target="#clientModalAddForm"><i class="fas fa-plus"></i> Add new</button>
         </div>
     </div>
     <!--Table-->
-    <table id="dtMaterialDesignExample" class="ad-datatable table table-responsive-md" width="100%">
+    <table id="dtMaterialDesignExample" class="adminclient ad-datatable table table-responsive-md" width="100%">
         <!--Table head-->
         <thead>
         <tr>

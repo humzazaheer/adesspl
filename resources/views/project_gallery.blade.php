@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="banner about-banner">
+    <section class="banner gallery-banner">
 
         <div class="mask rgba-black-strong">
 
@@ -14,31 +14,33 @@
         </div>
     </section>
     <div class="container">
+        <section class="gallery-section">
         @if($gallery)
+            <h1 class="text-center mb-5 ad-black wow fadeInDown">
+                {{$gallery->gallery_description}}
+            </h1>
+        <div class="row">
 
-            <section class="project-gallery-detail text-center">
-                <h1 class="text-center mb-5 ad-black wow bounceInDown">
-                    {{$gallery->gallery_description}}
-                </h1>
+                <!-- Grid row -->
+                <div class="tile-gallery " id="gallery">
+
+                    @foreach(explode('|', $gallery->gallery_images) as $g_image)
+
+                        <div class="mb-3 pics animation all 2 waves-light z-depth-1 rounded">
+
+                            <img  alt="picture" src="{{asset('/uploads')}}/{{$g_image}}"
+                                 class="img-fluid rounded z-depth-1 wow flipInX">
+                        </div>
+                    @endforeach
 
 
-                <div class="row">
-                    <div class="col-md-12">
-                    <div id="mdb-lightbox-ui"></div>
-
-
-                    <div class="mdb-lightbox">
-                        @foreach(explode('|', $gallery->gallery_images) as $g_image)
-                            <figure class="col-lg-4 col-md-6 wow flipInX">
-                                <a href="{{asset('/uploads')}}/{{$g_image}}" data-size="1600x1067">
-                                    <img alt="picture" src="{{asset('/uploads')}}/{{$g_image}}" class="img-fluid rounded z-depth-1">
-                                </a>
-                            </figure>
-                        @endforeach
-                    </div>
-                    </div>
                 </div>
-            </section>
+            <div class="mx-auto my-5">
+                <a href="{{url('gallery')}}" class="btn ad-orangeGradient" ><i class="fas fa-arrow-left"></i> Back To Lightbox</a>
+            </div>
+
+        </div>
         @endif
+        </section>
     </div>
 @endsection

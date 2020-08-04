@@ -126,7 +126,9 @@
     background-color: rgba(0, 0, 0, .3);
 
 }
-
+.custom-toggler-icon{
+    color: #F46361;
+}
 .top-nav-collapse {
     background-color: #fff
 }
@@ -134,13 +136,26 @@
 .page-footer {
     background-color: #333;
 }
+footer ul li p{
+    margin-left: 22px;
+}
+footer ul li{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
 
 @media only screen and (max-width: 768px) {
+    .qhse-last{
+        width: 100% !important;
+    }
     .navbar {
         background-color: #1C2331;
 
     }
-
+    .navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link{
+        color: #ffffff;
+    }
     .project-gallery figure {
         display: flex;
         justify-content: center;
@@ -154,22 +169,7 @@
     margin: .5rem 0 !important;
 
 }
-@media screen and (max-width: 992px){
-    .ss-dropdown ul li{
-        margin: 0 !important;
 
-    }
-    .nav-link {
-        padding: .5rem 1rem !important;
-    }
-    .ss-link{
-        padding: .5rem 1rem !important;
-    }
-    .ss-dropdown div{
-        padding-right: 1.5em !important;
-        padding-left: 1.5em !important;
-    }
-}
 
 .navbar.scrolling-navbar .dropdown-menu {
     background-color: rgba(0, 0, 0, .3);
@@ -249,7 +249,7 @@
     border-bottom: 5px solid transparent;
 }
 .navbar .nav-link {
-    padding: 2rem 0.6rem !important;
+    padding: 1rem 0.6rem !important;
     border-bottom: 5px solid transparent;
 }
 .navbar .nav-link:hover {
@@ -264,8 +264,12 @@
     padding-left: 1.6rem !important;
     padding-right: 1.6rem !important;
 }
-.nav-item.show .nav-link{
-    background-color: rgba(0,0,0,0.7) !important;
+/*.nav-item.show .nav-link{*/
+/*    background-color: rgba(0,0,0,0.7) !important;*/
+/*}*/
+li.nav-item.dropdown.mega-dropdown.show .nav-link{
+    border-image-source: linear-gradient(to right, #F46262 0%, #F2AB21 100%);
+    border-image-slice: 1;
 }
 .navbar.navbar-expand-lg.navbar-dark.transparent.fixed-top.scrolling-navbar.top-nav-collapse .nav-link {
     color: #000 !important;
@@ -318,9 +322,6 @@
 }
 .gallery a:hover{
     color: #fff;
-}
-.gallery-banner {
-    background-image: url("");
 }
 
 .core-values h5 {
@@ -376,31 +377,41 @@
 /*footer*/
 
 .footer-logo img {
-    max-width: 3.5rem;
+    max-width: 2.5rem;
 }
 
 .footer-logo-text {
-    line-height: 1.5rem;
+    line-height: 1.9rem;
     text-transform: uppercase;
 }
 
 .footer-logo-text span {
-    font-size: 1.14rem;
+    font-size: 1.18rem;
+    font-family: segoe;
+
 }
-
+.footer-logo .navbar-brand-text{
+    font-size: 10px;
+    line-height: 1.2rem;
+}
 @media screen and (max-width: 480px) {
-    .footer-logo img {
-        max-width: 3rem;
-    }
+    /*.footer-logo img {*/
+    /*    max-width: 1.8rem;*/
+    /*}*/
+    /*.footer-logo .navbar-brand-text{*/
+    /*    font-size: 7px;*/
+    /*    text-align: center;*/
+    /*    line-height: 0.2;*/
+    /*}*/
 
-    .footer-logo-text {
-        line-height: 1.2rem;
-        font-size: 1.2rem;
-    }
+    /*.footer-logo-text {*/
+    /*    line-height: 1.2rem;*/
+    /*    font-size: 1.2rem;*/
+    /*}*/
 
-    .footer-logo-text span {
-        font-size: 0.786rem;
-    }
+    /*.footer-logo-text span {*/
+    /*    font-size: 12.9px;*/
+    /*}*/
 }
 
 /* Gallery */
@@ -467,21 +478,21 @@
 .ss-heading{
     margin:0 0 5rem;
 }
-#client_slider li img{
-    height: 110px;
-    margin: 0 auto;
-}
+
 .lSSlideOuter .lSPager.lSpg{
     margin: 50px 0 0 !important;
 }
-.lslide{
-    width:250px !important;
+
+
+.client_slider .client-image-div{
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 12rem;
 }
-#client_slider li.clone{
-    display: flex;
-    align-items: center;
+.client_slider{
+    height: 15rem !important;
+
 }
 .footer-social-icons li{
     display: inline-block;
@@ -489,6 +500,11 @@
 }
 .footer-social-icons li a i{
     font-size: 20px;
+}
+@media screen and (min-width: 992px) {
+    .footer-intro, .footer-address{
+        width: 85%;
+    }
 }
 @media screen and (max-width: 992px) {
     .col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img{
@@ -525,8 +541,44 @@
         width: 18% !important;
         margin: 0 auto 2rem !important;
     }
-}
 
+    .ss-dropdown ul li{
+        margin: 0 !important;
+
+    }
+    .nav-link {
+        padding: .5rem 1rem !important;
+    }
+    .ss-link{
+        padding: .5rem 1rem !important;
+    }
+    .ss-dropdown div{
+        padding-right: 1.5em !important;
+        padding-left: 1.5em !important;
+    }
+    .footer-intro{
+        width: 100%;
+    }
+    .nav-active{
+        border-bottom: none;
+        border-left: 5px solid transparent;
+        border-image-source: linear-gradient(to bottom, #F46262 0%, #F2AB21 100%) ;
+    }
+    .navbar .nav-link{
+        border-bottom: none;
+        border-left: 5px solid transparent;
+    }
+    .navbar .nav-link:hover{
+        border-bottom: none;
+        border-left: 5px solid transparent;
+        border-image-source: linear-gradient(to bottom, #F46262 0%, #F2AB21 100%);
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    a.nav-link.waves-effect.waves-light{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width: 768px) {
     .ss-img{
        text-align: center !important;
@@ -551,6 +603,10 @@
     .gallery .card img{
         height: auto;
     }
+    .navbar.scrolling-navbar.top-nav-collapse .navbar-brand .navbar-brand-text{
+        color: #fff;
+    }
+
 }
 
 /*.col-lg-8.manufacturing-img img, .manufacturing-img img, .col-lg-3.manpower-img img{*/
@@ -582,7 +638,9 @@
 .ss-section img.tank-img{
     width: 55%;
     margin: 1rem auto;
-
+}
+.adminclient button{
+    background-color: none;
 }
 /*.card{*/
 /*    height: 100%;*/
@@ -601,10 +659,15 @@
 }
 
 /* Banners */
-.contact-banner {
-    background-image: url("");
+.gallery-banner {
+    background-image: url("/images/banners/gallery.png");
 }
-
+.experience-banner {
+    background-image: url("/images/banners/experience.jpg");
+}
+.contact-banner {
+    background-image: url("/images/banners/contact.jpg");
+}
 .manufacturing-of-machine-element-banner {
     background-image: url("/images/banners/manufac.jpg");
 }
@@ -641,12 +704,21 @@
 .workshop-banner{
     background-image: url("/images/banners/workshop.jpg");
 }
-.experience-banner{
-    background-image: url("/images/banners/");
+.career-banner{
+    background-image: url("/images/banners/careers.jpg");
+}
+.turnkey-epc-project-banner{
+    background-image: url("/images/banners/epc.jpg");
 }
 
 .about-banner{
     background-image: url("/images/banners/about.png");
+    background-position: unset !important;
+
+}
+.qhse-banner{
+    background-image: url("/images/banners/qhse-banner.jpg");
+
 
 }
 
@@ -659,3 +731,76 @@ label.active{
     -webkit-box-shadow: 0 1px 0 0 #f46361 !important;
     box-shadow: 0 1px 0 0 #f46361 !important;
 }
+
+
+
+
+
+
+
+
+
+
+.tile-gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+.tile-gallery {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+.tile-gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+
+@media (max-width: 450px) {
+    .tile-gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+.qhse-last{
+    width: 35%;
+}
+
+.qhse-section .col-12 i:nth-child(even){
+    color: #f46361 !important;
+}
+/*.qhse-section i:nth-child(even){*/
+/*    color: #F2AB21 !important;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

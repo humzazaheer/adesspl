@@ -24,6 +24,7 @@
                             <div class="company-logo float-left">
                                 <img src="{{asset('/uploads')}}/{{$exp->client_logo}}" alt="{{$exp->client_logo}}" class="img-fluid">
                             </div>
+                            <br>
 
                             <div class="exp">
                                 <p class="mt-5">{{$exp->exp_description}}</p>

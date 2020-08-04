@@ -18,7 +18,7 @@
 
 </head>
 
-<body >
+<body>
 
 
 <!-- Header -->
@@ -32,31 +32,24 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class=""><i class="fas fa-bars custom-toggler-icon "></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='/'?'nav-active':''}}" href="{{url('/')}}">Home</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='/'?'nav-active':''}}"
+                       href="{{url('/')}}">Home</a>
                 </li>
-{{--                <li class="nav-item dropdown">--}}
-{{--                    <a class="nav-link waves-effect waves-light dropdown-toggle" href="{{url('solutionservice')}}" id="navbarDropdownMenuLink" data-toggle="dropdown"--}}
-{{--                       aria-haspopup="true" aria-expanded="false">Solution & Services</a>--}}
-{{--                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">--}}
-{{--                        <a class="dropdown-item" href="#">Turnkey EPC Project & Solutions</a>--}}
-{{--                        <a class="dropdown-item" href="#">Fabrication & Plant Eraction</a>--}}
-{{--                        <a class="dropdown-item" href="#">Installation & Commissioning of Plant Machinery</a>--}}
-{{--                        <a class="dropdown-item" href="#">O&M Services</a>--}}
-{{--                        <a class="dropdown-item" href="#">Manufacturing of Machine Element</a>--}}
-{{--                        <a class="dropdown-item" href="#">Overhauling of Diesel Engine & Parts</a>--}}
-{{--                        <a class="dropdown-item" href="#">Design Engineering</a>--}}
-{{--                        <a class="dropdown-item" href="#">Project Management Consultancy</a>--}}
-{{--                        <a class="dropdown-item" href="#">Plant Maintenance & Turnaround</a>--}}
-{{--                        <a class="dropdown-item" href="#">Infrastructure & MEP</a>--}}
-{{--                        <a class="dropdown-item" href="#">Manpower Supply</a>--}}
-{{--                        <a class="dropdown-item" href="#">Equipment on Rent</a>--}}
-{{--                    </div>--}}
-{{--                </li>--}}
+
+
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='workshop'?'nav-active':''}}"
+                       href="{{url('workshop')}}">Workshop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='experience'?'nav-active':''}}"
+                       href="{{url('experience')}}">Experience</a>
+                </li>
                 <li class="nav-item dropdown mega-dropdown">
                     <a class="nav-link dropdown-toggle ss-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
@@ -82,7 +75,8 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="menu-item pl-0" href="{{url('installation_and_commissioning_of_plant_machinery')}}">
+                                        <a class="menu-item pl-0"
+                                           href="{{url('installation_and_commissioning_of_plant_machinery')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Installation & Commissioning of Plant Machinery
                                         </a>
@@ -107,7 +101,8 @@
                                     </li>
 
                                     <li>
-                                        <a class="menu-item pl-0" href="{{url('overhauling_of_diesel_engine_and_parts')}}">
+                                        <a class="menu-item pl-0"
+                                           href="{{url('overhauling_of_diesel_engine_and_parts')}}">
                                             <i class="fas fa-caret-right pl-1 pr-3"></i>
                                             Overhauling of Diesel Engine & Parts
                                         </a>
@@ -160,20 +155,25 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='workshop'?'nav-active':''}}" href="{{url('workshop')}}">Workshop</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='gallery'?'nav-active':''}}"
+                       href="{{url('gallery')}}">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='experience'?'nav-active':''}}" href="{{url('experience')}}">Experience</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='qhse'?'nav-active':''}}"
+                       href="{{url('qhse')}}">QHSE Policy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='gallery'?'nav-active':''}}" href="{{url('gallery')}}">Gallery</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='career'?'nav-active':''}}"
+                       href="{{url('career')}}">Career</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='about'?'nav-active':''}}" href="{{url('about')}}">About</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='about'?'nav-active':''}}"
+                       href="{{url('about')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='contact'?'nav-active':''}}" href="{{url('contact')}}">Contact</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='contact'?'nav-active':''}}"
+                       href="{{url('contact')}}">Contact</a>
                 </li>
 
             </ul>
@@ -194,22 +194,36 @@
 <footer class="page-footer font-small pt-4 mt-5 ">
 
     <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left ">
+    <div class="container-fluid  text-md-left ">
 
         <!-- Grid row -->
         <div class="row">
 
             <!-- Grid column -->
             <div class="col-lg-5 col-sm-12 mt-lg-0 mt-3">
+                <a href="/" class="d-block">
+                    <div class="footer-logo">
 
-                <div class="footer-logo">
-                    <a href="/">
-                        <img src="{{asset('images/logo.png')}}" alt="ADESSPL" class="img-fluid float-left"><h3 class="footer-logo-text ml-2 mt-1 float-left">Al-Din Engineering <br><span>Solutions & Services <abbr title="Private">PVT.</abbr> <abbr
-                                title="Limited">LTD</abbr></span></h3>
-                    </a>
+                        <div class="footer-logo navbar-brand float-left"><img src="{{asset('images/logo.png')}}"
+                                                                              alt="ADESSPL"
+                                                                              class="img-fluid float-left">
+                            <br>
+                            <span class="navbar-brand-text">ADESSPL</span>
+                        </div>
+                        <h3 class="footer-logo-text ml-2 mt-1 float-left">Al-Din Engineering <br><span>Solutions & Services <abbr
+                                    title="Private">PVT.</abbr> <abbr
+                                    title="Limited">LTD</abbr></span>
+                        </h3>
 
+                    </div>
+                </a>
+                <br><br><br><br>
+                <p class="footer-intro  text-white-50">
+                    ADESSPL is an engineering services, manufacturing and construction company op­erating in Pakistan.
+                    We are in the business of delivering client-specific solutions for projects related to Energy,
+                    Infrastructure and Other Process industry.
+                </p>
 
-                </div>
 
             </div>
             <!-- Grid column -->
@@ -223,13 +237,19 @@
                 <h5 class="text-uppercase">Get in touch</h5>
                 <ul class="text-lg-left list-unstyled mt-4">
                     <li>
-                        <p class="text-white"><i class="fas fa-map-marker-alt pr-3 text-white"></i> Office # 5, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
+                        <h6 class="mb-2 text-white-50"><i class="fas fa-map-marker-alt pr-2 text-white-50"></i>Address
+                        </h6>
+                        <p class="footer-address text-white-50"> Office # 6, 7th
+                            Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600
+                        </p>
                     </li>
                     <li>
-                        <p class="text-white"><i class="fas fa-phone pr-2 text-white"></i> +01 234 567 89</p>
+                        <h6 class="mb-2 text-white-50"><i class="fas fa-phone pr-2 text-white-50"></i>Office Phone</h6>
+                        <p class="text-white-50"> +01 234 567 89</p>
                     </li>
                     <li>
-                        <p class="text-white"><i class="fas fa-envelope pr-2 text-white"></i> contact@example.com</p>
+                        <h6 class="mb-2 text-white-50"><i class="fas fa-envelope pr-2 text-white-50"></i>Email</h6>
+                        <p class="text-white-50"> contact@example.com</p>
                     </li>
                 </ul>
 
@@ -245,16 +265,21 @@
 
                 <ul class="list-unstyled footer-social-icons">
                     <li>
-                        <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://www.facebook.com/ADESSPL"><i class="fab fa-facebook-f"></i></a>
                     </li>
                     <li>
-                        <a href="#!"><i class="fab fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/company/al-din-engineering-solutions-&-services-pvt.-ltd.?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf"><i
+                                class="fab fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="#!"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UCtzWjVzXEvRSfCQhcncMZNA"><i
+                                class="fab fa-youtube"></i></a>
                     </li>
                     <li>
-                        <a href="#!"><i class="fab fa-twitter"></i></a>
+                        <a href="http://www.twitter.com/ADESSPL"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="skype:aldinengineering?"><i class="fab fa-skype"></i></a>
                     </li>
                 </ul>
 
@@ -268,7 +293,7 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <div class="footer-copyright text-center py-3">© {{date('Y')}} Copyright:
         <a href="https://mdbootstrap.com/education/bootstrap/"> ADESSPL</a>
     </div>
     <!-- Copyright -->
@@ -285,6 +310,8 @@
 <script type="text/javascript" src="{{asset('js/lightslider.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/script.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/wow.js')}}"></script>
+
+
 
 
 </body>

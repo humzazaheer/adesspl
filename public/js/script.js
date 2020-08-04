@@ -49,6 +49,8 @@ $(document).ready(function() {
     // lightslider
 
     var autoplaySlider = $('#client_slider').lightSlider({
+        controls:false,
+        pager:false,
         auto: true,
         loop: true,
         item: 4,
@@ -101,4 +103,22 @@ function preview_images() {
 
 new WOW().init();
 
+// $(this).bind("contextmenu", function(e) {
+//     e.preventDefault();
+//     alert('Restricted content...!');
+// });
+$(function() {
+    var selectedClass = "";
+    $(".filter").click(function(){
+        selectedClass = $(this).attr("data-rel");
+        $("#gallery").fadeTo(100, 0.1);
+        $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+        setTimeout(function() {
+            $("."+selectedClass).fadeIn().addClass('animation');
+            $("#gallery").fadeTo(300, 1);
+        }, 300);
+    });
+});
+
+    $('[data-toggle="tooltip"]').tooltip();
 

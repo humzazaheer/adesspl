@@ -1,6 +1,16 @@
+@media screen and (max-width: 600px){
+    .banner-icon img{
+        width: 60px;
+    }
+    .banner h2{
+        font-size: 20px;
+        padding: 35% 0 5% !important;
+    }
+}
 .banner {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 0;
 }
 
@@ -62,3 +72,13 @@ section {
 #toast-container>div {
     width: 100% !important;
 }
+strong{
+    font-weight: 900;
+}
+/**{*/
+/*    -webkit-user-select:none;*/
+/*    -moz-user-select:none;*/
+/*    -ms-user-select:none;*/
+/*    -o-user-select:none;*/
+/*    user-select:none;*/
+/*}*/

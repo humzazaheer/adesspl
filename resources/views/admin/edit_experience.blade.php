@@ -30,9 +30,8 @@
 
         </div>
 
-        <div class="d-flex justify-content-center">
-            <input class="btn ad-orangeGradient btn-block my-4 waves-effect z-depth-0"
-                   type="submit" id="update_client" name="update_client" value="Save"/>
+        <div class="d-table m-auto justify-content-center">
+            <input class="btn ad-orangeGradient btn-block my-4 waves-effect z-depth-0" type="submit" id="update_client" name="update_client" value="Save"/>
             <input type="button" class="btn ad-orangeGradient waves-effect z-depth-0 btn-black my-5" onclick="history.back();" value="Back">
         </div>
     </form>

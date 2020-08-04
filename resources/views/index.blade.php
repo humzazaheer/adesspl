@@ -24,7 +24,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <span class="mb-4 carousel-title ">
-                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide wow fadeInDownBig" data-wow-delay="0.5s">
+                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide wow fadeInDownBig" >
                                 <h1 class="wow slideInRight">AL DIN ENGINEERING</h1>
                                 <h2 class="wow fadeInUp" data-wow-delay="0.5s">SOLUTION & SERVICES PRIVATE LIMITED</h2>
                             </span>
@@ -357,14 +357,24 @@
                 @if($clientLogos)
                     @foreach($clientLogos as $client_logo)
                         <li>
-                            <img src="{{asset('/uploads')}}/{{$client_logo->client_logo}}"
-                                 alt="{{$client_logo->client_logo}}" class="w-50 img-fluid">
+                            <div class="client-image-div">
+                                <img src="{{asset('/uploads')}}/{{$client_logo->client_logo}}"
+                                     alt="{{$client_logo->client_logo}}" class=" img-fluid w-50">
+                            </div>
                         </li>
                     @endforeach
                 @endif
             </ul>
 
         </div>
+
+
+
+
+
+
+
+
 
     </section>
     {{--    end clients--}}

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="banner about-banner">
+    <section class="banner gallery-banner">
 
         <div class="mask rgba-black-strong">
 
@@ -16,14 +16,14 @@
     <div class="container">
 
         <section class="gallery text-center">
-            <h1 class="text-center mb-4 ad-black wow bounceInDown">Projects Lightbox</h1>
+            <h1 class="text-center mb-4 ad-black wow fadeInDown">Projects Lightbox</h1>
             <p class="wow fadeInUp">Check out our works gallery.</p>
 
             <div class="row">
                 @if($galleries)
                     @foreach($galleries as $gallery)
                         <div class=" col-lg-4 col-md-6">
-                            <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox">
+                            <div class="card card-cascade wider mt-2 mb-3 wow jackInTheBox ">
 
                                 <!-- Card image -->
 
@@ -31,7 +31,7 @@
                                     <img class="card-img-top"
                                          src="{{asset('/uploads')}}/{{$gallery->gallery_thumbnail}}"
                                          alt="{{$gallery->gallery_thumbnail}}">
-                                    <a href="project_gallery">
+                                    <a href="project_gallery/{{$gallery->id}}">
                                         <div class="mask rgba-white-slight"></div>
                                     </a>
                                 </div>

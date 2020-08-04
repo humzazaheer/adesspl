@@ -114,7 +114,7 @@
                         <ul class="text-lg-left list-unstyled ">
 
                             <li class="text-center mb-4">
-                                <i class="fas fa-map-marker-alt pr-3 text-white fa-2x mb-2"></i> <p class="text-white"> Office # 5, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
+                                <i class="fas fa-map-marker-alt pr-3 text-white fa-2x mb-2"></i> <p class="text-white"> Office # 6, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
                             </li>
                             <li class="text-center mb-4">
                                 <i class="fas fa-phone pr-2 text-white fa-2x mb-2"></i> <p class="text-white"> +01 234 567 89</p>
@@ -126,18 +126,28 @@
                         <hr class="hr-light my-4">
                         <ul class="list-inline text-center list-unstyled">
                             <li class="list-inline-item">
-                                <a class="p-2 fa-lg tw-ic">
+                                <a href="http://www.twitter.com/ADESSPL" class="p-2 fa-lg tw-ic">
                                     <i class="fab fa-twitter text-white"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="p-2 fa-lg li-ic">
+                                <a href="http://www.linkedin.com/company/al-din-engineering-solutions-&-services-pvt.-ltd.?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf" class="p-2 fa-lg li-ic">
                                     <i class="fab fa-linkedin-in text-white"> </i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="p-2 fa-lg ins-ic">
-                                    <i class="fab fa-instagram text-white"> </i>
+                                <a href="http://www.facebook.com/ADESSPL" class="p-2 fa-lg ins-ic">
+                                    <i class="fab fa-facebook text-white"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCtzWjVzXEvRSfCQhcncMZNA" class="p-2 fa-lg ins-ic">
+                                    <i class="fab fa-youtube text-white"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="skype:aldinengineering?" class="p-2 fa-lg ins-ic">
+                                    <i class="fab fa-skype text-white"> </i>
                                 </a>
                             </li>
                         </ul>
@@ -159,3 +169,4 @@
         <iframe  width="100%" height="350" frameborder="0" class="map shadow mb-5 rounded z-depth-1 wow zoomIn" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.7787349353034!2d74.32010231481888!3d31.53023655381027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919049a66feaf99%3A0x9816f44b8f4fadb6!2sAl-Din+Engineering+Solutions+and+Services+(Pvt.)+Ltd.!5e0!3m2!1sen!2s!4v1471667656830"  allowfullscreen=""></iframe>
     </section>
 </div>
+@endsection

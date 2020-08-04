@@ -67,6 +67,11 @@ class PageController extends Controller
         return view('project_gallery', compact('gallery'));
     }
 
+    public function career()
+    {
+        return view('career');
+    }
+
 
     // Solution & services pages
     public function turnkey_epc_project()
@@ -116,6 +121,10 @@ class PageController extends Controller
     public function equipment_on_rent()
     {
         return view('equipment_on_rent', []);
+    }
+    public function qhse()
+    {
+        return view('qhse', []);
     }
 
 

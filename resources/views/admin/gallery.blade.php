@@ -16,7 +16,7 @@
         @endif
 
         <div class="ml-auto">
-            <button class="btn ad-orangeGradient" data-toggle="modal" data-target="#clientModalAddForm">Add new</button>
+            <button class="btn ad-orangeGradient" data-toggle="modal" data-target="#clientModalAddForm"><i class="fas fa-plus"></i> Add new</button>
         </div>
     </div>
     <!--Table-->
