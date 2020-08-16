@@ -1,5 +1,5 @@
 @extends('base')
-
+@section('title','ADESSPL - Project Lightbox')
 @section('content')
 
     <section class="banner gallery-banner">

@@ -16,7 +16,9 @@ class AdminPageController extends Controller
         $this->middleware('auth');
     }
     public function dashboard(){
-        return view('admin/index');
+        $clients_count = DB::table('clients')->select('id')->where('client_active_status','1')->get();
+        $projects_count = DB::table('experiences')->select('id')->where('exp_active_status','1')->get();
+        return view('admin/index', ['clientsCount'=>$clients_count, 'projectsCount'=>$projects_count] );
     }
     public function clients(){
         return view('admin/client');
@@ -25,6 +27,7 @@ class AdminPageController extends Controller
         return view('admin/gallery');
     }
     public function experience(){
+
         return view('admin/experience');
     }
     public function profile(){

@@ -245,7 +245,7 @@
                     </li>
                     <li>
                         <h6 class="mb-2 text-white-50"><i class="fas fa-phone pr-2 text-white-50"></i>Office Phone</h6>
-                        <p class="text-white-50"> +01 234 567 89</p>
+                        <p class="text-white-50"> +92-42-37522425</p>
                     </li>
                     <li>
                         <h6 class="mb-2 text-white-50"><i class="fas fa-envelope pr-2 text-white-50"></i>Email</h6>
@@ -294,7 +294,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© {{date('Y')}} Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> ADESSPL</a>
+        <a href="{{url('/')}}"> ADESSPL</a>
     </div>
     <!-- Copyright -->
 

@@ -64,3 +64,29 @@ td img {
 .dropdown-content li>a, .dropdown-content li>span {
     color: #4d4b4b !important;
 }
+.digital-clock{
+    font-size:4rem;
+    color: #f46262;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.media-body small{
+    font-weight: 900 !important;
+    letter-spacing: 2px;
+}
+.media i{
+    padding: 1.7rem !important;
+}
+.media .value-count{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 768px){
+    .digital-clock{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .digital-clock{
+        font-size: 2rem;
+    }
+}

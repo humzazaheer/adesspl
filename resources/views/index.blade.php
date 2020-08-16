@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('title','Home')
+@section('title','ADESSPL - Home')
 
 @section('content')
 
@@ -24,7 +24,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <span class="mb-4 carousel-title ">
-                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide wow fadeInDownBig" >
+                                <img src="{{asset('images/logo.png')}}" class="logo-on-slide wow fadeInDownBig">
                                 <h1 class="wow slideInRight">AL DIN ENGINEERING</h1>
                                 <h2 class="wow fadeInUp" data-wow-delay="0.5s">SOLUTION & SERVICES PRIVATE LIMITED</h2>
                             </span>
@@ -43,7 +43,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
+                                {{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
+                                {{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
+                                {{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -91,7 +91,6 @@
             <!--/4th slide-->
 
 
-
             <!--5th slide-->
             <div class="carousel-item">
 
@@ -100,7 +99,7 @@
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
-{{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
+                                {{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
                             </h1>
                         </div>
                     </div>
@@ -300,7 +299,7 @@
                         <li class="timeline-element wow fadeInRight">
                             <h5 class="font-weight-bold  mb-3">
                                 Quality
-                                <span class="text-warning ml-4"><i class="fad fa-award fa-2x"></i></span>
+                                <span class="text-warning ml-4"><i class="fas fa-award fa-2x"></i></span>
 
                             </h5>
                             <p class="">We are passionate about excellence and doing our work right the first
@@ -321,7 +320,7 @@
                         <li class="timeline-element wow fadeInRight">
                             <h5 class="font-weight-bold  mb-3">
                                 No Politics
-                                <span class="text-warning ml-4"><i class="fad fa-landmark fa-2x"></i></span>
+                                <span class="text-warning ml-4"><i class="fas fa-landmark fa-2x"></i></span>
 
                             </h5>
                             <p class="">As a team we struggle for results & collective success. Internal politics is not
@@ -373,9 +372,12 @@
 
 
 
-
-
-
     </section>
     {{--    end clients--}}
 @endsection
+
+
+
+
+
+

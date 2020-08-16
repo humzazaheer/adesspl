@@ -1,5 +1,5 @@
 @extends('base')
-
+@section('title','ADESSPL - Solution & Services')
 @section('content')
 
     <section class="banner  design-engineeirng-banner">

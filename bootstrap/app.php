@@ -1,5 +1,5 @@
 <?php
-
+use PragmaRX\Tracker\Vendor\Laravel\ServiceProvider;
 /*
 |--------------------------------------------------------------------------
 | Create The Application

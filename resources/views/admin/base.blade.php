@@ -77,7 +77,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
         <main>
             @yield('content')
         </main>
@@ -90,6 +90,7 @@
     <!--        javascript      -->
 
     <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+
     <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/fontawesome.js')}}"></script>

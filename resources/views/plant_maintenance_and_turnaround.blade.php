@@ -25,7 +25,7 @@
                 <div class="col-lg-12 plant-img">
                     <div class="waves-light wow zoomIn">
                         <img src="{{asset('images/solution&services/plant-maintenance/plant1.jpg')}}"
-                             class="img-fluid w-75 rounded"/>
+                             class="img-fluid w-100 rounded"/>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     <div class="waves-light  wow zoomIn">
 
                         <img src="{{asset('images/solution&services/plant-maintenance/plant3.jpg')}}"
-                             class="img-fluid  z-depth-1<<  rounded"/>
+                             class="img-fluid  z-depth-1 rounded"/>
                     </div>
                 </div>
             </div>

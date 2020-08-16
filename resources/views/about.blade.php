@@ -1,5 +1,7 @@
 @extends('base')
 
+@section('title','ADESSPL - About')
+
 @section('content')
 
     <section class="banner about-banner">

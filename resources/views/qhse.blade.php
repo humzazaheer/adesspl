@@ -1,5 +1,5 @@
 @extends('base')
-
+@section('title','ADESSPL - QHSE Policy')
 @section('content')
 
     <section class="banner qhse-banner">

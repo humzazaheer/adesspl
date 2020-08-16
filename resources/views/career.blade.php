@@ -1,5 +1,5 @@
 @extends('base')
-
+@section('title','ADESSPL - Career')
 @section('content')
 
     <section class="banner career-banner">

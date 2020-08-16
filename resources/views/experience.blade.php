@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('title', 'Work Experience')
+@section('title', 'ADESSPL - Work Experience')
 
 @section('content')
     <section class="banner experience-banner">

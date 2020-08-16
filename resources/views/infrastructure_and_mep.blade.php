@@ -19,7 +19,7 @@
 
 {{--    Infrastructure services     --}}
 
-            <h2 class="wow fadeInUp">Infrastructure Services</h2>
+            <h4 class="wow fadeInUp">Infrastructure Services</h4>
             <div class="row mt-5 ">
                 <div class="col-md-6 col-xl-3 mb-4">
                     <div class="card text-center waves-effect wow flipInX">
@@ -73,7 +73,7 @@
 
 
 {{--MEP Services--}}
-            <h2 class="mt-5 mb-5 wow fadeInUp">MEP Services</h2>
+            <h4  class="mt-5 mb-5 wow fadeInUp">MEP Services</h4>
             <div class="row mt-5 mep-row mep">
 
                 <div class="col-md-6 col-xl-4 mb-4">
@@ -115,14 +115,17 @@
 
 
 
-                <div class="col-md-6 col-xl-4 mb-4 mep-col d-block m-auto">
+                <div class="col-md-6 col-xl-4  mep-col d-block mb-4 mx-auto">
                     <div class="card text-center waves-effect wow flipInX">
                         <img class="card-img-top water-plant-img" src="{{asset('images/solution&services/infrastructure/electrical.png')}}" alt="">
+                        <br><br>
                         <div class="card-body">
 
                             <h5 class="font-weight-normal">
                                 Electricals and Instrumentation
+
                             </h5>
+
 
                         </div>
                     </div>
