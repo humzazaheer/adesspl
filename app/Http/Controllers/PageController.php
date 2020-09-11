@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Gallery;
 use App\Mail\ContactMail;
+use App\Mail\cvMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
@@ -37,10 +38,25 @@ class PageController extends Controller
 
         $data = [$name, $email, $phone, $company,$message];
 
-        Mail::to('faiqueimtiaz123@gmail.com')->send(new ContactMail($data));
+        Mail::to('hamzazaheer165@gmail.com')->send(new ContactMail($data));
         return Redirect::route('contact');
     }
+    public function sendCV(Request $request)
+    {
+        $name = $request->get('name');
+        $email = $request->get('email');
+        $phone = $request->get('phone');
+        $address = $request->get('address');
+        $cv = $request->file('cv');
+//        $file_name =  date('d_m_y_H_s_i') . '.' . $cv->getClientOriginalExtension();
+//        $cv->move(public_path('/uploads'), $file_name);
 
+        $data = [$name, $email, $phone, 'file_name' => $cv, $address];
+
+
+        Mail::to('hamzazaheer165@gmail.com')->send(new cvMail($data));
+        return Redirect::route('career');
+    }
     public function solutionservice()
     {
         return view('solution_service', []);

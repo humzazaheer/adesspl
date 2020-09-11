@@ -37,7 +37,7 @@
                                 <!-- Header -->
                                 <h3 class="mt-4 ad-black"><i class="fad fa-file-upload pr-2"></i>Drop Your CV</h3>
 
-                                <form action="" method="post">
+                                <form action="/sendCV" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <!-- Grid row -->
 
@@ -80,16 +80,18 @@
                                         <!-- Grid column -->
 
                                         <!-- Grid column -->
-                                        <div class="md-form file-field">
-                                            <div class="btn ad-orangeGradient btn-sm float-left text-white">
-                                                <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
-                                                <input type="file" name="gallery_thumbnail" id="gallery_thumbnail" required>
-                                            </div>
-                                            <div class="file-path-wrapper">
-                                                <input class="file-path validate" type="text"
-                                                       placeholder="Upload Your CV">
-                                            </div>
+                                        <div class="col-md-6">
+                                            <div class="md-form file-field">
+                                                <div class="btn ad-orangeGradient btn-sm float-left text-white">
+                                                    <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Choose file</span>
+                                                    <input type="file" name="cv" id="cv" required>
+                                                </div>
+                                                <div class="file-path-wrapper">
+                                                    <input class="file-path validate" type="text"
+                                                           placeholder="Upload Your CV">
+                                                </div>
 
+                                            </div>
                                         </div>
                                         <!-- Grid column -->
 
