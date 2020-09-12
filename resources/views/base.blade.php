@@ -159,8 +159,8 @@
                        href="{{url('gallery')}}">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light {{Request::path()==='qhse'?'nav-active':''}}"
-                       href="{{url('qhse')}}">QHSE Policy</a>
+                    <a class="nav-link waves-effect waves-light {{Request::path()==='q_policy'?'nav-active':''}}"
+                       href="{{url('q_policy')}}">Quality Policy</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light {{Request::path()==='career'?'nav-active':''}}"
