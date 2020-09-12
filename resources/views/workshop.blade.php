@@ -17,7 +17,7 @@
 
         <div class="container">
             <section class="ss-section">
-                <h1 class="text-center ad-black ss-heading wow fadeInDown">ADSSPL Workshop</h1>
+                <h1 class="text-center ad-black ss-heading wow fadeInDown">ADESSPL Workshop</h1>
 
                 <div class="row">
                     <div class="col-md-6 d-flex align-content-center flex-wrap">
