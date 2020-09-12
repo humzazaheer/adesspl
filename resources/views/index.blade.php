@@ -13,6 +13,7 @@
             <li data-target="#carousel-example-1z" data-slide-to="2"></li>
             <li data-target="#carousel-example-1z" data-slide-to="3"></li>
             <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+            <li data-target="#carousel-example-1z" data-slide-to="5"></li>
         </ol>
         <!--/.Indicators-->
         <!--Slides-->
@@ -52,6 +53,25 @@
                 </div>
             </div>
             <!--/Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="view"
+                     style="background-image: url('../images/slider/slider6.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+                        <div class="text-center white-text mx-5">
+                            <h1 class="mb-4">
+                                {{--                                <strong>Learn Bootstrap 4 with MDB</strong>--}}
+                            </h1>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--/Third slide-->
             <!--Third slide-->
             <div class="carousel-item">
 

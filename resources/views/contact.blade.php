@@ -116,13 +116,15 @@
                         <ul class="text-lg-left list-unstyled ">
 
                             <li class="text-center mb-4">
-                                <i class="fas fa-map-marker-alt pr-3 text-white fa-2x mb-2"></i> <p class="text-white"> Office # 6, 7th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
+                                <i class="fas fa-map-marker-alt pr-3 text-white fa-2x mb-2"></i> <p class="text-white"> Office # 6, 4th Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600</p>
                             </li>
                             <li class="text-center mb-4">
-                                <i class="fas fa-phone pr-2 text-white fa-2x mb-2"></i> <p class="text-white"> +01 234 567 89</p>
+                                <i class="fas fa-phone pr-2 text-white fa-2x mb-2"></i> <p class="text-white"><a class="text-white"
+                                        href="tel:+924237522425">+92-42-37522425</a></p>
                             </li>
                             <li class="text-center">
-                                <i class="fas fa-envelope pr-2 text-white fa-2x mb-2"></i><p class="text-white"> contact@example.com</p>
+                                <i class="fas fa-envelope pr-2 text-white fa-2x mb-2"></i><p class="text-white"><a
+                                        class="text-white" href="mailto:info@adesspl.com">info@adesspl.com</a></p>
                             </li>
                         </ul>
                         <hr class="hr-light my-4">

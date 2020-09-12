@@ -62,7 +62,7 @@
                         </div>
                         <div class="col-lg-4 d-flex mb-2 align-items-center">
                             <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center wow slideInRight">
-                                <img src="{{asset('images/ceo_snap.jpg')}}" class=" img-fluid z-depth-1" alt="CEO image">
+                                <img src="{{asset('images/ceo_snap2.jpg')}}" class="ceo_snap img-fluid z-depth-1" alt="CEO image">
                             </div>
                         </div>
                     </div>

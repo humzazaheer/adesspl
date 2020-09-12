@@ -239,17 +239,17 @@
                     <li>
                         <h6 class="mb-2 text-white-50"><i class="fas fa-map-marker-alt pr-2 text-white-50"></i>Address
                         </h6>
-                        <p class="footer-address text-white-50"> Office # 6, 7th
+                        <p class="footer-address text-white-50"> Office # 6, 4th
                             Floor, Goldmine Plaza, Ferozpur Road, Lahore, Punjab, Pakistan، Ichhra Lahore, Punjab 54600
                         </p>
                     </li>
                     <li>
                         <h6 class="mb-2 text-white-50"><i class="fas fa-phone pr-2 text-white-50"></i>Office Phone</h6>
-                        <p class="text-white-50"> +92-42-37522425</p>
+                        <p class="text-white-50"><a class="text-white-50" href="tel:+924237522425">+92-42-37522425</a></p>
                     </li>
                     <li>
                         <h6 class="mb-2 text-white-50"><i class="fas fa-envelope pr-2 text-white-50"></i>Email</h6>
-                        <p class="text-white-50"> contact@example.com</p>
+                        <p class="text-white-50"><a class="text-white-50" href="mailto:info@adesspl.com">info@adesspl.com</a></p>
                     </li>
                 </ul>
 

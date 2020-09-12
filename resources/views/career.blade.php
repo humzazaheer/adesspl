@@ -20,7 +20,7 @@
             <section class="contact-section mt-5">
                 <h1 class="text-center mb-5 ad-black wow fadeInDown">Join ADESSPL</h1>
                 <p class="text-center mb-5">
-                    At Aldin Engineering Solution & Services (Pvt) Limited, we seek Talented, Proficient and Industrious Team Members,
+                    At Al Din Engineering Solution & Services (Pvt) Limited, we seek Talented, Proficient and Industrious Team Members,
                     who can excel in competitive environments and are flexible to work at multiple projects location.
                     If you are interested to join us, send us your resume or Contact us for further details.</p>
 

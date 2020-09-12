@@ -507,6 +507,9 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
     }
 }
 @media screen and (max-width: 992px) {
+    .ceo_snap {
+        max-width: 60%;
+    }
     .col-lg-8.manufacturing-img img, .col-lg-4.manufacturing-img img{
         height: auto !important;
     }
@@ -517,7 +520,7 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
         height: auto !important;
         width: 100% !important;
     }
-    .plant-img:nth-child(2){
+    .plant-img{
         margin-top: 1.5rem;
     }
     .installation-img{
@@ -632,7 +635,8 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
     height: 100% !important;
 }
 .plant-img img{
-    height: 25rem;
+    /*height: 17rem;*/
+    margin-top: 25px;
 }
 .logo-on-slide {
     width: 23%;
@@ -670,7 +674,7 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
     background-image: url("/images/banners/gallery.png");
 }
 .experience-banner {
-    background-image: url("/images/banners/experience.jpg");
+    background-image: url("/images/banners/exp.JPG");
 }
 .contact-banner {
     background-image: url("/images/banners/contact.jpg");
@@ -691,7 +695,7 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
     background-image: url("/images/banners/infrastructure.jpg");
 }
 .installation-commissioning-banner{
-    background-image: url("/images/banners/installation.jpg");
+    background-image: url("/images/banners/installation.jpeg");
 }
 .design-engineeirng-banner{
     background-image: url("/images/banners/design-engineering.jpg");
@@ -709,7 +713,7 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
     background-image: url("/images/banners/equipment.jpg");
 }
 .workshop-banner{
-    background-image: url("/images/banners/workshop.jpg");
+    background-image: url("/images/banners/croped-workshop.JPG");
 }
 .career-banner{
     background-image: url("/images/banners/careers.jpg");
