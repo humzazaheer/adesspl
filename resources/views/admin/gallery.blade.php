@@ -54,7 +54,7 @@
                     <td width="30%" colspan="2">
 
                         @if($data->gallery_images)
-                        <div id="carouselExampleControls" class="carousel slide g_carousel" data-ride="carousel">
+                        <div id="carouselExampleControls-@if($data->id){{$data->id}}@endif" class="carousel slide g_carousel" data-ride="carousel">
                             <div class="carousel-inner">
                                 @php
                                 $i=1;
@@ -71,11 +71,11 @@
                                     @endphp
                                     @endforeach
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleControls-@if($data->id){{$data->id}}@endif" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carouselExampleControls-@if($data->id){{$data->id}}@endif" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>

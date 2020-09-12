@@ -26,7 +26,7 @@
 
                     @foreach(explode('|', $gallery->gallery_images) as $g_image)
 
-                        <div class="mb-3 pics animation all 2 waves-light z-depth-1 rounded">
+                        <div class="mb-3 pics rounded">
 
                             <img  alt="picture" src="{{asset('/uploads')}}/{{$g_image}}"
                                  class="img-fluid rounded z-depth-1 wow flipInX">

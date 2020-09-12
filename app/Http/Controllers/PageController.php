@@ -138,9 +138,9 @@ class PageController extends Controller
     {
         return view('equipment_on_rent', []);
     }
-    public function qhse()
+    public function q_policy()
     {
-        return view('qhse', []);
+        return view('q_policy', []);
     }
 
 

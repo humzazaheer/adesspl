@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-
+    $('#btnTop').hide();
     //scrolltop
 
     $('#btnTop').click(function() {
@@ -78,11 +78,9 @@ $(document).ready(function() {
         ]
     });
 
-    $('#total').text(autoplaySlider.getTotalSlideCount());
+    // $('#total').text(autoplaySlider.getTotalSlideCount());
 
     // end lightslider
-
-
 
 
 

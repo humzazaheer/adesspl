@@ -27,7 +27,7 @@ Route::get('/gallery', 'PageController@gallery');
 Route::get('/project_gallery/{gallery}', 'PageController@project_gallery');
 Route::get('/experience', 'PageController@experience');
 Route::get('/career', 'PageController@career');
-Route::get('/qhse', 'PageController@qhse');
+Route::get('/q_policy', 'PageController@q_policy');
 //solution & services pages
 Route::get('/turnkey_epc_project', 'PageController@turnkey_epc_project');
 Route::get('/fabrication_and_plant_eraction', 'PageController@fabrication_and_plant_eraction');

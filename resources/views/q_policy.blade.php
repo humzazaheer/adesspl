@@ -56,8 +56,8 @@
                     <div class="row mb-3">
 
                         <div class="col-12 wow fadeInLeft">
-                            <i class="fas fa-2x fa-users mb-2 text-warning"></i>
-                            <h5 class="font-weight-bold mb-3">Operating the business legal</h5>
+                            <i class="fas fa-2x fa-briefcase mb-2 text-warning"></i>
+                            <h5 class="font-weight-bold mb-3">Operating the business legally</h5>
                             <p class=" ">Operating the business to the systems required by QMS ISO 9001:2015, EMS ISO 14001:2015 and
                                         OHSMS ISO 45001:2018.
                             </p>
@@ -78,21 +78,6 @@
                                 management system and creating awareness on how their actions can influence the company's
                                 quality management system.
                             </p>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-                    <div class="row mb-md-0 mb-3">
-
-                        <!-- Grid column -->
-                        <div class="col-12 wow fadeInLeft">
-                            <i class="fad fa-2x fa-skiing-nordic mb-2 text-warning"></i>
-                            <h5 class="font-weight-bold mb-3">Strive for improvement</h5>
-                            <p class="  mb-0">Continually strive for improvement by providing adequate trainings, motivation and promoting quality
-                            awareness to our workforce in order to improve their performance and deliver a best class quality
-                            services to our valued customer.
-                                </p>
                         </div>
                         <!-- Grid column -->
 
@@ -133,7 +118,7 @@
 
 
                         <div class="col-12 wow fadeInRight">
-                            <i class="fad fa-2x fa-check-double mb-2 text-danger"></i>
+                            <i class="fad fa-2x fa-skiing-nordic mb-2 text-danger"></i>
                             <h5 class="font-weight-bold mb-3">Face the challenges</h5>
                             <p class=" ">Face the challenges of changing market environment through our proper communication and
                                         commitment within the organization.
@@ -144,7 +129,25 @@
 
                     </div>
 
-                  
+
+                    <!-- Grid row -->
+                    <div class="row mb-md-0 mb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-12 wow fadeInRight">
+                            <i class="fad fa-2x fa-check-double mb-2 text-warning"></i>
+                            <h5 class="font-weight-bold mb-3">Strive for improvement</h5>
+                            <p class="  mb-0">Continually strive for improvement by providing adequate trainings, motivation and promoting quality
+                                awareness to our workforce in order to improve their performance and deliver a best class quality
+                                services to our valued customer.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+
+
+
         </section>
         <!--Section: Content-->
 
