@@ -167,7 +167,11 @@ function clockUpdate() {
     $('.digital-clock').text(h  +  " " + ':' +  " " + m + " " + ':' + " " + s +  " " +ampm)
 }
 
+setTimeout(function () {
+        $('.toastr').fadeOut();
+}
 
+,5000);
 
 
 

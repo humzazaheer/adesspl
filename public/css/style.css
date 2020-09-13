@@ -377,7 +377,7 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
 /*footer*/
 
 .footer-logo img {
-    max-width: 2.5rem;
+    max-width: 2.55rem;
 }
 
 .footer-logo-text {
@@ -396,12 +396,12 @@ li.nav-item.dropdown.mega-dropdown.show .nav-link{
 }
 @media screen and (max-width: 480px) {
     .footer-logo img {
-        max-width: 1.8rem;
+        max-width: 1.72rem;
     }
     .footer-logo .navbar-brand-text{
         font-size: 7px;
         text-align: center;
-        line-height: 0.2;
+        line-height: 0.8;
     }
 
     .footer-logo-text {

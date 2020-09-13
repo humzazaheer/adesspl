@@ -21,7 +21,7 @@
             <!--First slide-->
             <div class="carousel-item active">
                 <div class="view"
-                     style="background-image: url('../images/slider/slider5.jpg'); background-repeat: no-repeat; background-size: cover">
+                     style="background-image: url('../images/slider/slider5.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <span class="mb-4 carousel-title ">
@@ -40,7 +40,7 @@
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('../images/slider/slider3.jpg'); background-repeat: no-repeat; background-size: cover">
+                     style="background-image: url('../images/slider/slider3.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
@@ -58,7 +58,7 @@
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('../images/slider/slider6.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                     style="background-image: url('../images/slider/slider6.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
@@ -76,7 +76,7 @@
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('../images/slider/slider1.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                     style="background-image: url('../images/slider/slider1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
@@ -95,7 +95,7 @@
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('../images/slider/slider4.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                     style="background-image: url('../images/slider/slider4.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">
@@ -115,7 +115,7 @@
             <div class="carousel-item">
 
                 <div class="view"
-                     style="background-image: url('../images/slider/slider2.jpg'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+                     style="background-image: url('../images/slider/slider2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
                         <div class="text-center white-text mx-5">
                             <h1 class="mb-4">

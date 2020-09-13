@@ -1,9 +1,6 @@
-{{--@foreach($data as $data)--}}
-{{--    {{$data[0]}}--}}
-{{--    <br>--}}
-{{--@endforeach--}}
 
-{{$data[0]}}
-{{$data[1]}}
-{{$data[2]}}
-{{$data[3]}}
+
+<strong>Name: </strong>{{$data[0]}} <br>
+<strong>Email: </strong>{{$data[1]}}<br>
+<strong>Phone: </strong>{{$data[2]}}<br>
+<strong>City: </strong>{{$data[3]}}<br>

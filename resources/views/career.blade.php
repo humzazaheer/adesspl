@@ -133,5 +133,9 @@
             </section>
 
         </div>
+
+        @if($msg = Session::get('success'))
+            <div id="toast-container" style="position: fixed !important;bottom: 0;right: 10px;"><div class="md-toast md-toast-success"><div class="md-toast-message">sent</div></div></div>
+        @endif
     </div>
 @endsection

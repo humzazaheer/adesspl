@@ -39,7 +39,7 @@ class PageController extends Controller
         $data = [$name, $email, $phone, $company,$message];
 
         Mail::to('hamzazaheer165@gmail.com')->send(new ContactMail($data));
-        return Redirect::route('contact');
+        return redirect()->back()->with('success','Successfully Sent!');
     }
     public function sendCV(Request $request)
     {
@@ -48,14 +48,12 @@ class PageController extends Controller
         $phone = $request->get('phone');
         $address = $request->get('address');
         $cv = $request->file('cv');
-//        $file_name =  date('d_m_y_H_s_i') . '.' . $cv->getClientOriginalExtension();
-//        $cv->move(public_path('/uploads'), $file_name);
 
         $data = [$name, $email, $phone, 'file_name' => $cv, $address];
 
 
         Mail::to('hamzazaheer165@gmail.com')->send(new cvMail($data));
-        return Redirect::route('career');
+        return redirect()->back()->with('success','Successfully Sent!');
     }
     public function solutionservice()
     {
